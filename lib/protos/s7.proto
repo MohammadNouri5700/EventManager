@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+
+message SnapSevenConfigResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+
+enum ParameterDataType{
+    BOOLEAN = 0;
+    INT8=1;
+    UINT8=2;
+    INT16=3;
+    UINT16=4;
+    INT32=5;
+    UINT32=6;
+    INT64=7;
+    UINT64=8;
+    FLOAT32=9;
+    FLOAT64=10;
+    STRING=11;
+}
+//----------------------------------------------------------------------------------
+
+message ConfigSnapSeven{
+    message PLCConfig{
+        string plcName = 1;
+        string plcID = 2;
+        string plcAddress = 3;
+        int32 plcPort = 4;
+        string plcIp = 5;
+        message IoTag{
+            string tagName = 1;
+            string tagId = 2;
+            string tagType= 3;
+            string ioType= 4;
+            int32 wordCount = 5;
+            int32 bitCount = 6;
+            int32 byteCount= 7;
+            int32 interval=8;
+            bool operation=9;
+        }
+        message DataBlockTag{
+            string tagName=1;
+            string tagId=2;
+            string functionCode=3;
+            int32 count=4;
+            ParameterDataType parameter=5;
+            int32 startAddress=6;
+            int32 bitNumber=7;
+            int32 dbNumber=8;
+            int32 interval=9;
+            bool operation=10;
+        }
+        message MemoryTag{
+            string tagName=1;
+            string tagId=2;
+            string functionCode=3;
+            int32 startAddress=4;
+            int32 varSize=5;
+            int32 interval=6;
+            bool operation=7;
+        }
+        repeated  IoTag iotag =6;
+        repeated  DataBlockTag datablocktag =7;
+        repeated  MemoryTag memoryTag =8 ;
+    }
+    repeated  PLCConfig pLCConfig =1 ;
+
+}
+    
+service SystemSnapSevenConfig {
+    rpc SendSystemSnapSevenConfig (ConfigSnapSeven) returns (SnapSevenConfigResponse);
+}
+
+

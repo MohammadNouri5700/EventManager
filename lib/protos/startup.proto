@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+message StartupResponse {
+  bool Success = 1;
+  int32 errorCode = 2;
+  string errorDesc = 3;
+}
+
+message StartupConfig{
+    string time=1;
+}
+
+
+service SystemStartupConfig {
+  rpc SendSystemStartupConfig (StartupConfig) returns (StartupResponse);
+}
+

@@ -1,0 +1,159 @@
+cmake_minimum_required(VERSION 3.5.1)
+project(Event_manager)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "-Wall  -Wall -Wpedantic -Wextra -Wconversion -Weffc++" )
+
+
+#set(CMAKE_SYSTEM_NAME Linux)
+#set(CMAKE_SYSTEM_PROCESSOR arm)
+
+#set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+
+#set(tools arm-myir-linux-gnueabihf-)
+#set(CMAKE_C_COMPILER ${tools}gcc)
+#set(CMAKE_CXX_COMPILER ${tools}g++)
+
+
+
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+#set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+
+include(CheckIncludeFile)
+include(CheckIncludeFileCXX)
+include(CheckIncludeFiles)
+include(ExternalProject)
+
+find_package(PkgConfig REQUIRED)
+find_package(Threads REQUIRED)
+
+#find_package(modbuspp REQUIRED)
+
+
+
+#add_subdirectory(W_coap)
+#add_subdirectory(W_mqtt)
+#add_subdirectory(W_snmp)
+#add_subdirectory(W_S7)
+#add_subdirectory(ErrorManager)
+
+
+
+
+set(PKG  libpaho-mqtt3a.so libpaho-mqttpp3.so
+    snap7
+    libcoap-3.so
+	pthread
+	pugixml
+	#snmppp
+	boost_system boost_thread boost_timer boost_chrono rt
+	#modbuspp
+	iw
+	bluetooth
+    )
+
+#set(MODBUS W_modbus/ModBus.cpp W_modbus/ModBus.h W_modbus/Server.cpp W_modbus/Server.h W_modbus/Master.cpp W_modbus/Master.h)
+set(S7  W_S7/snap7.h W_S7/SNAP7_Client.cpp W_S7/SNAP7_Client.h W_S7/S7Client.cpp W_S7/S7Client.h)
+#set(SNMP W_snmp/SnmpAgent.cpp  W_snmp/SnmpAgent.h)
+
+set( LIB
+
+	    W_coap/Coap.cpp W_coap/Coap.h
+        W_coap/Resource.cpp W_coap/Resource.h
+        W_coap/Context.cpp W_coap/Context.h
+        W_coap/Pdu.cpp W_coap/Pdu.h
+        W_coap/Sessions.cpp W_coap/Sessions.h
+        W_coap/Server.cpp W_coap/Server.h
+        W_coap/client.cpp W_coap/client.h
+        W_coap/EndPoint.cpp W_coap/EndPoint.h
+        W_coap/CoapNode.cpp W_coap/CoapNode.h
+
+	    W_mqtt/Mqtt.cpp W_mqtt/Mqtt.h
+	    W_mqtt/MqttSubscriber.cpp W_mqtt/MqttSubscriber.h
+	    W_mqtt/MqttPublisher.cpp W_mqtt/MqttPublisher.h
+	    W_mqtt/NewPublisher.cpp W_mqtt/NewPublisher.h
+
+        MouseKey/key.h MouseKey/key.cpp
+        MouseKey/mouse.h MouseKey/mouse.cpp
+
+        GateWay/Listener.cpp GateWay/Listener.h
+        GateWay/EventManager.cpp GateWay/EventManager.h
+
+        Protocols/Protocol.cpp Protocols/Protocol.h
+        Protocols/SubscriberProtocol.cpp Protocols/SubscriberProtocol.h
+        Protocols/ServerProtocol.cpp Protocols/ServerProtocol.h
+        #Protocols/SnmpProtocol.cpp Protocols/SnmpProtocol.h
+        #Protocols/MasterProtocol.cpp Protocols/MasterProtocol.h
+        Protocols/ServerProtocol.cpp Protocols/ServerProtocol.h
+        Protocols/S7Protocol.cpp Protocols/S7Protocol.h
+
+        Utility/ieee745.cpp Utility/ieee745.h
+        Utility/PiPe.cpp Utility/PiPe.h
+
+
+        GateWay/SignalS.h GateWay/SignalS.cpp
+        GateWay/ThreadPool.cpp GateWay/ThreadPool.h
+        GateWay/Thread_Call.cpp  GateWay/Thread_Call.h
+        W_gps/GpsMessagesParser.cpp W_gps/GpsMessagesParser.h
+        Protocols/GpsProtocol.cpp Protocols/GpsProtocol.h
+
+        GateWay/Connection/Connection.h GateWay/Connection/Connection.cpp
+        #GateWay/Connection/ConnectionModbus.cpp GateWay/Connection/ConnectionModbus.cpp
+        GateWay/Connection/ConnectionMqtt.cpp GateWay/Connection/ConnectionMqtt.h
+        GateWay/Connection/ConnectionS7.cpp GateWay/Connection/ConnectionS7.h
+        GateWay/Connection/XmlReader.cpp GateWay/Connection/XmlReader.h
+        GateWay/Connection/ConnectionGPS.cpp GateWay/Connection/ConnectionGPS.h
+        #GateWay/Connection/ConnectionSnmp.cpp GateWay/Connection/ConnectionSnmp.h
+        ErrorManager/ErrorManager.cpp ErrorManager/ErrorManager.h ErrorManager/Error.h ErrorManager/Error.cpp
+        GateWay/Event.cpp GateWay/Event.h GateWay/Data.cpp GateWay/Data.h
+        GateWay/Node/Tag.cpp GateWay/Node/Tag.h
+        GateWay/Node/NodeList.cpp GateWay/Node/NodeList.h
+        GateWay/Node/MqttTag.cpp GateWay/Node/MqttTag.h
+        ConnectionManager/Connection.cpp ConnectionManager/Connection.h
+        ConnectionManager/ConnectionManager.cpp ConnectionManager/ConnectionManager.h
+        GateWay/Node/S7Tag.cpp GateWay/Node/S7Tag.h
+	#GateWay/Node/ModBusTag.cpp GateWay/Node/ModBusTag.h
+        GateWay/Connection/ConnectionCoap.cpp GateWay/Connection/ConnectionCoap.h
+	GateWay/Node/CoapTag.cpp GateWay/Node/CoapTag.h
+        GateWay/ConvertS/Convert.cpp GateWay/ConvertS/Convert.h
+	Protocols/CoapProtocol.cpp Protocols/CoapProtocol.h
+        GateWay/EventHandler.cpp GateWay/EventHandler.h
+	Protocols/KeyProtocol.cpp Protocols/KeyProtocol.h
+        Protocols/MouseProtocol.cpp Protocols/MouseProtocol.h
+        Reciver/Receiver.cpp Reciver/Receiver.h
+        Protocols/ReceiverProtocol.cpp Protocols/ReceiverProtocol.h
+        Entity/GateSetting/setting.cpp Entity/GateSetting/setting.h
+	Entity/EdgeProcess/edges.cpp Entity/EdgeProcess/edges.h
+        Entity/EdgeProcess/edgeprocess.cpp Entity/EdgeProcess/edgeprocess.h
+	Entity/Tag/tags.cpp Entity/Tag/tags.h
+        Entity/Panel/panel.cpp Entity/Panel/panel.h Entity/JsonMessage.h
+	Protocols/CentralProtocol.cpp Protocols/CentralProtocol.h
+        GateWay/Node/EdgeTag.cpp GateWay/Node/EdgeTag.h
+	GateWay/Connection/ConnectionEdge.cpp GateWay/Connection/ConnectionEdge.h
+        Entity/command/command.h Entity/command/command.cpp
+        Entity/TagValue/tagValue.cpp Entity/TagValue/tagValue.h
+        Entity/TagValue/getTagValue.h Entity/TagValue/getTagValue.cpp
+        wireless/wifi.h wireless/wifi.cpp
+
+
+        GateWay/Connection/Connection.cpp GateWay/Connection/Connection.h
+	    GateWay/Connection/ConnectionCoap.cpp GateWay/Connection/ConnectionCoap.h
+        #GateWay/Connection/ConnectionManager.cpp GateWay/Connection/ConnectionManager.h 
+
+	    GateWay/Node/S7Tag.cpp GateWay/Node/S7Tag.h
+	    #GateWay/Node/ModBusTag.cpp GateWay/Node/ModBusTag.h
+	    GateWay/Node/CoapTag.cpp GateWay/Node/CoapTag.h
+
+	    GateWay/ConvertS/Convert.cpp GateWay/ConvertS/Convert.h
+ 
+	    Protocols/CoapProtocol.cpp Protocols/CoapProtocol.h
+	)
+
+add_executable(Event_manager main.cpp  ${LIB} ${S7})# ${MODBUS}  ${SNAP})
+target_link_libraries( Event_manager PUBLIC W_coap PUBLIC W_mqtt PUBLIC W_snmp PUBLIC W_S7 ${PKG} )
+
+include(CPack)

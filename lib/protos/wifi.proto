@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+
+enum CommandType{
+    WIFI_SCAN = 0;
+    WIFI_CONNECT = 1;
+    WIFI_DISCONNECT = 2;
+    WIFI_STATE = 3;
+}
+
+message WifiList{
+    string networkName =1;
+    string networksignal =2;
+}
+
+message Command{
+CommandType commandType  = 1;
+int32 commandID = 2; 
+string data = 3;
+
+}
+
+message CommandResponce{
+string responceType = 1;
+bool isOK = 2;
+string responceData = 3;
+repeated WifiList wifiList = 4;
+string networkName = 5;
+}
+
+service SystemCommand {
+    rpc SendSystemCommand (Command) returns (CommandResponce);
+}
+
+
+
+message ConfigWifi{
+    string nemtworkName = 1;
+    string networkPassword = 2;
+    string ip = 3;
+    string mask = 4; 
+    string gateway = 5;
+    string dns = 6;
+    bool dhcp = 7;
+    CommandResponce commandResponce = 8;
+}
+
+ service SystemWifiConfig {
+     rpc SendSystemWifiConfig(ConfigWifi) returns (ConfigWifi);
+ }
+

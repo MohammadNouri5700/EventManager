@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+enum Parity{
+    ODD = 0;
+    EVEN = 1;
+    NONE = 2;
+}
+    
+enum BaudRate{
+    BAUD110 = 0;
+    BAUD300 = 1;
+    BAUD600 = 2;
+    BAUD1200 =3;
+    BAUD2400 =4;
+    BAUD4800 =5;
+    BAUD9600 =6;
+    BAUD14400=7;
+    BAUD19200=8;
+    BAUD38400=9;
+    BAUD56000=10;
+    BAUD57600=11;
+    BAUD115200=12;
+    BAUD125000=13;
+    BAUD256000=14;
+}
+
+enum FunctionCode{
+    RRAD_COIL=0;
+    READ_DISCRETE_INPUTS=1;
+    READ_MULTIPLE_HOLDING_REGISTERS=2;
+    READ_INPUT_REGISTERS=3;    
+    WRITE_SINGLE_COIL=4;
+    WRITE_SINGLE_HOLDING_REGISTER=5;
+    WRITE_MULTIPLE_COILS=6;
+    WRITE_MULTIPLE_HLDING_REGISTERS=7;
+}
+
+enum ModbusDataType{
+    MBOOLEAN = 0;
+    MINT8=1;
+    MUINT8=2;
+    MINT16=3;
+    MUINT16=4;
+    MINT32=5;
+    MUINT32=6;
+    MINT64=7;
+    MUINT64=8;
+    MFLOAT32=9;
+    MFLOAT64=10;
+    MSTRING=11;
+}
+
+message ModbusConfigResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+
+message ModbusConfig {
+        message ModbusDevice{
+                bool rtuOrTcp = 1;
+                        message ModbusRTUSlaves {
+                                    string clientName = 1;
+                                                string clientID = 2;
+                                                            BaudRate baudRate = 3;
+                                                                        Parity parity = 4;
+                                                                                    int32 startBit = 5;
+                                                                                                int32 stopBit = 6;
+                                                                                                            int32 dataBit = 7;
+                                                                                                                    }
+                                                                                                                            message ModbusTCPSlaves{
+                                                                                                                                        string clientName=1;
+                                                                                                                                                    string clientID=2;
+                                                                                                                                                                string IP = 3;
+                                                                                                                                                                            int32 port = 4;
+                                                                                                                                                                                    }
+                                                                                                                                                                                            ModbusRTUSlaves modbusRTUSlaves = 2;
+                                                                                                                                                                                                    ModbusTCPSlaves modbusTCPSlaves = 3;
+                                                                                                                                                                                                            message ModbusTag{
+                                                                                                                                                                                                                        string tagName = 1;
+                                                                                                                                                                                                                                    string tagId = 2;
+                                                                                                                                                                                                                                                string serverId = 3;
+                                                                                                                                                                                                                                                            ModbusDataType dataType = 4;
+                                                                                                                                                                                                                                                                        FunctionCode functionCode = 5;
+                                                                                                                                                                                                                                                                                    int32 intervalTime = 6;
+                                                                                                                                                                                                                                                                                                int32 startingAddress = 7;
+                                                                                                                                                                                                                                                                                                            int32 numberOfRegisters = 8;
+                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                            repeated  ModbusTag modbusTag =4;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                    repeated ModbusDevice modbusDevice =1;
+                                                                                                                                                                                                                                                                                                                                    }
+
+
+service SystemModbusConfig {
+  rpc SendSystemModbusConfig (ModbusConfig) returns (ModbusConfigResponse);
+}
+

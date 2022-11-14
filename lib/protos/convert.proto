@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+message ConvertProtocolConfigResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+
+message ConfigConvertProtocol{
+    message ConvertProtocol {
+        string tagNameSource=1;
+        string tagNameDist=2;
+        int32 timer=3;
+    }
+    repeated ConvertProtocol convertProtocol=1;
+}
+
+    
+service SystemConvertProtocolConfig {
+    rpc SendSystemConvertProtocolConfig (ConfigConvertProtocol) returns (ConvertProtocolConfigResponse);
+}
+

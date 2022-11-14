@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GateWay>
+    <ConnectionS>
+        <Connection Protocol="ModBus" >
+            <General>
+                <Name>mb01</Name>
+                <address Type="TCP" >
+                    <IP>192.168.2.240</IP>
+                    <Port>502</Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+            <Special>
+                <SlaveNumber>1</SlaveNumber>
+                <ByteOrder></ByteOrder>
+                <WordOrder></WordOrder>
+                <RegisterPerMessage></RegisterPerMessage>
+                <CoilPerMessage></CoilPerMessage>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>Temp01</Name>
+                        <Units Type = "temp">CC</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from modbus</Notes>
+                        <ValueType>int</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>20487</StartingAddress>
+                        <NumberOfRegisters>1</NumberOfRegisters>
+                        <Scale>15</Scale>
+                        <Function>4</Function>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+
+        <Connection Protocol="S7">
+            <General>
+                <Name>S701</Name>
+                <address Type="TCP" >
+                    <IP>192.168.2.59</IP>
+                    <Port></Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+
+            <Special>
+                <SlotNumber>2</SlotNumber>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>s7Tag01</Name>
+                        <Units Type="time">Hour</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>0</StartingAddress>
+                        <BitNumber>97</BitNumber>
+                        <SignalState>0</SignalState>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>s7Tag02</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>0</StartingAddress>
+                        <BitNumber>220</BitNumber>
+                        <SignalState>0</SignalState>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>s7Tag03</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>92</StartingAddress>
+                        <BitNumber>220</BitNumber>
+                        <SignalState>0</SignalState>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>s7Tag04</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>int16</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>2</StartingAddress>
+                        <BitNumber>219</BitNumber>
+                        <SignalState>0</SignalState>
+                    </Special>
+                </Tag>
+
+                <Tag>
+                    <General>
+                        <Name>s7Tag05</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <StartingAddress>0</StartingAddress>
+                        <BitNumber>218</BitNumber>
+                        <SignalState>0</SignalState>
+                    </Special>
+                </Tag>
+
+            </Node>
+        </Connection>
+
+        <Connection Protocol="Mqtt">
+
+            <General>
+                <Name>Mqtt01</Name>
+                <address Type="TCP">
+                    <IP>192.168.2.150</IP>
+                    <Port>1883</Port>
+                </address>
+                <Timeout> </Timeout>
+            </General>
+
+            <Special>
+                <ID>test</ID>
+                <Protocol>TCP</Protocol>
+                <Username></Username>
+                <Password></Password>
+                <ReconnectPeriod></ReconnectPeriod>
+                <ConnectTimeout></ConnectTimeout>
+                <KeepAlive></KeepAlive>
+                <WillTopic></WillTopic>
+                <WillQoS></WillQoS>
+                <WillRetain></WillRetain>
+                <AppendTimestamp></AppendTimestamp>
+                <CleanSession></CleanSession>
+                <ReschedulePings></ReschedulePings>
+                <MQTTv3.1.1compliant></MQTTv3.1.1compliant>
+                <WillPayload></WillPayload>
+                <QoSzero></QoSzero>
+                <ExecutionRetry></ExecutionRetry>
+                <RetryInterval></RetryInterval>
+                <RetriesIntervalUnit></RetriesIntervalUnit>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>sub01</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>MQTT01</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>sub02</Name>
+                        <Units Type="speed">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>0</Timer>
+                    </General>
+                    <Special>
+                        <Topic>MQTT02</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+
+        <Connection Protocol="GPS">
+            <General>
+                <Name>mbModBus01</Name>
+                <address Type="RTU">
+                    <Device>/dev/ttyUSB0</Device>
+                </address>
+                <Timeout> </Timeout>
+            </General>
+
+            <Special>
+            </Special>
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>GPS01</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Notes GPS</Notes>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+
+        <Connection Protocol="SNMP">
+            <General>
+                <Name>mbModBus01</Name>
+                <address Type="UDP">
+                    <IP>127.0.0.1</IP>
+                    <Port>161</Port>
+                </address>
+                <Timeout> </Timeout>
+            </General>
+
+            <Special>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>SNMP01</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Snmp Note</Notes>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+
+        <Connection Protocol="COAP">
+            <General>
+                <Name>coap01</Name>
+                <address Type="UDP">
+                    <IP>localhost</IP>
+                    <Port>5683</Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+
+            <Special>
+            </Special>
+
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>CoapTag01</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Snmp Note</Notes>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <URI>test</URI>
+                        <Token>t131qq</Token>
+                        <Request>GET</Request>
+                    </Special>
+                </Tag>
+                <Tag>
+                    <General>
+                        <Name>CoapTag02</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>string</ValueType>
+                        <Notes>Snmp Note</Notes>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <URI>TiMe</URI>
+                        <Token>t131qq</Token>
+                        <Request>GET</Request>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>
+        <Connection Protocol = "Edge">
+            <General>
+                <Name>Central</Name>
+                <address Type="TCP" >
+                    <IP>192.168.2.250</IP>
+                    <Port></Port>
+                </address>
+                <Timeout></Timeout>
+            </General>
+            <Special>
+
+            </Special>
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>Edge1</Name>
+                        <Units Type=""></Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from plc</Notes>
+                        <ValueType>float</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                    </General>
+                    <Special>
+                        <Func>(s7Tag01)(s7Tag02)(+)</Func>
+                        <tags>
+                            <T>s7Tag01</T>
+                            <T>s7Tag02</T>
+                        </tags>
+
+                    </Special>
+                </Tag>
+
+            </Node>
+        </Connection>
+    </ConnectionS>
+    <ConvertS>
+        <Convert>
+            <Source>s7Tag04</Source>
+            <DistS>
+                <Dist>sub02</Dist>
+                <Dist>tag031</Dist>
+                <Dist>tag032</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>tag02</Source>
+            <DistS>
+                <Dist>sub01</Dist>
+                <Dist>tag041</Dist>
+                <Dist>tag042</Dist>
+            </DistS>
+        </Convert>
+    </ConvertS>
+</GateWay>

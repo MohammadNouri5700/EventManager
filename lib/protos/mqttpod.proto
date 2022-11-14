@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+message PodResponse {
+    bool success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+
+message MqttPodNode {
+    string id = 1;
+    string name = 2;
+    string clientId = 3;
+    string alternativeClientId = 4;
+    string deviceTypeId = 5;
+    string deviceTypeName = 6;
+    message Attributes{
+        string AttribName = 1;
+        string AttribValue = 2;
+    }
+    repeated Attributes attributes = 7;
+    message Tags {
+        string type = 1;
+        string location = 2;
+    }
+    Tags tags = 8;
+    string owner = 9;
+}
+
+
+service MqttPodNodeConfig {
+    rpc SendMqttPodNodeConfig (MqttPodNode) returns (PodResponse);
+  }
+  

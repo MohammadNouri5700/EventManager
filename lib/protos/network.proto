@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+message NetworkResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+  }
+  
+// message GatewayNetworksConfig{
+// message NetworksConfig {
+//   bool dhcpEnabled = 1;  
+//   bool Status = 2;
+
+//   message NetworkIPConfig {
+//     string netIP = 1;
+//     string netMask = 2;
+//     string defaultGate = 3;
+//   }
+//   message NetworkDNSConfig{
+//       string DNSConfig =1;
+//   }
+//   repeated NetworkIPConfig networkIPConfig = 2;
+//   repeated NetworkDNSConfig networkDNSConfig =3;
+
+// }
+//     NetworksConfig ITNetworkConfig =1;
+//     NetworksConfig OTNetworkConfig =2;
+// }
+
+message GatewayNetworksConfig{
+
+  message NetworksConfig {
+    bool dhcpEnabled = 1;
+    bool Status = 2;
+  }
+  message NetworkIPConfig {
+    string netIP = 1;
+    string netMask = 2;
+    string defaultGate = 3;
+  }
+  message NetworkDNSConfig{
+    string DNSConfig = 1;
+  }
+  repeated NetworkIPConfig networkIPConfig = 1;
+  repeated NetworkDNSConfig networkDNSConfig = 2;
+
+  NetworksConfig OTNetworkConfig = 3;
+}
+service SystemNetworkConfig {
+    rpc SendSystemNetworkConfig (GatewayNetworksConfig) returns (NetworkResponse);
+}

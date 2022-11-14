@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+message SerialResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+  }
+
+  enum SerialParity{
+      SerialNone =0;
+      SerialEven =1;
+      SerialODD =2;
+
+  };
+
+
+  enum SerialBaudRate{
+    BS300 =0;
+    BS600 =1;
+    BS1200=2;
+    BS2400=3;
+    BS4800=4;
+    BS9600=5;
+    BS14400=6;
+    BS19200=7;
+    BS38400=8;
+    BS57600=9;
+    BS115200=10;
+    BS230400=11;
+    BS460800=12;
+    BS921600=13;
+    BS1843000=14;
+  };
+  
+
+  message SerialConfig{
+
+    message Rs232Config{
+        bool enabled =1;
+        SerialBaudRate serialBaudRate=2;
+        int32 endBit=3;
+        SerialParity serialParity=4;
+        int32 dataBit=5;
+
+    } ;
+    
+    message Rs485Config{
+        bool enabled =1;
+        SerialBaudRate serialBaudRate=2;
+        int32 endBit=3;
+        SerialParity serialParity=4;
+        int32 dataBit=5;
+    }
+    Rs232Config rs232Config=1;
+    Rs485Config rs485Config=2;
+  }
+
+  service SystemSerialConfig {
+    rpc SendSystemSerialConfig (SerialConfig) returns (SerialResponse);
+}
+

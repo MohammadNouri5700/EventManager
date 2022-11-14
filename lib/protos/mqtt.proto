@@ -1,0 +1,135 @@
+syntax = "proto3";
+
+enum Qos{
+    ALMOST_ONCE = 0;
+    ATLEAST_ONCE = 1;
+    EXACTLY_ONCE = 2;
+    ALL = 3; 
+}
+    
+enum Protocol{
+    WS = 0;
+    WSS = 1;
+    MQTTTCP = 2;
+    MQTTTTLS = 3;
+}
+
+enum MqttVarType{
+    PLAIN = 0;
+    JSON = 1;
+    CSV = 2;
+}
+
+enum ClientActions{
+    PUB = 0;
+    SUB = 1;
+    PUB_SUB = 2;
+}
+
+message ConfigResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+
+
+message MqttClients {
+    message MqttClient {
+    string clientName = 1;
+    string clientID = 2;
+    Protocol protocol = 3;
+    string hostAddress = 4;
+    int32 hostPort = 5;
+    string userName = 6;
+    string userPassword = 7;
+    int32 reConnect= 8;
+    int32 timeOut = 9;
+    string willTopic = 10;
+    Qos willQos = 11;
+    string willPayLoad = 12;
+    bool sendTimestamp = 13;
+    bool keepAlive = 14;
+    int32 keepAliveTime = 15;
+    bool mqtt31Compatilble = 16;
+    bool willRetain = 17;
+    bool cleanSession = 18;  
+    message ClientTag{
+        string tagName = 1;
+        string topicName = 2;
+        MqttVarType mqttVarType = 3;
+        bool onOff = 4;
+        string systemName = 5;
+        ClientActions clientActions = 6;
+    }
+    message Business{
+        string name=1;
+        int32 size=2;
+        float trpersec=3;
+      }
+    repeated ClientTag clientTag = 19;
+    Qos qos = 20;
+    int32 publishInterval = 21;
+    bool retain = 22;
+    Business business=23;
+
+}
+
+repeated  MqttClient mqttClient =1;
+}
+
+
+
+service MqttClientsConfig {
+  rpc SendMqttClientsConfig (MqttClients) returns (ConfigResponse);
+}
+
+//----------------------------------------------------------------------------------
+
+message MqttBorker{
+    string clientName = 1;
+    string clientID = 2;
+    Protocol protocol = 3;
+    string hostAddress = 4;
+    int32 hostPort = 5;
+    string userName = 6;
+    string userPassword = 7;
+    int32 maxCient = 8;
+    int32 maxLenght = 9;
+    Qos brokerQos = 10;
+    int32 maxQueLeght = 11;
+    int32 retainMessage = 12;
+    bool sendTimestamp = 13;
+    bool keepAlive = 14;
+    int32 keepAliveTime = 15;
+    bool mqtt31Compatilble = 16;
+    bool retainWill = 17;
+    bool wildcardSub = 18;  
+    message BrokerTag{
+        string tagName = 1;
+        string topicName = 2;
+        MqttVarType mqttVarType = 3;
+        bool onOff = 4;
+        string systemName = 5;
+        int32 timer = 6;
+    }
+    message BrokerClient{
+        string brokerClientName = 1;
+        string brokerClientID = 2;
+        Qos qos = 3;
+        ClientActions clientActions = 4;
+        message ClientTopic{
+            string clientTopic = 1;
+            string topicName = 2;
+            Qos qos = 3;
+            bool retain = 4;
+            bool private = 5;
+        }
+        repeated ClientTopic clientTopic = 5;    
+    } 
+    repeated BrokerClient brokerClient = 19;
+    repeated BrokerTag brokerTag = 20;  
+}
+    
+service MqttBrokerConfig {
+    rpc SendMqttBrokerConfig (MqttBorker) returns (ConfigResponse);
+}

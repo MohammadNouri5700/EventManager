@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+
+message NodeConfigResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+
+message ConfigNodeS{
+    message NodeData{
+        string nodeName =1;
+        string nodeID=2;
+        string connectionName=3;
+        int32 timer=4;
+            message TagListConfig{
+                int32 Attrib = 1;
+                string TagName = 2;
+                string Alternative=3;
+
+            }
+        repeated  TagListConfig tagListConfig =5 ;
+        string topic=6;
+    }
+    repeated  NodeData nodeData =1 ;
+}
+    
+service SystemNodeConfig {
+    rpc SendSystemNodeConfig (ConfigNodeS) returns (NodeConfigResponse);
+}
+
+
