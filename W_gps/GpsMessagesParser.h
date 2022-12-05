@@ -141,7 +141,7 @@ public:
 
     GpsMessagesParser(string port, unsigned int baud_rate);
 
-
+    GpsMessagesParser();
     /**
      * Write a string to the gpsSerialPortInterface device.
      * \param s string to write
@@ -169,7 +169,7 @@ public:
 
     void fillGPGGAFields(const vector<string> &vectSplitedGPSData);
 
-    void fillGPRMCFields(const vector<string> &vectSplitedGPSData);
+    void fillGPRMCFields(const vector<string> vectSplitedGPSData);
 
     void thrdFetchNMEAHandler();
 
@@ -209,12 +209,14 @@ private:
     double Time{};
     std::pair<double, double> coord{};
 
-    std::string gpsPort{"/dev/ttyUSB0"} ;
-    unsigned int gpsBaudRate {9600} ;
     gpsCallback GpsCb{};
 public:
     void setGpsCb(const gpsCallback &gpsCb);
     bool start =  true;
+    /// @brief its for have different devices
+    /// @author MohammadNouri
+    std::string DeviceName;
+    int baudrate;
 };
 
 #endif //EVENT_MANAGER_GPSMESSAGESPARSER_H

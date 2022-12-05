@@ -48,12 +48,12 @@ void XmlReader::ExtraConnection(std::vector<Connection*> &conn)
             can->SetData(Connection);
             conn.push_back(can);
         }
-        /*if (  !strcmp(Connection.attribute("Protocol").value(),"GPS")){
+        if (  !strcmp(Connection.attribute("Protocol").value(),"GPS")){
             ConnectionGPS *GPS = new ConnectionGPS{};
             GPS->SetData(Connection);
             conn.push_back(GPS);
         }
-        if (  !strcmp(Connection.attribute("Protocol").value(),"SNMP")){
+       /* if (  !strcmp(Connection.attribute("Protocol").value(),"SNMP")){
             ConnectionSnmp *Snmp = new ConnectionSnmp{};
             Snmp->SetData(Connection);
             conn.push_back(Snmp);

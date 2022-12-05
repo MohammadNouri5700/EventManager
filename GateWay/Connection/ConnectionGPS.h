@@ -6,9 +6,19 @@
 #define EVENT_MANAGER_CONNECTIONGPS_H
 #include "Connection.h"
 
+
+struct xmlGPS:public xmlNode {
+    void SpecialInfo(pugi::xml_node &Special) override;
+    void SpecialInfoGRPC() override;
+ 
+
+    void print() override;
+};
+
 struct ConnectionGPS: public Connection {
 public:
     void SpecialInfo(pugi::xml_node &Special) override;
+    void NodeSInfo(pugi::xml_node &Node) override;
     void SpecialInfoGRPC() override;
     void print() override;
 

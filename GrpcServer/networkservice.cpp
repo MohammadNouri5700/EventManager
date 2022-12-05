@@ -27,14 +27,14 @@ void SystemNetworkConfigService::ApplyIP()
 	//network interface
 
 	//clean up all ip addresses
-	cmd = "ip addr flush dev " + network.Name ;
-	system(cmd.c_str()); 
+	// cmd = "ip addr flush dev " + network.Name ;
+	// system(cmd.c_str()); 
 
-    for(auto ot :OTNetworkConfig){
-        cmd = "ip address add " + network.IP + "/24 dev " + network.Name;
-        std::cout << cmd << std::endl;
-        system(cmd.c_str()); 
-    }
+    // for(auto ot :OTNetworkConfig){
+    //     cmd = "ip address add " + network.IP + "/24 dev " + network.Name;
+    //     std::cout << cmd << std::endl;
+    //     system(cmd.c_str()); 
+    // }
     
 }
 

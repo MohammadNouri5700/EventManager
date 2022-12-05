@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GateWay>
     <ConnectionS>
-        <Connection Protocol="CAN">
+
+        <!-- <Connection Protocol="GPS">
+            <General>
+                <Name>gp</Name>
+                <address Type="GPS">/dev/ttyUSB0</address>
+                <Timeout>5</Timeout>
+            </General>
+
+            <Special>
+                
+            </Special>
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>gp</Name>
+                    </General>
+                    <Special>
+                      
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection> -->
+
+          <Connection Protocol="GPS">
+            <General>
+                <Name>GPSNeo</Name>
+                <address  Type="GPS">tty0</address>
+                <Timeout>0</Timeout>
+            </General>
+            <Special>
+                <BitRate>1000000</BitRate>
+            </Special>
+            <Node>
+                <Tag>
+                    <General>
+                        <Name>CAN_LT201</Name>
+                        <Units Type="temp">CC</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from modbus</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+                        <StartingAddress>1</StartingAddress>
+                        <CANID>4</CANID>
+                        <BitNumber>1</BitNumber>
+                        <BitCount>8</BitCount>
+                    </Special>
+                </Tag>
+            </Node>
+        </Connection>   
+
+        <!-- <Connection Protocol="CAN">
             <General>
                 <Name>CanConnection1</Name>
                 <address  Type="CAN">can0</address>
@@ -29,7 +82,7 @@
                     </Special>
                 </Tag>
             </Node>
-        </Connection>   
+        </Connection>    -->
 
         <!-- <Connection Protocol="Mqtt">
 
@@ -132,7 +185,7 @@
                 </Tag>
             </Node>
         </Connection> -->
-        <Connection Protocol="S7">
+        <!-- <Connection Protocol="S7">
             <General>
                 <Name>S701</Name>
                 <address Type="TCP">
@@ -171,7 +224,7 @@
                     </Special>
                 </Tag>
             </Node>
-        </Connection>  
+        </Connection>   -->
         <!-- <Connection Protocol="S7">
             <General>
                 <Name>S701</Name>
@@ -2174,12 +2227,12 @@
     </OutputNodeS>
 
     <ConvertS>
-        <Convert>
+        <!-- <Convert>
             <Source>S7_LT201</Source>
             <DistS>
                 <Dist>CAN_LT201</Dist>
             </DistS>
-        </Convert> 
+        </Convert>  -->
         <!-- <Convert>
             <Source>S7_LT201</Source>
             <DistS>

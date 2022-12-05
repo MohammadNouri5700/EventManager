@@ -70,6 +70,7 @@ set( LIB
         GateWay/Thread_Call.cpp  
         W_gps/GpsMessagesParser.cpp 
         Protocols/GpsProtocol.cpp 
+      
 
         GateWay/Connection/Connection.cpp
         GateWay/Connection/ConnectionModbus.cpp GateWay/Connection/ConnectionModbus.cpp
@@ -84,6 +85,7 @@ set( LIB
         GateWay/Node/NodeList.cpp 
         GateWay/Node/MqttTag.cpp 
         GateWay/Node/CanTag.cpp 
+        GateWay/Node/GpsTag.cpp 
         ConnectionManager/ConnectionManager.cpp
         GateWay/Node/S7Tag.cpp GateWay/Node/ModBusTag.cpp
         GateWay/Connection/ConnectionCoap.cpp GateWay/Node/CoapTag.cpp

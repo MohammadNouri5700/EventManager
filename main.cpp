@@ -3,7 +3,6 @@
 #include "GateWay/EventManager.h"
 #include "GateWay/EventHandler.h"
 #include "GateWay/Connection/XmlReader.h"
-#include "GateWay/Connection/xmlnetwork.h"
 #include "ErrorManager/ErrorManager.h"
 #include "GateWay/Node/Tag.h"
 #include "GateWay/Node/NodeList.h"
@@ -12,6 +11,7 @@
 #include "mosquittopp.h"
 #include "W_modbus/modbuspp/modbuspp.h"
 //#include "W_modbus/modbuspp/master.h"
+#include "W_gps/GpsMessagesParser.h"
 
 std::vector<Connection *> ConnectionS;
 std::vector<ProtocolS::Protocol *> ListenerS;
@@ -21,7 +21,6 @@ ProtocolS::NodeList nodeList;
 ERROR::ErrorManager errorManager;
 GateWay::LISTENer::Listener ll{};
 GateWay::EVENT::MANAGER::EventManager e_manager;
-Network network;
 
 std::thread e_m;
 std::thread e_h;
@@ -72,29 +71,103 @@ void sendRS485()
         write(hSerial, &c, 1);
     close(hSerial);
 }
-
-void ApplyIP()
-{
-    
-    std::string cmd;
-	//clean up all ip addresses
-	cmd = "ip addr flush dev " + network.Name;
-	
-    system(cmd.c_str()); 
-
-    cmd = "ip address add " + network.IP + "/24 dev " + network.Name;
-    system(cmd.c_str()); 
-    std::cout << "IP address added successfully " << network.IP << std::endl;
-    
-    
-}
-
 ////////////////////////////////////////////////////////////////////////////////////////////////
+class SimpleSerial
+{
+public:
+    /**
+     * Constructor.
+     * \param port device name, example "/dev/ttyUSB0" or "COM4"
+     * \param baud_rate communication speed, example 9600 or 115200
+     * \throws boost::system::system_error if cannot open the
+     * serial device
+     */
+    SimpleSerial(std::string port, unsigned int baud_rate)
+        : io(), serial(io, port)
+    {
+        serial.set_option(boost::asio::serial_port_base::baud_rate(baud_rate));
+        serial.set_option(boost::asio::serial_port_base::character_size(8));
+        serial.set_option(boost::asio::serial_port_base::parity(boost::asio::serial_port_base::parity::none));
+    }
+
+    /**
+     * Write a string to the serial device.
+     * \param s string to write
+     * \throws boost::system::system_error on failure
+     */
+    void writeString(std::string s)
+    {
+        boost::asio::write(serial, boost::asio::buffer(s.c_str(), s.size()));
+    }
+
+    /**
+     * Blocks until a line is received from the serial device.
+     * Eventual '\n' or '\r\n' characters at the end of the string are removed.
+     * \return a string containing the received line
+     * \throws boost::system::system_error on failure
+     */
+    std::string readLine()
+    {
+        // Reading data char by char, code is optimized for simplicity, not speed
+        using namespace boost;
+        char c;
+        std::string result;
+        for (;;)
+        {
+            asio::read(serial, asio::buffer(&c, 1));
+            switch (c)
+            {
+            case '\r':
+                break;
+            case '\n':
+                return result;
+            default:
+                result += c;
+            }
+        }
+    }
+
+private:
+    boost::asio::io_service io;
+    boost::asio::serial_port serial;
+};
 /////////////////////////////////////////////////////////////////////////
+
+
+/**
+ * @brief Prints the Gps Data
+ * 
+ *  
+ * We consider NEO6 is connected to laptop by USB
+ * 
+ * @author MohammadNouri
+ */
+void  readGps(){
+   
+    int i= 0;
+ while(i<50){
+        try
+        {
+            SimpleSerial serial("/dev/ttyUSB0",  9600); // We consider NEO6 is connected to laptop by USB
+            std::cout << serial.readLine() << std::endl;
+            // if(rs232Config.enabled == true)
+                // serial.writeString("Hello world2\n");
+                
+        }
+        catch (boost::system::system_error &e)
+        {
+            i++;
+            std::cout << "Error: " << e.what() << std::endl;
+        }
+    }
+    std::cout << "You have got more than 50 error: " << std::endl;
+}
 
 int main()
 {
-    
+    //  GpsMessagesParser ff =  GpsMessagesParser("/dev/ttyUSB0",9600);
+    // ff.fetchNMEA();
+    // readGps();
     // std::string port ("/dev/ttyUSB1");
     // Modbus::Master mb (Modbus::Net::Rtu, port , "19200N1"); // new master on RTU
     // if you have to handle the DE signal of the line driver with RTS,
@@ -152,12 +225,10 @@ int main()
     ////////////////////////////////////////////////////////////////////
     if (xml.setFile(path))
     {
-        xml.
-        (ConnectionS);
+        xml.ExtraConnection(ConnectionS);
         xml.ExtraConvert(ConvertS, ConnectionS);
-        xml.ExtraNetwork(network);
     }
-    ApplyIP();
+
     for (auto i : ConnectionS)
     {
         std::cout << "\n****************************\n";

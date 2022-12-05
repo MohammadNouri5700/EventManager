@@ -4,24 +4,89 @@
 
 #include "GpsProtocol.h"
 
-void GPs::GpsProtocol::Listen()
+void ProtocolS::GPS::GpsProtocol::Listen()
 {
-    thrdFetchNMEAHandler();
+   parsergps.fetchNMEA();
+}
+ProtocolS::GPS::GpsProtocol::GpsProtocol(){}
+
+
+ProtocolS::GPS::GpsProtocol::~GpsProtocol()
+{
 }
 
-GPs::GpsProtocol::GpsProtocol(const string &port, unsigned int baudRate) : GpsMessagesParser(port, baudRate) {}
-
-void GPs::GpsProtocol::Create(Connection *Conn)
+void ProtocolS::GPS::GpsProtocol::Create(Connection *Conn)
 {
-    (void)Conn;//TODO
+    // (void)Conn;//TODO
 }
 
-GPs::GpsProtocol::GpsProtocol(ConnectionGPS *Conn): GpsMessagesParser(Conn->Address.Value, 9600)
+void ProtocolS::GPS::GpsProtocol::Open(Connection * Conn)
 {
+     std::cout<<"Conn->Address.Open"<<std::endl;
 
 }
 
-void GPs::GpsProtocol::UpdateTag(ProtocolS::Tag *tag)
+void ProtocolS::GPS::GpsProtocol::Close()
+{
+}
+
+void ProtocolS::GPS::GpsProtocol::KeepAlive()
+{
+}
+
+bool ProtocolS::GPS::GpsProtocol::isOK()
+{
+return true;
+}
+
+void ProtocolS::GPS::GpsProtocol::Reconnect()
+{
+}
+
+void ProtocolS::GPS::GpsProtocol::hasError()
+{
+}
+
+void ProtocolS::GPS::GpsProtocol::DataReceived()
+{
+}
+// void mee (json_t d, json_t d1, json_t d2, json_t d3, double d4 , double d5, double d6 ){
+//  std::cout << "GPS Protocol Recived Data" << std::endl;
+// }
+
+ProtocolS::GPS::GpsProtocol::GpsProtocol(ConnectionGPS *Conn)
+{
+    std::cout << "GPS Protocol..########################" << std::endl;
+    conn = Conn;
+    
+    // GpsMessagesParser msg = GpsMessagesParser("/dev/ttyUSB0",9600);
+    // msg.start=true;
+    auto func = [this](json_t d, json_t d1, json_t d2, json_t d3, double d4 , double d5, double d6){
+        for (auto i : Observer)
+        {
+            auto m = reinterpret_cast<GPSTag *>(i);
+            m->setValue((void*)d.c_str(),strlen(d.c_str()));  
+        
+        }
+        
+    };
+    parsergps.setGpsCb(func);
+    // msg.fetchNMEA();
+
+
+}
+
+void ProtocolS::GPS::GpsProtocol::UpdateTag(ProtocolS::Tag *tag)
 {
     Protocol::UpdateTag(tag);
+}
+
+void ProtocolS::GPS::GpsProtocol::Write(Data * data, Tag * tag)
+{
+}
+
+void ProtocolS::GPS::GpsProtocol::Stop()
+{
+    std::cout << "stop gps" << std::endl;
+    // msg.start=false;
 }

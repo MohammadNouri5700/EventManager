@@ -17,6 +17,7 @@
 #include "../GateWay/Connection/ConnectionEdge.h"
 #include "../GateWay/ConvertS/Convert.h"
 
+#include "../GateWay/Node/GpsTag.h"
 #include "../GateWay/Node/MqttTag.h"
 #include "../GateWay/Node/S7Tag.h"
 #include "../GateWay/Node/Tag.h"
@@ -86,6 +87,12 @@ void CONNECTION::ConnectionManager::AddConnection(ProtocolS::Protocol* pro)
                 std::cout<< "Found the listener to update ......" << std::endl;
                 ListenerS.erase(ListenerS.begin() + Counter);
                 break;
+            case ProtocolIIOT::GPS :
+                dynamic_cast<ProtocolS::GPS::GpsProtocol*>(ListenerS.at(Counter))->Stop();
+                ListenerS.at(Counter)->Observer.clear();
+                std::cout<< "Found the GPS listener to update ......" << std::endl;
+                ListenerS.erase(ListenerS.begin() + Counter);
+            break;
             default:
                 break;
             }
@@ -246,11 +253,34 @@ void CONNECTION::ConnectionManager::Create()
         }
         break;
         case ProtocolIIOT::GPS : {
-            /*auto ConGPS = reinterpret_cast<ConnectionGPS*>(p);
-            GPs::GpsProtocol *gps{new GPs::GpsProtocol(ConGPS)};
-            gps->setGpsCb(gps_cb02);
-            ListenerS.push_back(gps);*/
-            std::cout << "\nGPS";
+            // auto ConGPS = reinterpret_cast<ConnectionGPS*>(p);
+            // GPs::GpsProtocol *gps{new GPs::GpsProtocol(ConGPS)};
+            // gps->setGpsCb(gps_cb02);
+            // ListenerS.push_back(gps);
+            // std::cout << "\nGPS from connection manager";
+            std::cout << "config GPS" << std::endl;
+            auto m = reinterpret_cast<ConnectionGPS*>(p);
+        
+            ProtocolS::GPS::GpsProtocol *gps{new  ProtocolS::GPS::GpsProtocol(m)};
+            gps->Create(m);
+            ProtocolS::Node n;
+            n.first = m->Name.Value;
+            for (auto t : m->NodeS ) {
+                auto mq = reinterpret_cast<xmlGPS*>(t);
+                ProtocolS::GPSTag* mn{new ProtocolS::GPSTag(mq)};
+                mn->conn = m;
+                n.second.push_back(mn);
+            }
+            nodeList.push_back(std::move(n));
+            for (auto [i, n]:nodeList) {
+                if (strcmp(i.c_str(), m->Name.Value.c_str())==0)
+                    for (auto t:n) {
+                        t->setSubject(gps);
+                        t->TagType = ProtocolIIOT::GPS;
+                    }
+            };
+
+            ListenerS.push_back(gps);
         }
         break;
         case ProtocolIIOT::SNMP : {

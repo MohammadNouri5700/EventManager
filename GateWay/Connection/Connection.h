@@ -32,7 +32,8 @@ enum class ConnectionType
     TCP,
     RTU,
     UDP,
-    CAN
+    CAN,
+    GPS
 };
 
 using strTag = XmlTag<std::string>;

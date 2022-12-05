@@ -71,7 +71,10 @@ void Connection::GeneralInfo(pugi::xml_node &General)
         Type = ConnectionType::CAN;
         Address.Value = address.child_value();
     }
-    
+    if (!strcmp("GPS", address.attribute("Type").value())) {
+        Type = ConnectionType::GPS;
+        Address.Value = address.child_value();
+    }
     if (!strcmp("TCP", address.attribute("Type").value())) {
         Type = ConnectionType::TCP;
         Address.Value += address.child("IP").child_value();

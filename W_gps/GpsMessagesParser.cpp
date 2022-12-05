@@ -4,6 +4,67 @@
 
 #include "GpsMessagesParser.h"
 
+
+class SimpleSerial
+{
+public:
+    /**
+     * Constructor.
+     * \param port device name, example "/dev/ttyUSB0" or "COM4"
+     * \param baud_rate communication speed, example 9600 or 115200
+     * \throws boost::system::system_error if cannot open the
+     * serial device
+     */
+    SimpleSerial(std::string port, unsigned int baud_rate)
+        : io(), serial(io, port)
+    {
+        serial.set_option(boost::asio::serial_port_base::baud_rate(baud_rate));
+        serial.set_option(boost::asio::serial_port_base::character_size(8));
+        serial.set_option(boost::asio::serial_port_base::parity(boost::asio::serial_port_base::parity::none));
+    }
+
+    /**
+     * Write a string to the serial device.
+     * \param s string to write
+     * \throws boost::system::system_error on failure
+     */
+    void writeString(std::string s)
+    {
+        boost::asio::write(serial, boost::asio::buffer(s.c_str(), s.size()));
+    }
+
+    /**
+     * Blocks until a line is received from the serial device.
+     * Eventual '\n' or '\r\n' characters at the end of the string are removed.
+     * \return a string containing the received line
+     * \throws boost::system::system_error on failure
+     */
+    std::string readLine()
+    {
+        // Reading data char by char, code is optimized for simplicity, not speed
+        using namespace boost;
+        char c;
+        std::string result;
+        for (;;)
+        {
+            asio::read(serial, asio::buffer(&c, 1));
+            switch (c)
+            {
+            case '\r':
+                break;
+            case '\n':
+                return result;
+            default:
+                result += c;
+            }
+        }
+    }
+
+private:
+    boost::asio::io_service io;
+    boost::asio::serial_port serial;
+};
+
 enumGGAProtocolHeaders headersResolver(string messageID)
 {
     if (messageID == "$GPRMC" ) return $GPRMC; // comment
@@ -109,32 +170,48 @@ vector<string> GpsMessagesParser::strSpliterUtility(std::string strStrm, char c)
     }
 }
 
+
+
 void GpsMessagesParser::fetchNMEA()
 {
     if (start) {
-        std::thread thrdFetchNMEA(&GpsMessagesParser::thrdFetchNMEAHandler, this);
-        thrdFetchNMEA.join();
+        // std::thread thrdFetchNMEA(&GpsMessagesParser::thrdFetchNMEAHandler, this);
+        // thrdFetchNMEA.join();
+        thrdFetchNMEAHandler();
     }
 }
 
 void GpsMessagesParser::thrdFetchNMEAHandler()
 {
-    try {
-        string NMEA;
-        while (start) {
-            NMEA = readNMEASentence();
-            vector<string> splitedGPSData;
-            splitedGPSData = strSpliterUtility(NMEA, ',');
-            NEMAFieldsSpliter(splitedGPSData);
-            GpsCb((bGPRMC?jasonGPRMC():""), (bGPVTG?jasonGPVTG():""), (bGPGGA?jasonGPGGA():""), (bGPGLL?jasonGPGLL():""), coord.first, coord.second, Time);
+    while (start) {
+        try {
+            string NMEA;
+            
+                NMEA = readNMEASentence();
+                vector<string> splitedGPSData;
+                splitedGPSData = strSpliterUtility(NMEA, ',');
+                NEMAFieldsSpliter(splitedGPSData);
+                json_t GPRMC =(bGPRMC?jasonGPRMC():"");
+                json_t gpvtg = (bGPVTG?jasonGPVTG():"");
+                json_t GPGGA = (bGPGGA?jasonGPGGA():"");
+                json_t GPGLL =(bGPGLL?jasonGPGLL():"");
+            try {
+            if (GPRMC != ""){
+                GpsCb(GPRMC , gpvtg,GPGGA ,GPGLL, coord.first, coord.second, Time);
+            }
+            }catch(const std::bad_function_call& e) {
+                std::cout << "Gps Message Parser" << e.what() << '\n';
+            }
+            
             bGPRMC = bGPVTG = bGPGGA = bGPGLL = false;
+        
+        } catch (system::system_error &e) {//TODO handle error
+            cout << "Gps Message Parser Error: " << e.what() << endl;
         }
-    } catch (system::system_error &e) {
-        cout << "Error: " << e.what() << endl;
-    }
+     }
 }
 
-void GpsMessagesParser::fillGPRMCFields(const vector<string> &vectSplitedGPSData)
+void GpsMessagesParser::fillGPRMCFields(vector<string> vectSplitedGPSData)
 {
 
     vector<string> modeChecksumFields;
@@ -144,7 +221,7 @@ void GpsMessagesParser::fillGPRMCFields(const vector<string> &vectSplitedGPSData
     NMEAFieldsGPRMCTmp.strLatitude = vectSplitedGPSData[3];
     NMEAFieldsGPRMCTmp.strNSIndicator = vectSplitedGPSData[4];
     NMEAFieldsGPRMCTmp.strLongitude = vectSplitedGPSData[5];
-    NMEAFieldsGPRMCTmp.strEWindicator = vectSplitedGPSData[6];
+    // NMEAFieldsGPRMCTmp.strEWindicator = (vectSplitedGPSData[6]!=""? vectSplitedGPSData[6] :"");
     NMEAFieldsGPRMCTmp.strSpeedOverGround = vectSplitedGPSData[7];
     NMEAFieldsGPRMCTmp.strCourseOverGround = vectSplitedGPSData[8];
     NMEAFieldsGPRMCTmp.strDate = vectSplitedGPSData[9];
@@ -258,23 +335,42 @@ void GpsMessagesParser::NEMAFieldsSpliter(vector<std::string> vectSplitedGPSData
 }
 
 std::string GpsMessagesParser::readNMEASentence()
-{
+{    
+    bool notfinished = true;
     string result;
-    char c;
     do {
-        asio::read(*gpsSerialPortInterface, asio::buffer(&c, 1));
-
-        switch (c) {
-        case '\r':
-            break;
-        case '\n':
-            return result;
-        default:
-            result+=c;
+       notfinished = true;
+       SimpleSerial serial("/dev/ttyUSB0",  9600); // We consider NEO6 is connected to laptop by USB
+        result ="";
+        result+=serial.readLine();
+        vector<string> splitedGPSData;
+        splitedGPSData = strSpliterUtility(result, ',');
+        if(headersResolver(splitedGPSData[0]) == $GPRMC){ // todo it should changed by tags
+            notfinished=false;
         }
-    } while ( c != '\n' );
-    return "";
+    } while (notfinished);
+    return result;
+    
 }
+
+// std::string GpsMessagesParser::readNMEASentence()
+// {    
+//     string result;
+//     char c;
+//     do {
+//         asio::read(*gpsSerialPortInterface, asio::buffer(&c, 1));
+
+//         switch (c) {
+//         case '\r':
+//             break;
+//         case '\n':
+//             return result;
+//         default:
+//             result+=c;
+//         }
+//     } while ( c != '\n' );
+//     return "";
+// }
 
 json_t GpsMessagesParser::jasonGPRMC()
 {
@@ -304,7 +400,6 @@ void GpsMessagesParser::setGpsCb(const gpsCallback &gpsCb)
 GpsMessagesParser::GpsMessagesParser(string port, unsigned int baud_rate)
 {
     try {
-        gpsPort = port;
         gpsSerialPortInterface.reset(new boost::asio::serial_port(io, port));
         gpsSerialPortInterface->set_option(boost::asio::serial_port_base::baud_rate(baud_rate));
         start =true;
@@ -315,6 +410,10 @@ GpsMessagesParser::GpsMessagesParser(string port, unsigned int baud_rate)
         ERROR::Error err{ERR_GPS, "GPS can not connected", "how to debug GPS", ERROR::ErrorType::RUN_TIME, 7};
         errorManager.AddError(err);
     }
+}
+
+GpsMessagesParser::GpsMessagesParser()
+{
 }
 
 double GpsMessagesParser::getTime() const
