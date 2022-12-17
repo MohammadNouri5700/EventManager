@@ -65,8 +65,9 @@ void ProtocolS::S7Tag::SendEvent()
                     b = Event(new ProtocolData{v, Value,Name.Value}, TYPE::MQTT, t);
                     EventList.push(std::move(b));
                 }
-                else
+                else{
                     std::cout << "private Tag" << t->Name.Value << std::endl;
+                }
             }
             break;
 
@@ -99,9 +100,7 @@ ProtocolS::S7Tag::~S7Tag()
 
 }
 
-ProtocolS::S7Tag::S7Tag(xmlS7 * nS7)
-    : Tag(nS7), StartingAddress(nS7->StartingAddress), BitNumber(nS7->BitNumber), 
-    SignalState(nS7->SignalState),s7tagType(nS7->s7TagType) ,DBNumber(nS7->DBNumber) {}
+ProtocolS::S7Tag::S7Tag(xmlS7 * nS7): Tag(nS7), StartingAddress(nS7->StartingAddress), BitNumber(nS7->BitNumber),SignalState(nS7->SignalState),s7tagType(nS7->s7TagType) ,DBNumber(nS7->DBNumber) {}
 
 uint16_t ProtocolS::S7Tag::getStartingAddress() const
 {

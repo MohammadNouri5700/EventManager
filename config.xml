@@ -10,7 +10,7 @@
             </General>
 
             <Special>
-                
+
             </Special>
             <Node>
                 <Tag>
@@ -18,41 +18,41 @@
                         <Name>gp</Name>
                     </General>
                     <Special>
-                      
+
                     </Special>
                 </Tag>
             </Node>
         </Connection> -->
 
-          <Connection Protocol="GPS">
-            <General>
-                <Name>GPSNeo</Name>
-                <address  Type="GPS">tty0</address>
-                <Timeout>0</Timeout>
-            </General>
-            <Special>
-                <BitRate>1000000</BitRate>
-            </Special>
-            <Node>
-                <Tag>
+                  <Connection Protocol="GPS">
                     <General>
-                        <Name>CAN_LT201</Name>
-                        <Units Type="temp">CC</Units>
-                        <ReadWrite>1</ReadWrite>
-                        <Notes>reading from modbus</Notes>
-                        <ValueType>bool</ValueType>
-                        <Disable>0</Disable>
-                        <Timer>1</Timer>
+                        <Name>GPSNeo</Name>
+                        <address  Type="GPS">tty0</address>
+                        <Timeout>0</Timeout>
                     </General>
                     <Special>
-                        <StartingAddress>1</StartingAddress>
-                        <CANID>4</CANID>
-                        <BitNumber>1</BitNumber>
-                        <BitCount>8</BitCount>
+                        <BitRate>1000000</BitRate>
                     </Special>
-                </Tag>
-            </Node>
-        </Connection>   
+                    <Node>
+                        <Tag>
+                            <General>
+                                <Name>Gps6</Name>
+                                <Units Type="temp">CC</Units>
+                                <ReadWrite>1</ReadWrite>
+                                <Notes>reading from modbus</Notes>
+                                <ValueType>bool</ValueType>
+                                <Disable>0</Disable>
+                                <Timer>1</Timer>
+                            </General>
+                            <Special>
+                                <StartingAddress>1</StartingAddress>
+                                <CANID>4</CANID>
+                                <BitNumber>1</BitNumber>
+                                <BitCount>8</BitCount>
+                            </Special>
+                        </Tag>
+                    </Node>
+                </Connection>
 
         <!-- <Connection Protocol="CAN">
             <General>
@@ -225,7 +225,10 @@
                 </Tag>
             </Node>
         </Connection>   -->
-        <!-- <Connection Protocol="S7">
+
+
+
+      <!--  <Connection Protocol="S7">
             <General>
                 <Name>S701</Name>
                 <address Type="TCP">
@@ -263,7 +266,6 @@
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
                 </Tag>
-
                 <Tag>
                     <General>
                         <Name>S7_LT202</Name>
@@ -286,7 +288,6 @@
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
                 </Tag>
-
                 <Tag>
                     <General>
                         <Name>S7_Start201</Name>
@@ -310,7 +311,6 @@
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
                 </Tag>
-
                 <Tag>
                     <General>
                         <Name>S7_Stop201</Name>
@@ -334,7 +334,6 @@
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
                 </Tag>
-
                 <Tag>
                     <General>
                         <Name>S7_ST_CONV201</Name>
@@ -419,7 +418,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>54</StartingAddress>
-                        <BitNumber>0</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -580,7 +579,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>0</StartingAddress>
-                        <BitNumber>0</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -603,7 +602,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>4</StartingAddress>
-                        <BitNumber>0</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -626,7 +625,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>8</StartingAddress>
-                        <BitNumber>0</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -672,7 +671,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>16</StartingAddress>
-                        <BitNumber>5</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>5</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -695,7 +694,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>20</StartingAddress>
-                        <BitNumber>5</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>5</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -718,7 +717,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>32</StartingAddress>
-                        <BitNumber>0</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -741,7 +740,7 @@
                     <Special>
                         <DBNumber>9</DBNumber>
                         <StartingAddress>36</StartingAddress>
-                        <BitNumber>5</BitNumber>
+                        &lt;!&ndash;                        <BitNumber>5</BitNumber>&ndash;&gt;
                         <SignalState>0</SignalState>
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
@@ -930,10 +929,12 @@
                         <S7TagType>DATABLOCKTAG</S7TagType>
                     </Special>
                 </Tag>
+
             </Node>
-        </Connection> -->
-<!-- 
-        <Connection Protocol="Mqtt">
+        </Connection>-->
+
+
+     <!--   <Connection Protocol="Mqtt">
 
             <General>
                 <Name>Mqtt02</Name>
@@ -945,7 +946,8 @@
             </General>
 
             <Special>
-                <ID>NS7LXDW6TRY4M0QC07JWKF4</ID>
+                &lt;!&ndash;                to the client id                    &ndash;&gt;
+                <ID>NG340F190E3YA3C02ESCIEI</ID>
                 <Protocol>TCP</Protocol>
                 <Username></Username>
                 <Password></Password>
@@ -967,7 +969,7 @@
             </Special>
 
             <Node>
-                <Tag>
+         &lt;!&ndash;       <Tag>
                     <General>
                         <Name>LT201</Name>
                         <Units Type="bool">m/s</Units>
@@ -989,7 +991,6 @@
                         <Action>0</Action>
                     </Special>
                 </Tag>
-
                 <Tag>
                     <General>
                         <Name>Rope201</Name>
@@ -1628,8 +1629,36 @@
                         <Action>0</Action>
                     </Special>
                 </Tag>
+                <Tag>
+                    <General>
+                        <Name>GPS</Name>
+                        <Units Type="bool">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>Json</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>0</Action>
+                    </Special>
+                </Tag>&ndash;&gt;
+
+
             </Node>
-        </Connection> -->
+        </Connection>-->
+
+
+
+
         <!-- <Connection Protocol="Mqtt">
 
             <General>
@@ -1998,8 +2027,10 @@
             </TagList>
         </OutputNode>
     </OutputNodeS> -->
-    <OutputNodeS>
-        <!-- <OutputNode>
+
+
+<!--    <OutputNodeS>
+        <OutputNode>
             <General>
                 <Name>MaterialHandling</Name>
                 <OutputNodeID>LKJDLKJLKJLKJ12LKJLK</OutputNodeID>
@@ -2012,7 +2043,7 @@
                 <Action>0</Action>
             </Special>
             <TagList>
-                <Dist>
+     &lt;!&ndash;           <Dist>
                     <TagName att="private">LT201</TagName>
                     <Alternative>LT201</Alternative>
                 </Dist>
@@ -2068,9 +2099,77 @@
                     <TagName att="private">Rope202</TagName>
                     <Alternative>Rope202</Alternative>
                 </Dist>
+                <Dist>
+                    <TagName att="private">LT101</TagName>
+                    <Alternative>LT101</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">LT102</TagName>
+                    <Alternative>LT102</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">PT101</TagName>
+                    <Alternative>PT101</Alternative>
+                </Dist>&ndash;&gt;
+&lt;!&ndash;                <Dist>&ndash;&gt;
+&lt;!&ndash;                    <TagName att="private">PT102</TagName>&ndash;&gt;
+&lt;!&ndash;                    <Alternative>PT102</Alternative>&ndash;&gt;
+&lt;!&ndash;                </Dist>&ndash;&gt;
+     &lt;!&ndash;           <Dist>
+                    <TagName att="private">TT101</TagName>
+                    <Alternative>TT101</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">TT102</TagName>
+                    <Alternative>TT102</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">ST_Pump101</TagName>
+                    <Alternative>ST_Pump101</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">ST_Pump102</TagName>
+                    <Alternative>ST_Pump102</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">Pump101_Run</TagName>
+                    <Alternative>Pump101_Run</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">Pump102_Run</TagName>
+                    <Alternative>Pump102_Run</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">SV101_Open</TagName>
+                    <Alternative>SV101_Open</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">SV102_Open</TagName>
+                    <Alternative>SV102_Open</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">Element101_ON</TagName>
+                    <Alternative>Element101_ON</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">Start101</TagName>
+                    <Alternative>Start101</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">Stop101</TagName>
+                    <Alternative>Stop101</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">FAN101_ON</TagName>
+                    <Alternative>FAN101_ON</Alternative>
+                </Dist>
+                <Dist>
+                    <TagName att="private">GPS</TagName>
+                    <Alternative>GPS</Alternative>
+                </Dist>&ndash;&gt;
             </TagList>
-        </OutputNode> -->
-        <!-- <OutputNode>
+        </OutputNode>
+        &lt;!&ndash; <OutputNode>
             <General>
                 <Name>HeatExchange</Name>
                 <OutputNodeID>LKJD222LKJLKJ12LKJLK</OutputNodeID>
@@ -2152,8 +2251,8 @@
                     <Alternative>Stop101</Alternative>
                 </Dist>
             </TagList>
-        </OutputNode> -->
-        <!-- <OutputNode>
+        </OutputNode> &ndash;&gt;
+        &lt;!&ndash; <OutputNode>
              <General>
                 <Name>MaterialHandlingVR</Name>
                 <OutputNodeID>LKJDLKJLKJLKJ12LKJLK</OutputNodeID>
@@ -2223,16 +2322,16 @@
                     <Alternative>Rope202</Alternative>
                 </Dist>
             </TagList>
-        </OutputNode> -->
-    </OutputNodeS>
+        </OutputNode> &ndash;&gt;
+    </OutputNodeS>-->
 
     <ConvertS>
-        <!-- <Convert>
-            <Source>S7_LT201</Source>
-            <DistS>
-                <Dist>CAN_LT201</Dist>
-            </DistS>
-        </Convert>  -->
+        <!--        <Convert>-->
+        <!--            <Source>GPSNeo</Source>-->
+        <!--            <DistS>-->
+        <!--                <Dist>CAN_LT201</Dist>-->
+        <!--            </DistS>-->
+        <!--        </Convert>-->
         <!-- <Convert>
             <Source>S7_LT201</Source>
             <DistS>
@@ -2318,7 +2417,7 @@
             </DistS>
         </Convert> -->
         <!-- *******************************-->
-        <!-- <Convert>
+<!--        <Convert>
             <Source>S7_LT201</Source>
             <DistS>
                 <Dist>LT201</Dist>
@@ -2401,8 +2500,9 @@
             <DistS>
                 <Dist>Rope202</Dist>
             </DistS>
-        </Convert> -->
-        <!-- <Convert>
+        </Convert>
+        &lt;!&ndash;        material handling convert &ndash;&gt;
+        <Convert>
             <Source>S7_LT101</Source>
             <DistS>
                 <Dist>LT101</Dist>
@@ -2497,11 +2597,17 @@
             <DistS>
                 <Dist>Stop101</Dist>
             </DistS>
-        </Convert> -->
+        </Convert>
+        <Convert>
+            <Source>Gps6</Source>
+            <DistS>
+                <Dist>GPS</Dist>
+            </DistS>
+        </Convert>-->
     </ConvertS>
     <!-- <Network>
         <Name>eth2</Name>
         <IP>192.168.0.204</IP>
-        <Netmask>255.255.255.0</Netmask> 
+        <Netmask>255.255.255.0</Netmask>
     </Network> -->
 </GateWay>

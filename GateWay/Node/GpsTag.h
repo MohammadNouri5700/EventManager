@@ -12,14 +12,19 @@ namespace ProtocolS
     class GPSTag : public Tag
     {
     private:
-        int data;
+        std::string jsonvalue;
+        FloatTag latitude;
+        FloatTag longitude;
+        FloatTag SpeedOverGround;
+        u16Tag UTC;
+        u16Tag Date;
 
     protected:
         void SendEvent() override;
 
     public:
-        u16Tag baudrate{};
-        // strTag MessageType;t
+//        u16Tag dataType{};
+//        strTag MessageType;t
         void Print() override;
         void UpdateValue() override;
         ~GPSTag() override;

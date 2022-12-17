@@ -5,6 +5,7 @@
 #include "mqttservice.h"
 #include "wifiservice.h"
 #include "convertservice.h"
+#include "gpsservice.h"
 #include "nodeservice.h"
 #include "s7service.h"
 #include "networkservice.h"
@@ -60,8 +61,16 @@ GrpcServer::GrpcServer(const std::string &address , CONNECTION::ConnectionManage
     SystemStartupConfigService *systemstartupconfigservice = new SystemStartupConfigService(ConnMan);
     builder.RegisterService(systemstartupconfigservice);
 
+    gpsservice *GpsService = new gpsservice(ConnMan);
+    builder.RegisterService(GpsService);
+
     // Finally assemble the server.
     server = builder.BuildAndStart();
     std::cout << "Server listening on " << address << std::endl;
 }
+
+
+
+
+
 

@@ -18,6 +18,33 @@ ProtocolS::GPS::GpsProtocol::~GpsProtocol()
 void ProtocolS::GPS::GpsProtocol::Create(Connection *Conn)
 {
     // (void)Conn;//TODO
+    auto cS7 = reinterpret_cast<ConnectionGPS *>(Conn);
+
+
+
+    conn =cS7;
+
+    for (auto n : conn->NodeS) {
+        auto mq = reinterpret_cast<xmlGPS *>(n);
+        ProtocolS::GPSTag *mn{new ProtocolS::GPSTag(mq)};
+        std::cout << mn->Name.Value << std::endl;
+    }
+
+
+
+    // GpsMessagesParser msg = GpsMessagesParser("/dev/ttyUSB0",9600);
+    // msg.start=true;
+    auto func = [this](json_t d, json_t d1, json_t d2, json_t d3, double d4 , double d5, double d6){
+        for (auto i : Observer)
+        {
+            auto m = reinterpret_cast<GPSTag *>(i);
+            m->setValue((void*)d.c_str(),strlen(d.c_str()));
+
+        }
+
+    };
+    parsergps.setGpsCb(func);
+
 }
 
 void ProtocolS::GPS::GpsProtocol::Open(Connection * Conn)
@@ -56,21 +83,16 @@ void ProtocolS::GPS::GpsProtocol::DataReceived()
 
 ProtocolS::GPS::GpsProtocol::GpsProtocol(ConnectionGPS *Conn)
 {
-    std::cout << "GPS Protocol..########################" << std::endl;
-    conn = Conn;
-    
-    // GpsMessagesParser msg = GpsMessagesParser("/dev/ttyUSB0",9600);
-    // msg.start=true;
-    auto func = [this](json_t d, json_t d1, json_t d2, json_t d3, double d4 , double d5, double d6){
-        for (auto i : Observer)
-        {
-            auto m = reinterpret_cast<GPSTag *>(i);
-            m->setValue((void*)d.c_str(),strlen(d.c_str()));  
-        
-        }
-        
-    };
-    parsergps.setGpsCb(func);
+    std::cout << "GPS Protocol called..########################" << std::endl;
+    conn =Conn;
+
+
+
+             for (auto n : conn->NodeS) {
+                 auto mq = reinterpret_cast<xmlGPS *>(n);
+                 ProtocolS::GPSTag *mn{new ProtocolS::GPSTag(mq)};
+                 std::cout << mn->Name.Value << std::endl;
+             }
     // msg.fetchNMEA();
 
 

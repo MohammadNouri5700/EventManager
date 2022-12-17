@@ -5,6 +5,9 @@
 #include "MqttPublisher.h"
 #include <iostream>
 #include "../GateWay/SignalS.h"
+#include <mutex>          // std::mutex
+
+std::mutex mtx;
 
 MqTT::MqttPublisher::MqttPublisher(std::string adrr, std::string id) : Mqtt{adrr, id}
 {
@@ -20,6 +23,7 @@ MqTT::MqttPublisher::MqttPublisher(stClient client) : Mqtt{client.strAddress, cl
 
 MqTT::MqttPublisher::~MqttPublisher()
 {
+
 }
 
 void MqTT::MqttPublisher::MqttPublisher::Init()
@@ -28,6 +32,7 @@ void MqTT::MqttPublisher::MqttPublisher::Init()
 
 void MqTT::MqttPublisher::Act()
 {
+    mtx.lock();
     mqtt::topic Topic(Client, strTopicName, QoS);
     mqtt::token_ptr tok;
     std::cout << "starting publisher..." << std::endl;
@@ -40,6 +45,7 @@ void MqTT::MqttPublisher::Act()
     auto now =  std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
     for (auto payload : vstrPayloads)
     {
+
         try
         {
             std::string temp;
@@ -68,6 +74,7 @@ void MqTT::MqttPublisher::Act()
         }
     }
     vstrPayloads.clear();
+    mtx.unlock();
     std::cout << "OK" << std::endl;
 }
 

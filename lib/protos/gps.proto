@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+message GpsConfigResponse {
+    bool Success = 1;
+    int32 errorCode = 2;
+    string errorDesc = 3;
+}
+enum GpsDataType{
+    TimeStamp = 0;
+    Latitude = 1;
+    Longitude = 2;
+    Altitude =3;
+    Type =4;
+    Location =5;
+}
+message ConfigGpsProtocol{
+    message GpsProtocol {
+        string gpsName=1;
+        string gpsId=2;
+        int32 interval=3;
+        GpsDataType gpsDataType=4;
+        bool gpsReciver = 5;
+    }
+    repeated GpsProtocol gpsProtocol=1;
+}
+
+    
+service SystemGpsProtocolConfig {
+    rpc SendSystemGpsProtocolConfig (ConfigGpsProtocol) returns (GpsConfigResponse);
+}
+

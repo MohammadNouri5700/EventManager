@@ -1,0 +1,307 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "W_coap",
+					"jsonFile" : "directory-W_coap-Debug-6d233379bceac19e2a2d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "W_coap",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "W_mqtt",
+					"jsonFile" : "directory-W_mqtt-Debug-33fbcdc2b91d38dc88f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "W_mqtt",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "W_S7",
+					"jsonFile" : "directory-W_S7-Debug-7f2758c5034cc7a69e21.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "W_S7",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "ErrorManager",
+					"jsonFile" : "directory-ErrorManager-Debug-51ef669a5eb198cc5645.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "ErrorManager",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "lib/mqttclient",
+					"jsonFile" : "directory-lib.mqttclient-Debug-a578332d55bb1ddb5780.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/mqttclient",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "lib/protos",
+					"jsonFile" : "directory-lib.protos-Debug-ce6906de39b5d8c06c6f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "lib/protos",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "GrpcServer",
+					"jsonFile" : "directory-GrpcServer-Debug-8e78e05d37af8270ca3e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "GrpcServer",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						5
+					],
+					"name" : "Event_manager",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "W_coap",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "W_mqtt",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "W_s7",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "ErrorManager",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "protos",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "GrpcServer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "ErrorManager::@b30c1a1c4b6a412ec540",
+					"jsonFile" : "target-ErrorManager-Debug-8dd6646678efae8ebcbd.json",
+					"name" : "ErrorManager",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Event_manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Event_manager-Debug-f1f8c2077411683a9c0e.json",
+					"name" : "Event_manager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "GrpcServer::@9abb81eeebf18c5e7e20",
+					"jsonFile" : "target-GrpcServer-Debug-11db2bb3dbe5e5be4043.json",
+					"name" : "GrpcServer",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "W_S7::@c0fce1a211a9e520604b",
+					"jsonFile" : "target-W_S7-Debug-a91dd27dcca71e88d81a.json",
+					"name" : "W_S7",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "W_coap::@21946a12cad9c41827bb",
+					"jsonFile" : "target-W_coap-Debug-6312803f5b39c3953d7f.json",
+					"name" : "W_coap",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "W_mqtt::@27736e70db155b5833fa",
+					"jsonFile" : "target-W_mqtt-Debug-007cafe7c1f818af521f.json",
+					"name" : "W_mqtt",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "mosquittopp::@8191279bd469f2dc4d31",
+					"jsonFile" : "target-mosquittopp-Debug-1a1307a2da95cc4706f7.json",
+					"name" : "mosquittopp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "protos::@f6540f26ea7fafbcb7f4",
+					"jsonFile" : "target-protos-Debug-29982d29366955dc87ee.json",
+					"name" : "protos",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/git/Event_manager11/Event_manager/cmake-build-debug",
+		"source" : "/home/user/git/Event_manager11/Event_manager"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -45,6 +45,7 @@ struct structNMEAFieldsGPRMC {
     string strMode{};
     string strChecksum{};
     std::string json();
+    std::string stringdata();
 };
 
 struct structNMEAFieldsGPVTG {
@@ -189,6 +190,7 @@ public:
 
     vector<string> strSpliterUtility(std::string strStrm, char c);
 
+    std::string stringGPRMC();
     json_t jasonGPRMC();
     json_t jasonGPVTG();
     json_t jasonGPGGA();

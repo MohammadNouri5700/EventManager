@@ -260,7 +260,7 @@ void CONNECTION::ConnectionManager::Create()
             // std::cout << "\nGPS from connection manager";
             std::cout << "config GPS" << std::endl;
             auto m = reinterpret_cast<ConnectionGPS*>(p);
-        
+
             ProtocolS::GPS::GpsProtocol *gps{new  ProtocolS::GPS::GpsProtocol(m)};
             gps->Create(m);
             ProtocolS::Node n;
@@ -281,6 +281,30 @@ void CONNECTION::ConnectionManager::Create()
             };
 
             ListenerS.push_back(gps);
+//        }
+//            std::cout << "config GPS" << std::endl;
+//            auto m = reinterpret_cast<ConnectionGPS*>(p);
+//            ProtocolS::GPS::GpsProtocol *gps{new ProtocolS::GPS::GpsProtocol};
+////            s7->setErrCallBack(errHandS7);
+//            gps->Create(m);
+//
+//            ProtocolS::Node n;
+//            n.first = m->Name.Value;
+//            for (auto t : m->NodeS ) {
+//                auto mq = reinterpret_cast<xmlGPS*>(t);
+//                ProtocolS::GPSTag* mn{new ProtocolS::GPSTag(mq)};
+//                mn->conn = m;
+//                n.second.push_back(mn);
+//            }
+//            nodeList.push_back(std::move(n));
+//            for (auto [i, n]:nodeList) {
+//                if (strcmp(i.c_str(), m->Name.Value.c_str())==0)
+//                    for (auto t:n) {
+//                        t->setSubject(gps);
+//                        t->TagType = ProtocolIIOT::GPS;
+//                    }
+//            };
+//            ListenerS.push_back(gps);
         }
         break;
         case ProtocolIIOT::SNMP : {

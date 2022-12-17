@@ -221,7 +221,8 @@ int main()
     connected = false;
 
     XmlReader xml;
-    std::string path{"/home/root/config.xml"};
+//    std::string path{"/home/root/config.xml"};
+    std::string path{"../config.xml"};
     ////////////////////////////////////////////////////////////////////
     if (xml.setFile(path))
     {

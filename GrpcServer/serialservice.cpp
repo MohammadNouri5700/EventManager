@@ -31,7 +31,6 @@ SystemSerialConfigService::SystemSerialConfigService(CONNECTION::ConnectionManag
 
     try
     {
-
         SimpleSerial serial("/dev/ttyO2", EnumToNumberBaud(rs232Config.serialBaudRate),
             EnumToNumberParity(rs232Config.serialParity),rs232Config.dataBit , rs232Config.endBit);
 

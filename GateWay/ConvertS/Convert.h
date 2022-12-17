@@ -19,7 +19,6 @@ public:
 
     std::string source() const { return Source; }
     std::vector<std::string> distS() const { return DistS; }
-
 };
 
 

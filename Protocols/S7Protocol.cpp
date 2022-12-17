@@ -152,6 +152,7 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
         }
         return true;
     };
+
     SetS7Cb(cb);
 }
 

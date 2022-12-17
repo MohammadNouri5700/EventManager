@@ -75,7 +75,25 @@ enumGGAProtocolHeaders headersResolver(string messageID)
     if (messageID == "$GPGLL" ) return $GPGLL;
     return $ERR;
 }
-
+std::string structNMEAFieldsGPRMC::stringdata()
+{
+    std::stringstream ss;
+    ss << "{" <<
+       "MessageID : " << strMessageID <<
+       ",UTCTime : " << strUTCTime <<
+       ",Status : "  << strStatus <<
+       ",Latitude : " << strLatitude <<
+       ",NSIndicator : " << strNSIndicator <<
+       ",Longitude : " << strLongitude <<
+       ",EWindicator : " << strEWindicator <<
+       ",SpeedOverGround : " << strSpeedOverGround <<
+       ",CourseOverGround : " << strCourseOverGround <<
+       ",Date : " << strDate <<
+       ",MagneticVariation : " << strMagneticVariation <<
+       ",Mode : " << strMode <<
+       ",Checksum : " << strChecksum << '}';
+   return ss.str();
+}
 std::string structNMEAFieldsGPRMC::json()
 {
     std::string json{};
@@ -186,25 +204,26 @@ void GpsMessagesParser::thrdFetchNMEAHandler()
     while (start) {
         try {
             string NMEA;
-            
+
                 NMEA = readNMEASentence();
                 vector<string> splitedGPSData;
                 splitedGPSData = strSpliterUtility(NMEA, ',');
                 NEMAFieldsSpliter(splitedGPSData);
                 json_t GPRMC =(bGPRMC?jasonGPRMC():"");
+                std::string STRGPRMC =(bGPRMC?stringGPRMC():"");
                 json_t gpvtg = (bGPVTG?jasonGPVTG():"");
                 json_t GPGGA = (bGPGGA?jasonGPGGA():"");
                 json_t GPGLL =(bGPGLL?jasonGPGLL():"");
             try {
             if (GPRMC != ""){
-                GpsCb(GPRMC , gpvtg,GPGGA ,GPGLL, coord.first, coord.second, Time);
+                GpsCb(STRGPRMC , gpvtg,GPGGA ,GPGLL, coord.first, coord.second, Time);
             }
             }catch(const std::bad_function_call& e) {
                 std::cout << "Gps Message Parser" << e.what() << '\n';
             }
-            
+
             bGPRMC = bGPVTG = bGPGGA = bGPGLL = false;
-        
+
         } catch (system::system_error &e) {//TODO handle error
             cout << "Gps Message Parser Error: " << e.what() << endl;
         }
@@ -335,7 +354,7 @@ void GpsMessagesParser::NEMAFieldsSpliter(vector<std::string> vectSplitedGPSData
 }
 
 std::string GpsMessagesParser::readNMEASentence()
-{    
+{
     bool notfinished = true;
     string result;
     do {
@@ -350,7 +369,7 @@ std::string GpsMessagesParser::readNMEASentence()
         }
     } while (notfinished);
     return result;
-    
+
 }
 
 // std::string GpsMessagesParser::readNMEASentence()
@@ -375,6 +394,10 @@ std::string GpsMessagesParser::readNMEASentence()
 json_t GpsMessagesParser::jasonGPRMC()
 {
     return NMEAFieldsGPRMCTmp.json();
+}
+std::string GpsMessagesParser::stringGPRMC()
+{
+    return NMEAFieldsGPRMCTmp.stringdata();
 }
 
 json_t GpsMessagesParser::jasonGPVTG()

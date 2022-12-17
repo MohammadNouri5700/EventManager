@@ -142,18 +142,30 @@ std::string OutputNode::CreateMQTTPayload()
     std::string Reported, vTemp;
     bool firstline=true;
 
+
     for (auto t : TagList) {
+
         if (t.tag->Value==0) continue;
         if (!firstline)
             Reported+= "," ;
-    
+
+//        if (t.tag->Name.Value=="PT102"){
+//            std::string *str = new std::string((char *)0);
+//            vTemp = *str;
+//        }
+
         if (t.tag->Value !=NULL && t.tag->Value != "") {
             std::string *str = new std::string((char *)t.tag->Value);
             vTemp = *str;
-        } else
+        } else{
             continue;
+        }
+
+
         firstline  = false;
         Reported += "\"" + t.Alternative + "\":\"" + vTemp +"\"\n";
+
+
     }
 
     std::string ReturnValue = "{\n\"deviceTwinDocument\":{ \n \"attributes\":{ \n \"reported\":{ \n" + Reported + "} \n} \n} \n}";

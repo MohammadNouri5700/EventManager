@@ -10,8 +10,6 @@
 struct xmlGPS:public xmlNode {
     void SpecialInfo(pugi::xml_node &Special) override;
     void SpecialInfoGRPC() override;
- 
-
     void print() override;
 };
 
