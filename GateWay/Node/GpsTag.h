@@ -11,20 +11,13 @@ namespace ProtocolS
 {
     class GPSTag : public Tag
     {
-    private:
-        std::string jsonvalue;
-        FloatTag latitude;
-        FloatTag longitude;
-        FloatTag SpeedOverGround;
-        u16Tag UTC;
-        u16Tag Date;
-
     protected:
         void SendEvent() override;
 
     public:
 //        u16Tag dataType{};
 //        strTag MessageType;t
+        void setValue(void *value, size_t Size) override;
         void Print() override;
         void UpdateValue() override;
         ~GPSTag() override;
@@ -40,6 +33,8 @@ namespace ProtocolS
             }
             return this->conn->Address.Value == tag->conn->Address.Value;
         }
+
+        std::string jsonvalue;
     };
 
 };

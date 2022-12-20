@@ -13,6 +13,7 @@
 #include "modbusservice.h"
 #include "mqttpodservice.h"
 #include "startupservice.h"
+#include "locationservice.h"
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -63,6 +64,10 @@ GrpcServer::GrpcServer(const std::string &address , CONNECTION::ConnectionManage
 
     gpsservice *GpsService = new gpsservice(ConnMan);
     builder.RegisterService(GpsService);
+
+
+    locationservice *LocationService = new locationservice(ConnMan);
+    builder.RegisterService(LocationService);
 
     // Finally assemble the server.
     server = builder.BuildAndStart();

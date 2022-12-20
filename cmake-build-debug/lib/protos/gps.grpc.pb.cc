@@ -20,6 +20,67 @@
 #include <grpcpp/impl/codegen/service_type.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
 
+static const char* SystemGpsData_method_names[] = {
+  "/SystemGpsData/SendSystemGpsData",
+};
+
+std::unique_ptr< SystemGpsData::Stub> SystemGpsData::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
+  (void)options;
+  std::unique_ptr< SystemGpsData::Stub> stub(new SystemGpsData::Stub(channel, options));
+  return stub;
+}
+
+SystemGpsData::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options)
+  : channel_(channel), rpcmethod_SendSystemGpsData_(SystemGpsData_method_names[0], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  {}
+
+::grpc::Status SystemGpsData::Stub::SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::GpsData* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::CommandEx, ::GpsData, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_SendSystemGpsData_, context, request, response);
+}
+
+void SystemGpsData::Stub::async::SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx* request, ::GpsData* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::CommandEx, ::GpsData, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_SendSystemGpsData_, context, request, response, std::move(f));
+}
+
+void SystemGpsData::Stub::async::SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx* request, ::GpsData* response, ::grpc::ClientUnaryReactor* reactor) {
+  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_SendSystemGpsData_, context, request, response, reactor);
+}
+
+::grpc::ClientAsyncResponseReader< ::GpsData>* SystemGpsData::Stub::PrepareAsyncSendSystemGpsDataRaw(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::GpsData, ::CommandEx, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_SendSystemGpsData_, context, request);
+}
+
+::grpc::ClientAsyncResponseReader< ::GpsData>* SystemGpsData::Stub::AsyncSendSystemGpsDataRaw(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) {
+  auto* result =
+    this->PrepareAsyncSendSystemGpsDataRaw(context, request, cq);
+  result->StartCall();
+  return result;
+}
+
+SystemGpsData::Service::Service() {
+  AddMethod(new ::grpc::internal::RpcServiceMethod(
+      SystemGpsData_method_names[0],
+      ::grpc::internal::RpcMethod::NORMAL_RPC,
+      new ::grpc::internal::RpcMethodHandler< SystemGpsData::Service, ::CommandEx, ::GpsData, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+          [](SystemGpsData::Service* service,
+             ::grpc::ServerContext* ctx,
+             const ::CommandEx* req,
+             ::GpsData* resp) {
+               return service->SendSystemGpsData(ctx, req, resp);
+             }, this)));
+}
+
+SystemGpsData::Service::~Service() {
+}
+
+::grpc::Status SystemGpsData::Service::SendSystemGpsData(::grpc::ServerContext* context, const ::CommandEx* request, ::GpsData* response) {
+  (void) context;
+  (void) request;
+  (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+
 static const char* SystemGpsProtocolConfig_method_names[] = {
   "/SystemGpsProtocolConfig/SendSystemGpsProtocolConfig",
 };

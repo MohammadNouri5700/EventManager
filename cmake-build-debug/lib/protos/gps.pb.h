@@ -47,13 +47,16 @@ struct TableStruct_gps_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[5]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_gps_2eproto;
+class CommandEx;
+struct CommandExDefaultTypeInternal;
+extern CommandExDefaultTypeInternal _CommandEx_default_instance_;
 class ConfigGpsProtocol;
 struct ConfigGpsProtocolDefaultTypeInternal;
 extern ConfigGpsProtocolDefaultTypeInternal _ConfigGpsProtocol_default_instance_;
@@ -63,10 +66,15 @@ extern ConfigGpsProtocol_GpsProtocolDefaultTypeInternal _ConfigGpsProtocol_GpsPr
 class GpsConfigResponse;
 struct GpsConfigResponseDefaultTypeInternal;
 extern GpsConfigResponseDefaultTypeInternal _GpsConfigResponse_default_instance_;
+class GpsData;
+struct GpsDataDefaultTypeInternal;
+extern GpsDataDefaultTypeInternal _GpsData_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
+template<> ::CommandEx* Arena::CreateMaybeMessage<::CommandEx>(Arena*);
 template<> ::ConfigGpsProtocol* Arena::CreateMaybeMessage<::ConfigGpsProtocol>(Arena*);
 template<> ::ConfigGpsProtocol_GpsProtocol* Arena::CreateMaybeMessage<::ConfigGpsProtocol_GpsProtocol>(Arena*);
 template<> ::GpsConfigResponse* Arena::CreateMaybeMessage<::GpsConfigResponse>(Arena*);
+template<> ::GpsData* Arena::CreateMaybeMessage<::GpsData>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 enum GpsDataType : int {
@@ -99,6 +107,157 @@ inline bool GpsDataType_Parse(
     GpsDataType_descriptor(), name, value);
 }
 // ===================================================================
+
+class GpsData final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GpsData) */ {
+ public:
+  inline GpsData() : GpsData(nullptr) {}
+  ~GpsData() override;
+  explicit constexpr GpsData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  GpsData(const GpsData& from);
+  GpsData(GpsData&& from) noexcept
+    : GpsData() {
+    *this = ::std::move(from);
+  }
+
+  inline GpsData& operator=(const GpsData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GpsData& operator=(GpsData&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const GpsData& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const GpsData* internal_default_instance() {
+    return reinterpret_cast<const GpsData*>(
+               &_GpsData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(GpsData& a, GpsData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GpsData* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GpsData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  GpsData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GpsData>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const GpsData& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const GpsData& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GpsData* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "GpsData";
+  }
+  protected:
+  explicit GpsData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kDevicedataFieldNumber = 1,
+  };
+  // string devicedata = 1;
+  void clear_devicedata();
+  const std::string& devicedata() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_devicedata(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_devicedata();
+  PROTOBUF_NODISCARD std::string* release_devicedata();
+  void set_allocated_devicedata(std::string* devicedata);
+  private:
+  const std::string& _internal_devicedata() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_devicedata(const std::string& value);
+  std::string* _internal_mutable_devicedata();
+  public:
+
+  // @@protoc_insertion_point(class_scope:GpsData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr devicedata_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_gps_2eproto;
+};
+// -------------------------------------------------------------------
 
 class GpsConfigResponse final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:GpsConfigResponse) */ {
@@ -148,7 +307,7 @@ class GpsConfigResponse final :
                &_GpsConfigResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   friend void swap(GpsConfigResponse& a, GpsConfigResponse& b) {
     a.Swap(&b);
@@ -273,6 +432,157 @@ class GpsConfigResponse final :
 };
 // -------------------------------------------------------------------
 
+class CommandEx final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CommandEx) */ {
+ public:
+  inline CommandEx() : CommandEx(nullptr) {}
+  ~CommandEx() override;
+  explicit constexpr CommandEx(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  CommandEx(const CommandEx& from);
+  CommandEx(CommandEx&& from) noexcept
+    : CommandEx() {
+    *this = ::std::move(from);
+  }
+
+  inline CommandEx& operator=(const CommandEx& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CommandEx& operator=(CommandEx&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CommandEx& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CommandEx* internal_default_instance() {
+    return reinterpret_cast<const CommandEx*>(
+               &_CommandEx_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  friend void swap(CommandEx& a, CommandEx& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CommandEx* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CommandEx* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CommandEx* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CommandEx>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const CommandEx& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom(const CommandEx& from);
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to, const ::PROTOBUF_NAMESPACE_ID::Message& from);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CommandEx* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CommandEx";
+  }
+  protected:
+  explicit CommandEx(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kComFieldNumber = 1,
+  };
+  // string com = 1;
+  void clear_com();
+  const std::string& com() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_com(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_com();
+  PROTOBUF_NODISCARD std::string* release_com();
+  void set_allocated_com(std::string* com);
+  private:
+  const std::string& _internal_com() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_com(const std::string& value);
+  std::string* _internal_mutable_com();
+  public:
+
+  // @@protoc_insertion_point(class_scope:CommandEx)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr com_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_gps_2eproto;
+};
+// -------------------------------------------------------------------
+
 class ConfigGpsProtocol_GpsProtocol final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ConfigGpsProtocol.GpsProtocol) */ {
  public:
@@ -321,7 +631,7 @@ class ConfigGpsProtocol_GpsProtocol final :
                &_ConfigGpsProtocol_GpsProtocol_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    3;
 
   friend void swap(ConfigGpsProtocol_GpsProtocol& a, ConfigGpsProtocol_GpsProtocol& b) {
     a.Swap(&b);
@@ -521,7 +831,7 @@ class ConfigGpsProtocol final :
                &_ConfigGpsProtocol_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    4;
 
   friend void swap(ConfigGpsProtocol& a, ConfigGpsProtocol& b) {
     a.Swap(&b);
@@ -637,6 +947,61 @@ class ConfigGpsProtocol final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// GpsData
+
+// string devicedata = 1;
+inline void GpsData::clear_devicedata() {
+  devicedata_.ClearToEmpty();
+}
+inline const std::string& GpsData::devicedata() const {
+  // @@protoc_insertion_point(field_get:GpsData.devicedata)
+  return _internal_devicedata();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void GpsData::set_devicedata(ArgT0&& arg0, ArgT... args) {
+ 
+ devicedata_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:GpsData.devicedata)
+}
+inline std::string* GpsData::mutable_devicedata() {
+  std::string* _s = _internal_mutable_devicedata();
+  // @@protoc_insertion_point(field_mutable:GpsData.devicedata)
+  return _s;
+}
+inline const std::string& GpsData::_internal_devicedata() const {
+  return devicedata_.Get();
+}
+inline void GpsData::_internal_set_devicedata(const std::string& value) {
+  
+  devicedata_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* GpsData::_internal_mutable_devicedata() {
+  
+  return devicedata_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* GpsData::release_devicedata() {
+  // @@protoc_insertion_point(field_release:GpsData.devicedata)
+  return devicedata_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void GpsData::set_allocated_devicedata(std::string* devicedata) {
+  if (devicedata != nullptr) {
+    
+  } else {
+    
+  }
+  devicedata_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), devicedata,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (devicedata_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    devicedata_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:GpsData.devicedata)
+}
+
+// -------------------------------------------------------------------
+
 // GpsConfigResponse
 
 // bool Success = 1;
@@ -728,6 +1093,61 @@ inline void GpsConfigResponse::set_allocated_errordesc(std::string* errordesc) {
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   // @@protoc_insertion_point(field_set_allocated:GpsConfigResponse.errorDesc)
+}
+
+// -------------------------------------------------------------------
+
+// CommandEx
+
+// string com = 1;
+inline void CommandEx::clear_com() {
+  com_.ClearToEmpty();
+}
+inline const std::string& CommandEx::com() const {
+  // @@protoc_insertion_point(field_get:CommandEx.com)
+  return _internal_com();
+}
+template <typename ArgT0, typename... ArgT>
+inline PROTOBUF_ALWAYS_INLINE
+void CommandEx::set_com(ArgT0&& arg0, ArgT... args) {
+ 
+ com_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:CommandEx.com)
+}
+inline std::string* CommandEx::mutable_com() {
+  std::string* _s = _internal_mutable_com();
+  // @@protoc_insertion_point(field_mutable:CommandEx.com)
+  return _s;
+}
+inline const std::string& CommandEx::_internal_com() const {
+  return com_.Get();
+}
+inline void CommandEx::_internal_set_com(const std::string& value) {
+  
+  com_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArenaForAllocation());
+}
+inline std::string* CommandEx::_internal_mutable_com() {
+  
+  return com_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
+}
+inline std::string* CommandEx::release_com() {
+  // @@protoc_insertion_point(field_release:CommandEx.com)
+  return com_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
+}
+inline void CommandEx::set_allocated_com(std::string* com) {
+  if (com != nullptr) {
+    
+  } else {
+    
+  }
+  com_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), com,
+      GetArenaForAllocation());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (com_.IsDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited())) {
+    com_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  }
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  // @@protoc_insertion_point(field_set_allocated:CommandEx.com)
 }
 
 // -------------------------------------------------------------------
@@ -943,6 +1363,10 @@ ConfigGpsProtocol::gpsprotocol() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

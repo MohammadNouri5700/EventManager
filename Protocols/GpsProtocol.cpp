@@ -24,11 +24,11 @@ void ProtocolS::GPS::GpsProtocol::Create(Connection *Conn)
 
     conn =cS7;
 
-    for (auto n : conn->NodeS) {
-        auto mq = reinterpret_cast<xmlGPS *>(n);
-        ProtocolS::GPSTag *mn{new ProtocolS::GPSTag(mq)};
-        std::cout << mn->Name.Value << std::endl;
-    }
+//    for (auto n : conn->NodeS) {
+//        auto mq = reinterpret_cast<xmlGPS *>(n);
+//        ProtocolS::GPSTag *mn{new ProtocolS::GPSTag(mq)};
+//        std::cout << mn->Name.Value << std::endl;
+//    }
 
 
 

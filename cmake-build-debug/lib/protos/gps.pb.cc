@@ -16,6 +16,18 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+constexpr GpsData::GpsData(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : devicedata_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct GpsDataDefaultTypeInternal {
+  constexpr GpsDataDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~GpsDataDefaultTypeInternal() {}
+  union {
+    GpsData _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GpsDataDefaultTypeInternal _GpsData_default_instance_;
 constexpr GpsConfigResponse::GpsConfigResponse(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : errordesc_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -30,6 +42,18 @@ struct GpsConfigResponseDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GpsConfigResponseDefaultTypeInternal _GpsConfigResponse_default_instance_;
+constexpr CommandEx::CommandEx(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : com_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+struct CommandExDefaultTypeInternal {
+  constexpr CommandExDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~CommandExDefaultTypeInternal() {}
+  union {
+    CommandEx _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CommandExDefaultTypeInternal _CommandEx_default_instance_;
 constexpr ConfigGpsProtocol_GpsProtocol::ConfigGpsProtocol_GpsProtocol(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : gpsname_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -59,11 +83,18 @@ struct ConfigGpsProtocolDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ConfigGpsProtocolDefaultTypeInternal _ConfigGpsProtocol_default_instance_;
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_gps_2eproto[3];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_gps_2eproto[5];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_gps_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_gps_2eproto = nullptr;
 
 const uint32_t TableStruct_gps_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::GpsData, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::GpsData, devicedata_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::GpsConfigResponse, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -73,6 +104,13 @@ const uint32_t TableStruct_gps_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(prot
   PROTOBUF_FIELD_OFFSET(::GpsConfigResponse, success_),
   PROTOBUF_FIELD_OFFSET(::GpsConfigResponse, errorcode_),
   PROTOBUF_FIELD_OFFSET(::GpsConfigResponse, errordesc_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::CommandEx, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::CommandEx, com_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ConfigGpsProtocol_GpsProtocol, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -93,36 +131,43 @@ const uint32_t TableStruct_gps_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(prot
   PROTOBUF_FIELD_OFFSET(::ConfigGpsProtocol, gpsprotocol_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::GpsConfigResponse)},
-  { 9, -1, -1, sizeof(::ConfigGpsProtocol_GpsProtocol)},
-  { 20, -1, -1, sizeof(::ConfigGpsProtocol)},
+  { 0, -1, -1, sizeof(::GpsData)},
+  { 7, -1, -1, sizeof(::GpsConfigResponse)},
+  { 16, -1, -1, sizeof(::CommandEx)},
+  { 23, -1, -1, sizeof(::ConfigGpsProtocol_GpsProtocol)},
+  { 34, -1, -1, sizeof(::ConfigGpsProtocol)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GpsData_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GpsConfigResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CommandEx_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ConfigGpsProtocol_GpsProtocol_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ConfigGpsProtocol_default_instance_),
 };
 
 const char descriptor_table_protodef_gps_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\tgps.proto\"J\n\021GpsConfigResponse\022\017\n\007Succ"
-  "ess\030\001 \001(\010\022\021\n\terrorCode\030\002 \001(\005\022\021\n\terrorDes"
-  "c\030\003 \001(\t\"\300\001\n\021ConfigGpsProtocol\0223\n\013gpsProt"
-  "ocol\030\001 \003(\0132\036.ConfigGpsProtocol.GpsProtoc"
-  "ol\032v\n\013GpsProtocol\022\017\n\007gpsName\030\001 \001(\t\022\r\n\005gp"
-  "sId\030\002 \001(\t\022\020\n\010interval\030\003 \001(\005\022!\n\013gpsDataTy"
-  "pe\030\004 \001(\0162\014.GpsDataType\022\022\n\ngpsReciver\030\005 \001"
-  "(\010*_\n\013GpsDataType\022\r\n\tTimeStamp\020\000\022\014\n\010Lati"
-  "tude\020\001\022\r\n\tLongitude\020\002\022\014\n\010Altitude\020\003\022\010\n\004T"
-  "ype\020\004\022\014\n\010Location\020\0052`\n\027SystemGpsProtocol"
-  "Config\022E\n\033SendSystemGpsProtocolConfig\022\022."
-  "ConfigGpsProtocol\032\022.GpsConfigResponseb\006p"
-  "roto3"
+  "\n\tgps.proto\"\035\n\007GpsData\022\022\n\ndevicedata\030\001 \001"
+  "(\t\"J\n\021GpsConfigResponse\022\017\n\007Success\030\001 \001(\010"
+  "\022\021\n\terrorCode\030\002 \001(\005\022\021\n\terrorDesc\030\003 \001(\t\"\030"
+  "\n\tCommandEx\022\013\n\003com\030\001 \001(\t\"\300\001\n\021ConfigGpsPr"
+  "otocol\0223\n\013gpsProtocol\030\001 \003(\0132\036.ConfigGpsP"
+  "rotocol.GpsProtocol\032v\n\013GpsProtocol\022\017\n\007gp"
+  "sName\030\001 \001(\t\022\r\n\005gpsId\030\002 \001(\t\022\020\n\010interval\030\003"
+  " \001(\005\022!\n\013gpsDataType\030\004 \001(\0162\014.GpsDataType\022"
+  "\022\n\ngpsReciver\030\005 \001(\010*_\n\013GpsDataType\022\r\n\tTi"
+  "meStamp\020\000\022\014\n\010Latitude\020\001\022\r\n\tLongitude\020\002\022\014"
+  "\n\010Altitude\020\003\022\010\n\004Type\020\004\022\014\n\010Location\020\0052:\n\r"
+  "SystemGpsData\022)\n\021SendSystemGpsData\022\n.Com"
+  "mandEx\032\010.GpsData2`\n\027SystemGpsProtocolCon"
+  "fig\022E\n\033SendSystemGpsProtocolConfig\022\022.Con"
+  "figGpsProtocol\032\022.GpsConfigResponseb\006prot"
+  "o3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_gps_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_gps_2eproto = {
-  false, false, 485, descriptor_table_protodef_gps_2eproto, "gps.proto", 
-  &descriptor_table_gps_2eproto_once, nullptr, 0, 3,
+  false, false, 602, descriptor_table_protodef_gps_2eproto, "gps.proto", 
+  &descriptor_table_gps_2eproto_once, nullptr, 0, 5,
   schemas, file_default_instances, TableStruct_gps_2eproto::offsets,
   file_level_metadata_gps_2eproto, file_level_enum_descriptors_gps_2eproto, file_level_service_descriptors_gps_2eproto,
 };
@@ -150,6 +195,209 @@ bool GpsDataType_IsValid(int value) {
   }
 }
 
+
+// ===================================================================
+
+class GpsData::_Internal {
+ public:
+};
+
+GpsData::GpsData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:GpsData)
+}
+GpsData::GpsData(const GpsData& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  devicedata_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    devicedata_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_devicedata().empty()) {
+    devicedata_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_devicedata(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:GpsData)
+}
+
+inline void GpsData::SharedCtor() {
+devicedata_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  devicedata_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+GpsData::~GpsData() {
+  // @@protoc_insertion_point(destructor:GpsData)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void GpsData::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  devicedata_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void GpsData::ArenaDtor(void* object) {
+  GpsData* _this = reinterpret_cast< GpsData* >(object);
+  (void)_this;
+}
+void GpsData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void GpsData::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void GpsData::Clear() {
+// @@protoc_insertion_point(message_clear_start:GpsData)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  devicedata_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* GpsData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string devicedata = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_devicedata();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "GpsData.devicedata"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* GpsData::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:GpsData)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string devicedata = 1;
+  if (!this->_internal_devicedata().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_devicedata().data(), static_cast<int>(this->_internal_devicedata().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "GpsData.devicedata");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_devicedata(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:GpsData)
+  return target;
+}
+
+size_t GpsData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:GpsData)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string devicedata = 1;
+  if (!this->_internal_devicedata().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_devicedata());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GpsData::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    GpsData::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GpsData::GetClassData() const { return &_class_data_; }
+
+void GpsData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<GpsData *>(to)->MergeFrom(
+      static_cast<const GpsData &>(from));
+}
+
+
+void GpsData::MergeFrom(const GpsData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:GpsData)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_devicedata().empty()) {
+    _internal_set_devicedata(from._internal_devicedata());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GpsData::CopyFrom(const GpsData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:GpsData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GpsData::IsInitialized() const {
+  return true;
+}
+
+void GpsData::InternalSwap(GpsData* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &devicedata_, lhs_arena,
+      &other->devicedata_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GpsData::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_gps_2eproto_getter, &descriptor_table_gps_2eproto_once,
+      file_level_metadata_gps_2eproto[0]);
+}
 
 // ===================================================================
 
@@ -411,7 +659,210 @@ void GpsConfigResponse::InternalSwap(GpsConfigResponse* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata GpsConfigResponse::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_gps_2eproto_getter, &descriptor_table_gps_2eproto_once,
-      file_level_metadata_gps_2eproto[0]);
+      file_level_metadata_gps_2eproto[1]);
+}
+
+// ===================================================================
+
+class CommandEx::_Internal {
+ public:
+};
+
+CommandEx::CommandEx(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:CommandEx)
+}
+CommandEx::CommandEx(const CommandEx& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  com_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    com_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_com().empty()) {
+    com_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_com(), 
+      GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(copy_constructor:CommandEx)
+}
+
+inline void CommandEx::SharedCtor() {
+com_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  com_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+}
+
+CommandEx::~CommandEx() {
+  // @@protoc_insertion_point(destructor:CommandEx)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void CommandEx::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  com_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void CommandEx::ArenaDtor(void* object) {
+  CommandEx* _this = reinterpret_cast< CommandEx* >(object);
+  (void)_this;
+}
+void CommandEx::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CommandEx::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void CommandEx::Clear() {
+// @@protoc_insertion_point(message_clear_start:CommandEx)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  com_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CommandEx::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // string com = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_com();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "CommandEx.com"));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CommandEx::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CommandEx)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string com = 1;
+  if (!this->_internal_com().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_com().data(), static_cast<int>(this->_internal_com().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "CommandEx.com");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_com(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CommandEx)
+  return target;
+}
+
+size_t CommandEx::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CommandEx)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string com = 1;
+  if (!this->_internal_com().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_com());
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandEx::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandEx::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandEx::GetClassData() const { return &_class_data_; }
+
+void CommandEx::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<CommandEx *>(to)->MergeFrom(
+      static_cast<const CommandEx &>(from));
+}
+
+
+void CommandEx::MergeFrom(const CommandEx& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:CommandEx)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_com().empty()) {
+    _internal_set_com(from._internal_com());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CommandEx::CopyFrom(const CommandEx& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CommandEx)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CommandEx::IsInitialized() const {
+  return true;
+}
+
+void CommandEx::InternalSwap(CommandEx* other) {
+  using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &com_, lhs_arena,
+      &other->com_, rhs_arena
+  );
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CommandEx::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_gps_2eproto_getter, &descriptor_table_gps_2eproto_once,
+      file_level_metadata_gps_2eproto[2]);
 }
 
 // ===================================================================
@@ -748,7 +1199,7 @@ void ConfigGpsProtocol_GpsProtocol::InternalSwap(ConfigGpsProtocol_GpsProtocol* 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConfigGpsProtocol_GpsProtocol::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_gps_2eproto_getter, &descriptor_table_gps_2eproto_once,
-      file_level_metadata_gps_2eproto[1]);
+      file_level_metadata_gps_2eproto[3]);
 }
 
 // ===================================================================
@@ -933,13 +1384,19 @@ void ConfigGpsProtocol::InternalSwap(ConfigGpsProtocol* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata ConfigGpsProtocol::GetMetadata() const {
   return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
       &descriptor_table_gps_2eproto_getter, &descriptor_table_gps_2eproto_once,
-      file_level_metadata_gps_2eproto[2]);
+      file_level_metadata_gps_2eproto[4]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::GpsData* Arena::CreateMaybeMessage< ::GpsData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::GpsData >(arena);
+}
 template<> PROTOBUF_NOINLINE ::GpsConfigResponse* Arena::CreateMaybeMessage< ::GpsConfigResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::GpsConfigResponse >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CommandEx* Arena::CreateMaybeMessage< ::CommandEx >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CommandEx >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ConfigGpsProtocol_GpsProtocol* Arena::CreateMaybeMessage< ::ConfigGpsProtocol_GpsProtocol >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ConfigGpsProtocol_GpsProtocol >(arena);

@@ -22,7 +22,7 @@ struct GpsProtocol {
 };
 
 
-class gpsservice : public SystemGpsProtocolConfig::Service {
+class gpsservice : public SystemGpsProtocolConfig::Service  {
 private:
     CONNECTION::ConnectionManager *connMan;
     std::vector<GpsProtocol> gpsConfig;

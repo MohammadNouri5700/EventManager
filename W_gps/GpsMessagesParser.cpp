@@ -75,16 +75,34 @@ enumGGAProtocolHeaders headersResolver(string messageID)
     if (messageID == "$GPGLL" ) return $GPGLL;
     return $ERR;
 }
+float GpsToDecimalDegrees(const char* nmeaPos, char quadrant)
+{
+    float v= 0;
+    if(strlen(nmeaPos)>5)
+    {
+        char integerPart[3+1];
+        int digitCount= (nmeaPos[4]=='.' ? 2 : 3);
+        memcpy(integerPart, nmeaPos, digitCount);
+        integerPart[digitCount]= 0;
+        nmeaPos+= digitCount;
+        v= atoi(integerPart) + atof(nmeaPos)/60.;
+        if(quadrant=='W' || quadrant=='S')
+            v= -v;
+    }
+    return v;
+}
 std::string structNMEAFieldsGPRMC::stringdata()
 {
+
+
     std::stringstream ss;
     ss << "{" <<
        "MessageID : " << strMessageID <<
        ",UTCTime : " << strUTCTime <<
        ",Status : "  << strStatus <<
-       ",Latitude : " << strLatitude <<
+       ",Latitude : " << GpsToDecimalDegrees(strLatitude.c_str(),'N') <<
        ",NSIndicator : " << strNSIndicator <<
-       ",Longitude : " << strLongitude <<
+       ",Longitude : " << GpsToDecimalDegrees(strLongitude.c_str(),'A') <<
        ",EWindicator : " << strEWindicator <<
        ",SpeedOverGround : " << strSpeedOverGround <<
        ",CourseOverGround : " << strCourseOverGround <<

@@ -24,6 +24,9 @@ void ProtocolS::GPSTag::SendEvent()
 
     std::string str((char *)Value);
 
+    this->jsonvalue =str;
+
+
     Event e{new ProtocolData{str, nullptr,Name.Value}, TYPE::PRINT};
 
     auto size = strlen(str.c_str());
@@ -106,3 +109,7 @@ void ProtocolS::GPSTag::setSubject(Protocol * subject)
 }
 
 ProtocolS::GPSTag::GPSTag(xmlGPS * gps): Tag(gps) {}
+
+void ProtocolS::GPSTag::setValue(void *value, size_t Size) {
+    Tag::setValue(value, Size);
+}

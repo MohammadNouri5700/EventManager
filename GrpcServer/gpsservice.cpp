@@ -17,9 +17,7 @@ gpsservice::SendSystemGpsProtocolConfig(::grpc::ServerContext *context, const ::
 
 
 
-
-
-    return Service::SendSystemGpsProtocolConfig(context, request, response);
+    return SystemGpsProtocolConfig::Service::SendSystemGpsProtocolConfig(context, request, response);
 }
 
 

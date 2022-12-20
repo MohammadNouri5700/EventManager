@@ -25,6 +25,213 @@
 #include <grpcpp/impl/codegen/stub_options.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
 
+class SystemGpsData final {
+ public:
+  static constexpr char const* service_full_name() {
+    return "SystemGpsData";
+  }
+  class StubInterface {
+   public:
+    virtual ~StubInterface() {}
+    virtual ::grpc::Status SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::GpsData* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GpsData>> AsyncSendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GpsData>>(AsyncSendSystemGpsDataRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GpsData>> PrepareAsyncSendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GpsData>>(PrepareAsyncSendSystemGpsDataRaw(context, request, cq));
+    }
+    class async_interface {
+     public:
+      virtual ~async_interface() {}
+      virtual void SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx* request, ::GpsData* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx* request, ::GpsData* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+    };
+    typedef class async_interface experimental_async_interface;
+    virtual class async_interface* async() { return nullptr; }
+    class async_interface* experimental_async() { return async(); }
+   private:
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::GpsData>* AsyncSendSystemGpsDataRaw(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::GpsData>* PrepareAsyncSendSystemGpsDataRaw(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) = 0;
+  };
+  class Stub final : public StubInterface {
+   public:
+    Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
+    ::grpc::Status SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::GpsData* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GpsData>> AsyncSendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GpsData>>(AsyncSendSystemGpsDataRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GpsData>> PrepareAsyncSendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GpsData>>(PrepareAsyncSendSystemGpsDataRaw(context, request, cq));
+    }
+    class async final :
+      public StubInterface::async_interface {
+     public:
+      void SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx* request, ::GpsData* response, std::function<void(::grpc::Status)>) override;
+      void SendSystemGpsData(::grpc::ClientContext* context, const ::CommandEx* request, ::GpsData* response, ::grpc::ClientUnaryReactor* reactor) override;
+     private:
+      friend class Stub;
+      explicit async(Stub* stub): stub_(stub) { }
+      Stub* stub() { return stub_; }
+      Stub* stub_;
+    };
+    class async* async() override { return &async_stub_; }
+
+   private:
+    std::shared_ptr< ::grpc::ChannelInterface> channel_;
+    class async async_stub_{this};
+    ::grpc::ClientAsyncResponseReader< ::GpsData>* AsyncSendSystemGpsDataRaw(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::GpsData>* PrepareAsyncSendSystemGpsDataRaw(::grpc::ClientContext* context, const ::CommandEx& request, ::grpc::CompletionQueue* cq) override;
+    const ::grpc::internal::RpcMethod rpcmethod_SendSystemGpsData_;
+  };
+  static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
+
+  class Service : public ::grpc::Service {
+   public:
+    Service();
+    virtual ~Service();
+    virtual ::grpc::Status SendSystemGpsData(::grpc::ServerContext* context, const ::CommandEx* request, ::GpsData* response);
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_SendSystemGpsData : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_SendSystemGpsData() {
+      ::grpc::Service::MarkMethodAsync(0);
+    }
+    ~WithAsyncMethod_SendSystemGpsData() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status SendSystemGpsData(::grpc::ServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestSendSystemGpsData(::grpc::ServerContext* context, ::CommandEx* request, ::grpc::ServerAsyncResponseWriter< ::GpsData>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  typedef WithAsyncMethod_SendSystemGpsData<Service > AsyncService;
+  template <class BaseClass>
+  class WithCallbackMethod_SendSystemGpsData : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_SendSystemGpsData() {
+      ::grpc::Service::MarkMethodCallback(0,
+          new ::grpc::internal::CallbackUnaryHandler< ::CommandEx, ::GpsData>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::CommandEx* request, ::GpsData* response) { return this->SendSystemGpsData(context, request, response); }));}
+    void SetMessageAllocatorFor_SendSystemGpsData(
+        ::grpc::MessageAllocator< ::CommandEx, ::GpsData>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::CommandEx, ::GpsData>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_SendSystemGpsData() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status SendSystemGpsData(::grpc::ServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* SendSystemGpsData(
+      ::grpc::CallbackServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/)  { return nullptr; }
+  };
+  typedef WithCallbackMethod_SendSystemGpsData<Service > CallbackService;
+  typedef CallbackService ExperimentalCallbackService;
+  template <class BaseClass>
+  class WithGenericMethod_SendSystemGpsData : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_SendSystemGpsData() {
+      ::grpc::Service::MarkMethodGeneric(0);
+    }
+    ~WithGenericMethod_SendSystemGpsData() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status SendSystemGpsData(::grpc::ServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_SendSystemGpsData : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_SendSystemGpsData() {
+      ::grpc::Service::MarkMethodRaw(0);
+    }
+    ~WithRawMethod_SendSystemGpsData() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status SendSystemGpsData(::grpc::ServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestSendSystemGpsData(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_SendSystemGpsData : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_SendSystemGpsData() {
+      ::grpc::Service::MarkMethodRawCallback(0,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SendSystemGpsData(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_SendSystemGpsData() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status SendSystemGpsData(::grpc::ServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* SendSystemGpsData(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SendSystemGpsData : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_SendSystemGpsData() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::CommandEx, ::GpsData>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::CommandEx, ::GpsData>* streamer) {
+                       return this->StreamedSendSystemGpsData(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_SendSystemGpsData() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SendSystemGpsData(::grpc::ServerContext* /*context*/, const ::CommandEx* /*request*/, ::GpsData* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSendSystemGpsData(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::CommandEx,::GpsData>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_SendSystemGpsData<Service > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_SendSystemGpsData<Service > StreamedService;
+};
+
 class SystemGpsProtocolConfig final {
  public:
   static constexpr char const* service_full_name() {

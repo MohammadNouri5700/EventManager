@@ -1646,6 +1646,13 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o: CXX_COMPILER__GrpcS
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
+build GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/locationservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
+  OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target GrpcServer
@@ -1654,7 +1661,7 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o: CXX_COMPILER__GrpcS
 #############################################
 # Link the static library GrpcServer/libGrpcServer.a
 
-build GrpcServer/libGrpcServer.a: CXX_STATIC_LIBRARY_LINKER__GrpcServer_Debug GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o || lib/mqttclient/libmosquittopp.a lib/protos/libprotos.a
+build GrpcServer/libGrpcServer.a: CXX_STATIC_LIBRARY_LINKER__GrpcServer_Debug GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o || lib/mqttclient/libmosquittopp.a lib/protos/libprotos.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   POST_BUILD = :
