@@ -223,7 +223,8 @@ void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag)
     ProtocolS::S7Tag *tag_ = (ProtocolS::S7Tag *)tag;
     auto size = Size(tag->ValueType.Value);
     byte db[size];
-    int16_t temp = atoi(data->GetString().c_str());
+//    int16_t temp = atoi(data->GetString().c_str());
+    bool temp = atoi(data->GetString().c_str()) ;
     memcpy(db, &temp, sizeof(temp));
     boost::posix_time::time_duration td;
     std::cout << "++++++ write S7 ++++++" << std::endl;

@@ -232,9 +232,11 @@ void GpsMessagesParser::thrdFetchNMEAHandler()
                 json_t gpvtg = (bGPVTG?jasonGPVTG():"");
                 json_t GPGGA = (bGPGGA?jasonGPGGA():"");
                 json_t GPGLL =(bGPGLL?jasonGPGLL():"");
+                splitedGPSData[3] = boost::lexical_cast<std::string>(GpsToDecimalDegrees( splitedGPSData[3].c_str(),'N')) ;
+                splitedGPSData[5] =boost::lexical_cast<std::string>( GpsToDecimalDegrees( splitedGPSData[5].c_str(),'A'));
             try {
             if (GPRMC != ""){
-                GpsCb(STRGPRMC , gpvtg,GPGGA ,GPGLL, coord.first, coord.second, Time);
+                GpsCb(STRGPRMC , splitedGPSData[3] ,splitedGPSData[5] ,GPGLL, coord.first, coord.second, Time);
             }
             }catch(const std::bad_function_call& e) {
                 std::cout << "Gps Message Parser" << e.what() << '\n';

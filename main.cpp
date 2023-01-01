@@ -13,6 +13,10 @@
 //#include "W_modbus/modbuspp/master.h"
 #include "W_gps/GpsMessagesParser.h"
 
+
+
+#include <mqtt/client.h>  // Mosquitto client.
+
 std::vector<Connection *> ConnectionS;
 std::vector<ProtocolS::Protocol *> ListenerS;
 std::vector<Convert> ConvertS;
@@ -143,16 +147,19 @@ private:
  * @author MohammadNouri
  */
 void  readGps(){
-   
+    SimpleSerial serial("/dev/ttyUSB0",  9600);
+
     int i= 0;
- while(i<50){
+ while(true){
         try
         {
-            SimpleSerial serial("/dev/ttyUSB0",  9600); // We consider NEO6 is connected to laptop by USB
-            std::cout << serial.readLine() << std::endl;
+            // We consider NEO6 is connected to laptop by USB
+            serial.writeString("RXM");
+            std::cout <<  serial.readLine() << std::endl;
+
             // if(rs232Config.enabled == true)
-                // serial.writeString("Hello world2\n");
-                
+            // serial.writeString("Hello world2\n");
+
         }
         catch (boost::system::system_error &e)
         {
@@ -163,8 +170,69 @@ void  readGps(){
     std::cout << "You have got more than 50 error: " << std::endl;
 }
 
+
+int start_sub(){
+    // In order to connect the mqtt client to a broker,
+    // Define an Ip address pointing to a broker. In this case, the localhost on port 1883.
+    std::string ip = "iot-mqtt.pod.ir:1883";
+    // Then, define an ID to be used by the client when communicating with the broker.
+    std::string id = "NG340F190E3YA3C02ESCIEI";
+
+    // Construct a client using the Ip and Id, specifying usage of MQTT V5.
+    mqtt::client client(ip, id, mqtt::create_options(MQTTVERSION_5));
+    // Use the connect method of the client to establish a connection to the broker.
+    client.connect();
+    // In order to receive messages from the broker, specify a topic to subscribe to.
+    client.subscribe("dvcout/75r8nn7z3rg/NG340F190E3YA3C02ESCIEI/twin/#");
+    // Begin the client's message processing loop, filling a queue with messages.
+    client.start_consuming();
+
+    bool running = true;
+    while (running)
+    {
+        // Construct a message pointer to hold an incoming message.
+        mqtt::const_message_ptr messagePointer;
+
+        // Try to consume a message, passing messagePointer by reference.
+        // If a message is consumed, the function will return `true`,
+        // allowing control to enter the if-statement body.
+        if (client.try_consume_message(&messagePointer))
+        {
+            // Construct a string from the message payload.
+            std::string messageString = messagePointer -> get_payload_str();
+            // Print payload string to console (debugging).
+            std::cout << messageString << std::endl;
+
+            // Perform processing on the string.
+            // This is where message processing can be passed onto different
+            // functions for parsing.
+            // Here, we break the loop and exit the program if a `quit` is received.
+            if (messageString == "quit")
+            {
+                running = false;
+            }
+        }
+    }
+
+    return 0;
+}
+
+
+
 int main()
 {
+//    start_sub();
+
+
+//    tag_->outputTime = boost::posix_time::microsec_clock::local_time();
+//    td = tag_->outputTime - tag_->inputTime;
+//    std::cout << "time : " << td.total_milliseconds() << std::endl
+//              << std::endl;
+
+
+
+//    readGps();
+//    return 0;
     //  GpsMessagesParser ff =  GpsMessagesParser("/dev/ttyUSB0",9600);
     // ff.fetchNMEA();
     // readGps();

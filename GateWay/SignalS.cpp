@@ -149,6 +149,7 @@ FunctionType S7CB01 = [](Data *data, ProtocolS::Tag *dest)
     }
     else
     {
+//        s7 = S7s[dest->conn->Address.Value];
         s7 = new ProtocolS::S7::S7Protocol();
         s7->Create(dest->conn);
         S7s[dest->conn->Address.Value] = s7;

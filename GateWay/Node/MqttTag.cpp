@@ -18,6 +18,7 @@ void ProtocolS::MqttTag::SendEvent()
 {
     Event b;
     std::string *str = new std::string((char *)Value);
+
     data = atoi((char *)Value);
     std::cout << "Sub value : " << *str <<std::endl;
     Event e{new ProtocolData{*str, nullptr,Name.Value}, TYPE::PRINT};
@@ -63,9 +64,11 @@ void ProtocolS::MqttTag::Print()
 void ProtocolS::MqttTag::setSubject(ProtocolS::Protocol *subject)
 {
     Tag::setSubject(subject);
-    std::cout << "clientAction"<< clientAction << std::endl;
-    if (clientAction == ClientActions::SUB)
+    std::cout << "clientAction is = "<< clientAction << std::endl;
+    if (clientAction == ClientActions::SUB){
         reinterpret_cast<subMqtt *>(subject)->SetTopic(Topic.Value, 0);
+
+    }
 }
 
 ProtocolS::MqttTag::MqttTag(xmlMqtt *mqtt) : Tag(mqtt),

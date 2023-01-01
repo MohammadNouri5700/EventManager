@@ -2,29 +2,9 @@
 <GateWay>
     <ConnectionS>
 
-        <!-- <Connection Protocol="GPS">
-            <General>
-                <Name>gp</Name>
-                <address Type="GPS">/dev/ttyUSB0</address>
-                <Timeout>5</Timeout>
-            </General>
 
-            <Special>
 
-            </Special>
-            <Node>
-                <Tag>
-                    <General>
-                        <Name>gp</Name>
-                    </General>
-                    <Special>
-
-                    </Special>
-                </Tag>
-            </Node>
-        </Connection> -->
-
-        <Connection Protocol="GPS">
+<!--        <Connection Protocol="GPS">
             <General>
                 <Name>GPSNeo</Name>
                 <address  Type="GPS">tty0</address>
@@ -37,22 +17,37 @@
                 <Tag>
                     <General>
                         <Name>Gps6</Name>
-                        <Units Type="temp">CC</Units>
+                        <Units Type="Json">String</Units>
                         <ReadWrite>1</ReadWrite>
-                        <Notes>reading from modbus</Notes>
+                        <Notes>reading from GPS</Notes>
                         <ValueType>bool</ValueType>
                         <Disable>0</Disable>
                         <Timer>1</Timer>
                     </General>
                     <Special>
-                        <StartingAddress>1</StartingAddress>
-                        <CANID>4</CANID>
-                        <BitNumber>1</BitNumber>
-                        <BitCount>8</BitCount>
+
                     </Special>
                 </Tag>
+
+
+                <Tag>
+                    <General>
+                        <Name>GpsLat</Name>
+                        <Units Type="Json">Latitude</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <Notes>reading from GPS</Notes>
+                        <ValueType>bool</ValueType>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+
+                    </Special>
+                </Tag>
+
+
             </Node>
-        </Connection>
+        </Connection>-->
 
         <!-- <Connection Protocol="CAN">
             <General>
@@ -84,7 +79,7 @@
             </Node>
         </Connection>    -->
 
-        <!-- <Connection Protocol="Mqtt">
+         <Connection Protocol="Mqtt">
 
             <General>
                 <Name>Mqtt02</Name>
@@ -96,7 +91,7 @@
             </General>
 
             <Special>
-                <ID>NS7LXDW6TRY4M0QC07JWKF4</ID>
+                <ID>NG340F190E3YA3C02ESCIEI</ID>
                 <Protocol>TCP</Protocol>
                 <Username></Username>
                 <Password></Password>
@@ -121,6 +116,53 @@
                 <Tag>
                     <General>
                         <Name>LT201</Name>
+                        <Units Type="int">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>int</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcout/75r8nn7z3rg/NG340F190E3YA3C02ESCIEI/twin/response/accepted</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>1</Action>
+                    </Special>
+                </Tag>
+
+
+                <Tag>
+                    <General>
+                        <Name>LT202</Name>
+                        <Units Type="int">m/s</Units>
+                        <ReadWrite>1</ReadWrite>
+                        <ValueType>int</ValueType>
+                        <Notes>Notes mqtt</Notes>
+                        <Function>
+                            <ExecutionRetry>ExecutionRetry</ExecutionRetry>
+                            <RetryInterval>RetryInterval</RetryInterval>
+                            <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
+                        </Function>
+                        <Disable>0</Disable>
+                        <Timer>1</Timer>
+                    </General>
+                    <Special>
+                        <Topic>dvcout/75r8nn7z3rg/NG340F190E3YA3C02ESCIEI/twin/response/accepted</Topic>
+                        <Prefix>Prefix</Prefix>
+                        <MessageType>MessageType mqtt</MessageType>
+                        <Action>1</Action>
+                    </Special>
+                </Tag>
+
+            <!--    <Tag>
+                    <General>
+                        <Name>Start201</Name>
                         <Units Type="bool">m/s</Units>
                         <ReadWrite>1</ReadWrite>
                         <ValueType>Json</ValueType>
@@ -134,14 +176,15 @@
                         <Timer>1</Timer>
                     </General>
                     <Special>
-                        <Topic>dvcasy/twin/update/reported</Topic>
+                        <Topic>dvcout/75r8nn7z3rg/NG340F190E3YA3C02ESCIEI/twin/response/accepted</Topic>
                         <Prefix>Prefix</Prefix>
                         <MessageType>MessageType mqtt</MessageType>
-                        <Action>0</Action>
+                        <Action>1</Action>
                     </Special>
-                </Tag>
+                </Tag>-->
+
             </Node>
-        </Connection> -->
+        </Connection>
 
         <!-- <Connection Protocol="ModBus">
             <General>
@@ -228,7 +271,7 @@
 
 
 
-        <!--  <Connection Protocol="S7">
+          <Connection Protocol="S7">
               <General>
                   <Name>S701</Name>
                   <address Type="TCP">
@@ -244,13 +287,37 @@
 
               <Node>
 
+<!--                  <Tag>-->
+<!--                      <General>-->
+<!--                          <Name>S7_Start201</Name>-->
+<!--                          <Units Type=""></Units>-->
+<!--                          <ReadWrite>1</ReadWrite>-->
+<!--                          <Notes>reading from plc</Notes>-->
+<!--                          <ValueType>bool</ValueType>-->
+<!--                          <Disable>0</Disable>-->
+<!--                          <Timer>1</Timer>-->
+<!--                          <Function>-->
+<!--                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>-->
+<!--                              <RetryInterval>RetryInterval</RetryInterval>-->
+<!--                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>-->
+<!--                          </Function>-->
+<!--                      </General>-->
+<!--                      <Special>-->
+<!--                          <DBNumber>800</DBNumber>-->
+<!--                          <StartingAddress>800</StartingAddress>-->
+<!--                          <BitNumber>0</BitNumber>-->
+<!--                          <SignalState>0</SignalState>-->
+<!--                          <S7TagType>MEMORYTAG</S7TagType>-->
+<!--                      </Special>-->
+<!--                  </Tag>-->
+
                   <Tag>
                       <General>
-                          <Name>S7_LT201</Name>
+                          <Name>S7_stopMat</Name>
                           <Units Type=""></Units>
                           <ReadWrite>1</ReadWrite>
                           <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
+                          <ValueType>int</ValueType>
                           <Disable>0</Disable>
                           <Timer>1</Timer>
                           <Function>
@@ -260,19 +327,22 @@
                           </Function>
                       </General>
                       <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>24</StartingAddress>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
+                          <DBNumber>801</DBNumber>
+                          <StartingAddress>801</StartingAddress>
+                          <BitNumber>801</BitNumber>
+                          <SignalState>1</SignalState>
+                          <S7TagType>MEMORYTAG</S7TagType>
                       </Special>
                   </Tag>
+
+
                   <Tag>
                       <General>
-                          <Name>S7_LT202</Name>
+                          <Name>S7_startMat</Name>
                           <Units Type=""></Units>
                           <ReadWrite>1</ReadWrite>
                           <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
+                          <ValueType>int</ValueType>
                           <Disable>0</Disable>
                           <Timer>1</Timer>
                           <Function>
@@ -282,659 +352,19 @@
                           </Function>
                       </General>
                       <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>28</StartingAddress>
+                          <DBNumber>801</DBNumber>
+                          <StartingAddress>801</StartingAddress>
+                          <BitNumber>801</BitNumber>
                           <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
+                          <S7TagType>MEMORYTAG</S7TagType>
                       </Special>
                   </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Start201</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>6</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Stop201</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>0</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>7</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_ST_CONV201</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>42</StartingAddress>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_ST_CONV202</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>46</StartingAddress>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_ST_CONV203</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>50</StartingAddress>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_ST_FEED201</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>54</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_CONV201_Run</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>0</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_CONV202_Run</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>1</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_CONV203_Run</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>2</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_FEED201_Run</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>3</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Rope201</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>4</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Rope202</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>5</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_LT101</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>0</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_LT102</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>4</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_PT101</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>8</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_PT102</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>flat</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>12</StartingAddress>
-                          <BitNumber>0</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_TT101</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>16</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>5</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_TT102</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>20</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>5</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_ST_Pump101</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>32</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>0</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_ST_Pump102</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>float</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>36</StartingAddress>
-                          &lt;!&ndash;                        <BitNumber>5</BitNumber>&ndash;&gt;
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Pump101_Run</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>0</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Pump102_Run</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>1</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_SV101_Open</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>2</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_SV102_Open</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>3</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Element101_ON</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>4</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_FAN101_ON</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>40</StartingAddress>
-                          <BitNumber>5</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Start101</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>6</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
-                  <Tag>
-                      <General>
-                          <Name>S7_Stop101</Name>
-                          <Units Type=""></Units>
-                          <ReadWrite>1</ReadWrite>
-                          <Notes>reading from plc</Notes>
-                          <ValueType>bool</ValueType>
-                          <Disable>0</Disable>
-                          <Timer>1</Timer>
-                          <Function>
-                              <ExecutionRetry>ExecutionRetry</ExecutionRetry>
-                              <RetryInterval>RetryInterval</RetryInterval>
-                              <RetriesIntervalUnit>RetriesIntervalUnit</RetriesIntervalUnit>
-                          </Function>
-                      </General>
-                      <Special>
-                          <DBNumber>9</DBNumber>
-                          <StartingAddress>58</StartingAddress>
-                          <BitNumber>7</BitNumber>
-                          <SignalState>0</SignalState>
-                          <S7TagType>DATABLOCKTAG</S7TagType>
-                      </Special>
-                  </Tag>
+
 
               </Node>
-          </Connection>-->
+          </Connection>
 
-
-        <!--   <Connection Protocol="Mqtt">
+          <!-- <Connection Protocol="Mqtt">
 
                <General>
                    <Name>Mqtt02</Name>
@@ -2326,6 +1756,20 @@
         </OutputNodeS>-->
 
     <ConvertS>
+
+        <Convert>
+            <Source>LT201</Source>
+            <DistS>
+                <Dist>S7_stopMat</Dist>
+            </DistS>
+        </Convert>
+        <Convert>
+            <Source>LT202</Source>
+            <DistS>
+                <Dist>S7_startMat</Dist>
+            </DistS>
+        </Convert>
+
         <!--        <Convert>-->
         <!--            <Source>GPSNeo</Source>-->
         <!--            <DistS>-->
