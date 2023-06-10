@@ -8,6 +8,7 @@
 
 namespace MqTT
 {
+    static bool isSending = false;
 class MqttPublisher: public Mqtt
 {
 

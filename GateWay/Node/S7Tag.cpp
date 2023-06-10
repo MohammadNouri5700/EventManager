@@ -23,7 +23,7 @@ void ProtocolS::S7Tag::SendEvent()
 {
     std::string v;
     Event b;
-    std::cout << "void ProtocolS::S7Tag::SendEvent()" << std::endl;
+    std::cout << "void ProtocolS::S7Tag::SendEvent() type == " << ValueType.Value.c_str() << std::endl;
 
     if (strcmp(ValueType.Value.c_str(), "float")==0) {
         float  Res; memcpy (&Res, Value, 4);

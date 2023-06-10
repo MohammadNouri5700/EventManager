@@ -4,6 +4,9 @@
  *  Detailed description starts here.
  */
 #include "EventHandler.h"
+#include <ctime>
+#include <chrono>
+#include <iostream>
 
 extern std::mutex end_mutex;
 
@@ -69,7 +72,7 @@ void GateWay::EVENT::HANDLER::EventHandler::Act()
                 e.SetSignal(S7CB01);
                 break;
             case TYPE::PRINT:
-                e.SetSignal(PrintCB01);
+                // e.SetSignal(PrintCB01);
                 break;
             case TYPE::CAN:
                 e.SetSignal(CANCB01);
@@ -116,7 +119,7 @@ void GateWay::EVENT::HANDLER::EventHandler::Act()
     };
 
     PoolQueue.Post(free_b);
-    Caller.push_task("re", 1s, free_b);
+    Caller.push_task("re", std::chrono::microseconds(500), free_b);
 
     Caller.run();
     PoolEvent.Wait();

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libErrorManager.a  CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o CMakeFiles/ErrorManager.dir/Error.cpp.o
+/usr/bin/ranlib libErrorManager.a

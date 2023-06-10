@@ -56,6 +56,8 @@ build CMakeFiles/Event_manager.dir/main.cpp.o: CXX_COMPILER__Event_manager_Debug
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/W_can/cancontroller.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/W_can/cancontroller.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -64,6 +66,8 @@ build CMakeFiles/Event_manager.dir/W_can/cancontroller.cpp.o: CXX_COMPILER__Even
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/W_can
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/MouseKey/key.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/MouseKey/key.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -72,6 +76,8 @@ build CMakeFiles/Event_manager.dir/MouseKey/key.cpp.o: CXX_COMPILER__Event_manag
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/MouseKey
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/MouseKey/mouse.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/MouseKey/mouse.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -80,6 +86,8 @@ build CMakeFiles/Event_manager.dir/MouseKey/mouse.cpp.o: CXX_COMPILER__Event_man
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/MouseKey
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Listener.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Listener.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -88,6 +96,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Listener.cpp.o: CXX_COMPILER__Event_m
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/EventManager.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/EventManager.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -96,6 +106,8 @@ build CMakeFiles/Event_manager.dir/GateWay/EventManager.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/Protocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/Protocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -104,6 +116,8 @@ build CMakeFiles/Event_manager.dir/Protocols/Protocol.cpp.o: CXX_COMPILER__Event
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/SubscriberProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/SubscriberProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -112,6 +126,8 @@ build CMakeFiles/Event_manager.dir/Protocols/SubscriberProtocol.cpp.o: CXX_COMPI
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/CanProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/CanProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -120,6 +136,8 @@ build CMakeFiles/Event_manager.dir/Protocols/CanProtocol.cpp.o: CXX_COMPILER__Ev
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/PublisherProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/PublisherProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -128,6 +146,8 @@ build CMakeFiles/Event_manager.dir/Protocols/PublisherProtocol.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/ServerProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/ServerProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -136,6 +156,8 @@ build CMakeFiles/Event_manager.dir/Protocols/ServerProtocol.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/MasterProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/MasterProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -144,6 +166,8 @@ build CMakeFiles/Event_manager.dir/Protocols/MasterProtocol.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/S7Protocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/S7Protocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -152,6 +176,8 @@ build CMakeFiles/Event_manager.dir/Protocols/S7Protocol.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/SignalS.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/SignalS.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -160,6 +186,8 @@ build CMakeFiles/Event_manager.dir/GateWay/SignalS.cpp.o: CXX_COMPILER__Event_ma
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/ThreadPool.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/ThreadPool.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -168,6 +196,8 @@ build CMakeFiles/Event_manager.dir/GateWay/ThreadPool.cpp.o: CXX_COMPILER__Event
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Thread_Call.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Thread_Call.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -176,6 +206,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Thread_Call.cpp.o: CXX_COMPILER__Even
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/W_gps/GpsMessagesParser.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/W_gps/GpsMessagesParser.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -184,6 +216,8 @@ build CMakeFiles/Event_manager.dir/W_gps/GpsMessagesParser.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/W_gps
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/GpsProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/GpsProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -192,6 +226,8 @@ build CMakeFiles/Event_manager.dir/Protocols/GpsProtocol.cpp.o: CXX_COMPILER__Ev
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/Connection.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/Connection.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -200,6 +236,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/Connection.cpp.o: CXX_COMP
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionModbus.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionModbus.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -208,6 +246,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionModbus.cpp.o: CX
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionMqtt.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionMqtt.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -216,6 +256,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionMqtt.cpp.o: CXX_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCan.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionCan.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -224,6 +266,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCan.cpp.o: CXX_C
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionS7.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionS7.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -232,6 +276,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionS7.cpp.o: CXX_CO
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/XmlReader.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/XmlReader.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -240,6 +286,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/XmlReader.cpp.o: CXX_COMPI
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionGPS.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionGPS.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -248,6 +296,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionGPS.cpp.o: CXX_C
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/ErrorManager/ErrorManager.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/ErrorManager/ErrorManager.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -256,6 +306,8 @@ build CMakeFiles/Event_manager.dir/ErrorManager/ErrorManager.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/ErrorManager
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/ErrorManager/Error.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/ErrorManager/Error.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -264,6 +316,8 @@ build CMakeFiles/Event_manager.dir/ErrorManager/Error.cpp.o: CXX_COMPILER__Event
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/ErrorManager
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Event.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Event.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -272,6 +326,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Event.cpp.o: CXX_COMPILER__Event_mana
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Data.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Data.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -280,6 +336,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Data.cpp.o: CXX_COMPILER__Event_manag
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/Tag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/Tag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -288,6 +346,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/Tag.cpp.o: CXX_COMPILER__Event_m
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/NodeList.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/NodeList.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -296,6 +356,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/NodeList.cpp.o: CXX_COMPILER__Ev
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/MqttTag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/MqttTag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -304,6 +366,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/MqttTag.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/CanTag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/CanTag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -312,6 +376,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/CanTag.cpp.o: CXX_COMPILER__Even
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/GpsTag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/GpsTag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -320,6 +386,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/GpsTag.cpp.o: CXX_COMPILER__Even
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/ConnectionManager/ConnectionManager.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/ConnectionManager/ConnectionManager.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -328,6 +396,8 @@ build CMakeFiles/Event_manager.dir/ConnectionManager/ConnectionManager.cpp.o: CX
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/ConnectionManager
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/S7Tag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/S7Tag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -336,6 +406,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/S7Tag.cpp.o: CXX_COMPILER__Event
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/ModBusTag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/ModBusTag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -344,6 +416,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/ModBusTag.cpp.o: CXX_COMPILER__E
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCoap.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionCoap.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -352,6 +426,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCoap.cpp.o: CXX_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/CoapTag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/CoapTag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -360,6 +436,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/CoapTag.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/ConvertS/Convert.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/ConvertS/Convert.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -368,6 +446,8 @@ build CMakeFiles/Event_manager.dir/GateWay/ConvertS/Convert.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/ConvertS
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/CoapProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/CoapProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -376,6 +456,8 @@ build CMakeFiles/Event_manager.dir/Protocols/CoapProtocol.cpp.o: CXX_COMPILER__E
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/ConvertS/OutputNode.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/ConvertS/OutputNode.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -384,6 +466,8 @@ build CMakeFiles/Event_manager.dir/GateWay/ConvertS/OutputNode.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/ConvertS
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/EventHandler.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/EventHandler.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -392,6 +476,8 @@ build CMakeFiles/Event_manager.dir/GateWay/EventHandler.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/KeyProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/KeyProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -400,6 +486,8 @@ build CMakeFiles/Event_manager.dir/Protocols/KeyProtocol.cpp.o: CXX_COMPILER__Ev
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/MouseProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/MouseProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -408,6 +496,8 @@ build CMakeFiles/Event_manager.dir/Protocols/MouseProtocol.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/GateSetting/setting.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/GateSetting/setting.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -416,6 +506,8 @@ build CMakeFiles/Event_manager.dir/Entity/GateSetting/setting.cpp.o: CXX_COMPILE
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/GateSetting
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edges.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/EdgeProcess/edges.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -424,6 +516,8 @@ build CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edges.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/EdgeProcess
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edgeprocess.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/EdgeProcess/edgeprocess.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -432,6 +526,8 @@ build CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edgeprocess.cpp.o: CXX_COM
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/EdgeProcess
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/Tag/tags.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/Tag/tags.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -440,6 +536,8 @@ build CMakeFiles/Event_manager.dir/Entity/Tag/tags.cpp.o: CXX_COMPILER__Event_ma
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/Tag
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/Panel/panel.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/Panel/panel.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -448,6 +546,8 @@ build CMakeFiles/Event_manager.dir/Entity/Panel/panel.cpp.o: CXX_COMPILER__Event
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/Panel
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Protocols/CentralProtocol.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Protocols/CentralProtocol.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -456,6 +556,8 @@ build CMakeFiles/Event_manager.dir/Protocols/CentralProtocol.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Protocols
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Node/EdgeTag.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Node/EdgeTag.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -464,6 +566,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Node/EdgeTag.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Node
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionEdge.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionEdge.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -472,6 +576,8 @@ build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionEdge.cpp.o: CXX_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/command/command.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/command/command.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -480,6 +586,8 @@ build CMakeFiles/Event_manager.dir/Entity/command/command.cpp.o: CXX_COMPILER__E
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/command
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/TagValue/tagValue.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/TagValue/tagValue.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -488,6 +596,8 @@ build CMakeFiles/Event_manager.dir/Entity/TagValue/tagValue.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/TagValue
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/Entity/TagValue/getTagValue.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/Entity/TagValue/getTagValue.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -496,6 +606,8 @@ build CMakeFiles/Event_manager.dir/Entity/TagValue/getTagValue.cpp.o: CXX_COMPIL
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/Entity/TagValue
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/wireless/wifi.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/wireless/wifi.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -504,6 +616,8 @@ build CMakeFiles/Event_manager.dir/wireless/wifi.cpp.o: CXX_COMPILER__Event_mana
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/wireless
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/MouseKey/eventfinder.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -512,6 +626,8 @@ build CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o: CXX_COMPILER__Eve
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/MouseKey
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/W_modbus/ModBus.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -520,6 +636,8 @@ build CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o: CXX_COMPILER__Event_ma
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/W_modbus
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/W_modbus/Server.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -528,6 +646,8 @@ build CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o: CXX_COMPILER__Event_ma
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/W_modbus
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 build CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/W_modbus/Master.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
@@ -536,6 +656,8 @@ build CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o: CXX_COMPILER__Event_ma
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/W_modbus
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
+  TARGET_PDB = Event_manager.pdb
 
 
 # =============================================================================
@@ -551,15 +673,16 @@ build Event_manager: CXX_EXECUTABLE_LINKER__Event_manager_Debug CMakeFiles/Event
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/Event_manager.dir/
   TARGET_FILE = Event_manager
-  TARGET_PDB = Event_manager.dbg
+  TARGET_PDB = Event_manager.pdb
 
 
 #############################################
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -571,7 +694,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -583,8 +706,9 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -594,7 +718,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -621,6 +745,8 @@ build W_coap/CMakeFiles/W_coap.dir/Coap.cpp.o: CXX_COMPILER__W_coap_Debug /home/
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Resource.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o.d
@@ -628,6 +754,8 @@ build W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o: CXX_COMPILER__W_coap_Debug /h
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/Context.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Context.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Context.cpp.o.d
@@ -635,6 +763,8 @@ build W_coap/CMakeFiles/W_coap.dir/Context.cpp.o: CXX_COMPILER__W_coap_Debug /ho
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Pdu.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o.d
@@ -642,6 +772,8 @@ build W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o: CXX_COMPILER__W_coap_Debug /home/u
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Sessions.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o.d
@@ -649,6 +781,8 @@ build W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o: CXX_COMPILER__W_coap_Debug /h
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/Server.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Server.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Server.cpp.o.d
@@ -656,6 +790,8 @@ build W_coap/CMakeFiles/W_coap.dir/Server.cpp.o: CXX_COMPILER__W_coap_Debug /hom
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/client.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/client.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/client.cpp.o.d
@@ -663,6 +799,8 @@ build W_coap/CMakeFiles/W_coap.dir/client.cpp.o: CXX_COMPILER__W_coap_Debug /hom
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/EndPoint.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o.d
@@ -670,6 +808,8 @@ build W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o: CXX_COMPILER__W_coap_Debug /h
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 build W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/CoapNode.cpp || cmake_object_order_depends_target_W_coap
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o.d
@@ -677,6 +817,8 @@ build W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o: CXX_COMPILER__W_coap_Debug /h
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 
 # =============================================================================
@@ -691,15 +833,16 @@ build W_coap/libW_coap.a: CXX_STATIC_LIBRARY_LINKER__W_coap_Debug W_coap/CMakeFi
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = W_coap/CMakeFiles/W_coap.dir/W_coap.pdb
   TARGET_FILE = W_coap/libW_coap.a
-  TARGET_PDB = W_coap.a.dbg
+  TARGET_PDB = W_coap/libW_coap.pdb
 
 
 #############################################
 # Utility command for package
 
 build W_coap/CMakeFiles/package.util: CUSTOM_COMMAND W_coap/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -711,7 +854,7 @@ build W_coap/package: phony W_coap/CMakeFiles/package.util
 # Utility command for package_source
 
 build W_coap/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -723,8 +866,9 @@ build W_coap/package_source: phony W_coap/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build W_coap/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build W_coap/edit_cache: phony W_coap/CMakeFiles/edit_cache.util
@@ -734,7 +878,7 @@ build W_coap/edit_cache: phony W_coap/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build W_coap/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -761,6 +905,8 @@ build W_mqtt/CMakeFiles/W_mqtt.dir/Mqtt.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
+  TARGET_COMPILE_PDB = W_mqtt/CMakeFiles/W_mqtt.dir/W_mqtt.pdb
+  TARGET_PDB = W_mqtt/libW_mqtt.pdb
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/MqttSubscriber.cpp || cmake_object_order_depends_target_W_mqtt
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o.d
@@ -768,6 +914,8 @@ build W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o: CXX_COMPILER__W_mqtt_De
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
+  TARGET_COMPILE_PDB = W_mqtt/CMakeFiles/W_mqtt.dir/W_mqtt.pdb
+  TARGET_PDB = W_mqtt/libW_mqtt.pdb
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/MqttPublisher.cpp || cmake_object_order_depends_target_W_mqtt
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o.d
@@ -775,6 +923,8 @@ build W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o: CXX_COMPILER__W_mqtt_Deb
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
+  TARGET_COMPILE_PDB = W_mqtt/CMakeFiles/W_mqtt.dir/W_mqtt.pdb
+  TARGET_PDB = W_mqtt/libW_mqtt.pdb
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/NewPublisher.cpp || cmake_object_order_depends_target_W_mqtt
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o.d
@@ -782,6 +932,8 @@ build W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o: CXX_COMPILER__W_mqtt_Debu
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
+  TARGET_COMPILE_PDB = W_mqtt/CMakeFiles/W_mqtt.dir/W_mqtt.pdb
+  TARGET_PDB = W_mqtt/libW_mqtt.pdb
 
 
 # =============================================================================
@@ -796,15 +948,16 @@ build W_mqtt/libW_mqtt.a: CXX_STATIC_LIBRARY_LINKER__W_mqtt_Debug W_mqtt/CMakeFi
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = W_mqtt/CMakeFiles/W_mqtt.dir/W_mqtt.pdb
   TARGET_FILE = W_mqtt/libW_mqtt.a
-  TARGET_PDB = W_mqtt.a.dbg
+  TARGET_PDB = W_mqtt/libW_mqtt.pdb
 
 
 #############################################
 # Utility command for package
 
 build W_mqtt/CMakeFiles/package.util: CUSTOM_COMMAND W_mqtt/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -816,7 +969,7 @@ build W_mqtt/package: phony W_mqtt/CMakeFiles/package.util
 # Utility command for package_source
 
 build W_mqtt/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -828,8 +981,9 @@ build W_mqtt/package_source: phony W_mqtt/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build W_mqtt/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build W_mqtt/edit_cache: phony W_mqtt/CMakeFiles/edit_cache.util
@@ -839,7 +993,7 @@ build W_mqtt/edit_cache: phony W_mqtt/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build W_mqtt/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -866,6 +1020,8 @@ build W_S7/CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o: CXX_COMPILER__W_S7_Debug /hom
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_S7/CMakeFiles/W_S7.dir
   OBJECT_FILE_DIR = W_S7/CMakeFiles/W_S7.dir
+  TARGET_COMPILE_PDB = W_S7/CMakeFiles/W_S7.dir/W_S7.pdb
+  TARGET_PDB = W_S7/libW_S7.pdb
 
 build W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o: CXX_COMPILER__W_S7_Debug /home/user/git/Event_manager11/Event_manager/W_S7/S7Client.cpp || cmake_object_order_depends_target_W_S7
   DEP_FILE = W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o.d
@@ -873,6 +1029,8 @@ build W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o: CXX_COMPILER__W_S7_Debug /home/us
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_S7/CMakeFiles/W_S7.dir
   OBJECT_FILE_DIR = W_S7/CMakeFiles/W_S7.dir
+  TARGET_COMPILE_PDB = W_S7/CMakeFiles/W_S7.dir/W_S7.pdb
+  TARGET_PDB = W_S7/libW_S7.pdb
 
 
 # =============================================================================
@@ -887,15 +1045,16 @@ build W_S7/libW_S7.a: CXX_STATIC_LIBRARY_LINKER__W_S7_Debug W_S7/CMakeFiles/W_S7
   OBJECT_DIR = W_S7/CMakeFiles/W_S7.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = W_S7/CMakeFiles/W_S7.dir/W_S7.pdb
   TARGET_FILE = W_S7/libW_S7.a
-  TARGET_PDB = W_S7.a.dbg
+  TARGET_PDB = W_S7/libW_S7.pdb
 
 
 #############################################
 # Utility command for package
 
 build W_S7/CMakeFiles/package.util: CUSTOM_COMMAND W_S7/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -907,7 +1066,7 @@ build W_S7/package: phony W_S7/CMakeFiles/package.util
 # Utility command for package_source
 
 build W_S7/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -919,8 +1078,9 @@ build W_S7/package_source: phony W_S7/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build W_S7/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7 && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7 && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build W_S7/edit_cache: phony W_S7/CMakeFiles/edit_cache.util
@@ -930,7 +1090,7 @@ build W_S7/edit_cache: phony W_S7/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build W_S7/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7 && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7 && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -957,6 +1117,8 @@ build ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
   OBJECT_FILE_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
+  TARGET_COMPILE_PDB = ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.pdb
+  TARGET_PDB = ErrorManager/libErrorManager.pdb
 
 build ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o: CXX_COMPILER__ErrorManager_Debug /home/user/git/Event_manager11/Event_manager/ErrorManager/Error.cpp || cmake_object_order_depends_target_ErrorManager
   DEP_FILE = ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o.d
@@ -964,6 +1126,8 @@ build ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o: CXX_COMPILER__ErrorM
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
   OBJECT_FILE_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
+  TARGET_COMPILE_PDB = ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.pdb
+  TARGET_PDB = ErrorManager/libErrorManager.pdb
 
 
 # =============================================================================
@@ -978,15 +1142,16 @@ build ErrorManager/libErrorManager.a: CXX_STATIC_LIBRARY_LINKER__ErrorManager_De
   OBJECT_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.pdb
   TARGET_FILE = ErrorManager/libErrorManager.a
-  TARGET_PDB = ErrorManager.a.dbg
+  TARGET_PDB = ErrorManager/libErrorManager.pdb
 
 
 #############################################
 # Utility command for package
 
 build ErrorManager/CMakeFiles/package.util: CUSTOM_COMMAND ErrorManager/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -998,7 +1163,7 @@ build ErrorManager/package: phony ErrorManager/CMakeFiles/package.util
 # Utility command for package_source
 
 build ErrorManager/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1010,8 +1175,9 @@ build ErrorManager/package_source: phony ErrorManager/CMakeFiles/package_source.
 # Utility command for edit_cache
 
 build ErrorManager/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build ErrorManager/edit_cache: phony ErrorManager/CMakeFiles/edit_cache.util
@@ -1021,7 +1187,7 @@ build ErrorManager/edit_cache: phony ErrorManager/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build ErrorManager/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1048,6 +1214,8 @@ build lib/mqttclient/CMakeFiles/mosquittopp.dir/mosquittopp.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = lib/mqttclient/CMakeFiles/mosquittopp.dir
   OBJECT_FILE_DIR = lib/mqttclient/CMakeFiles/mosquittopp.dir
+  TARGET_COMPILE_PDB = lib/mqttclient/CMakeFiles/mosquittopp.dir/mosquittopp.pdb
+  TARGET_PDB = lib/mqttclient/libmosquittopp.pdb
 
 build lib/mqttclient/CMakeFiles/mosquittopp.dir/mqttclient.cpp.o: CXX_COMPILER__mosquittopp_Debug /home/user/git/Event_manager11/Event_manager/lib/mqttclient/mqttclient.cpp || cmake_object_order_depends_target_mosquittopp
   DEP_FILE = lib/mqttclient/CMakeFiles/mosquittopp.dir/mqttclient.cpp.o.d
@@ -1055,6 +1223,8 @@ build lib/mqttclient/CMakeFiles/mosquittopp.dir/mqttclient.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = lib/mqttclient/CMakeFiles/mosquittopp.dir
   OBJECT_FILE_DIR = lib/mqttclient/CMakeFiles/mosquittopp.dir
+  TARGET_COMPILE_PDB = lib/mqttclient/CMakeFiles/mosquittopp.dir/mosquittopp.pdb
+  TARGET_PDB = lib/mqttclient/libmosquittopp.pdb
 
 
 # =============================================================================
@@ -1069,15 +1239,16 @@ build lib/mqttclient/libmosquittopp.a: CXX_STATIC_LIBRARY_LINKER__mosquittopp_De
   OBJECT_DIR = lib/mqttclient/CMakeFiles/mosquittopp.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/mqttclient/CMakeFiles/mosquittopp.dir/mosquittopp.pdb
   TARGET_FILE = lib/mqttclient/libmosquittopp.a
-  TARGET_PDB = mosquittopp.a.dbg
+  TARGET_PDB = lib/mqttclient/libmosquittopp.pdb
 
 
 #############################################
 # Utility command for package
 
 build lib/mqttclient/CMakeFiles/package.util: CUSTOM_COMMAND lib/mqttclient/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1089,7 +1260,7 @@ build lib/mqttclient/package: phony lib/mqttclient/CMakeFiles/package.util
 # Utility command for package_source
 
 build lib/mqttclient/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1101,8 +1272,9 @@ build lib/mqttclient/package_source: phony lib/mqttclient/CMakeFiles/package_sou
 # Utility command for edit_cache
 
 build lib/mqttclient/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/mqttclient && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/mqttclient && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build lib/mqttclient/edit_cache: phony lib/mqttclient/CMakeFiles/edit_cache.util
@@ -1112,7 +1284,7 @@ build lib/mqttclient/edit_cache: phony lib/mqttclient/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build lib/mqttclient/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/mqttclient && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/mqttclient && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1139,6 +1311,8 @@ build lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o: CXX_COMPILER__proto
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/gps.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o.d
@@ -1146,6 +1320,8 @@ build lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o: CXX_COMPILER__protos_De
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/modbus.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o.d
@@ -1153,6 +1329,8 @@ build lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o: CXX_COMPILER__protos
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqtt.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o.d
@@ -1160,6 +1338,8 @@ build lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o: CXX_COMPILER__protos_D
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqttpod.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o.d
@@ -1167,6 +1347,8 @@ build lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o: CXX_COMPILER__proto
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/network.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o.d
@@ -1174,6 +1356,8 @@ build lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o: CXX_COMPILER__proto
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/node.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o.d
@@ -1181,6 +1365,8 @@ build lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o: CXX_COMPILER__protos_D
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/s7.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o.d
@@ -1188,6 +1374,8 @@ build lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o: CXX_COMPILER__protos_Deb
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/serialconfig.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o.d
@@ -1195,6 +1383,8 @@ build lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o: CXX_COMPILER__
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/startup.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o.d
@@ -1202,6 +1392,8 @@ build lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o: CXX_COMPILER__proto
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/wifi.grpc.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o.d
@@ -1209,6 +1401,8 @@ build lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o: CXX_COMPILER__protos_D
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/convert.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o.d
@@ -1216,6 +1410,8 @@ build lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o: CXX_COMPILER__protos_Deb
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/gps.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o.d
@@ -1223,6 +1419,8 @@ build lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o: CXX_COMPILER__protos_Debug /
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/modbus.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o.d
@@ -1230,6 +1428,8 @@ build lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o: CXX_COMPILER__protos_Debu
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqtt.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o.d
@@ -1237,6 +1437,8 @@ build lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o: CXX_COMPILER__protos_Debug 
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqttpod.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o.d
@@ -1244,6 +1446,8 @@ build lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o: CXX_COMPILER__protos_Deb
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/network.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/network.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/network.pb.cc.o.d
@@ -1251,6 +1455,8 @@ build lib/protos/CMakeFiles/protos.dir/network.pb.cc.o: CXX_COMPILER__protos_Deb
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/node.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/node.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/node.pb.cc.o.d
@@ -1258,6 +1464,8 @@ build lib/protos/CMakeFiles/protos.dir/node.pb.cc.o: CXX_COMPILER__protos_Debug 
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/s7.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o.d
@@ -1265,6 +1473,8 @@ build lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o: CXX_COMPILER__protos_Debug /h
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/serialconfig.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o.d
@@ -1272,6 +1482,8 @@ build lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o: CXX_COMPILER__proto
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/startup.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o.d
@@ -1279,6 +1491,8 @@ build lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o: CXX_COMPILER__protos_Deb
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 build lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/wifi.pb.cc || cmake_object_order_depends_target_protos
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o.d
@@ -1286,6 +1500,8 @@ build lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o: CXX_COMPILER__protos_Debug 
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 
 # =============================================================================
@@ -1300,15 +1516,16 @@ build lib/protos/libprotos.a: CXX_STATIC_LIBRARY_LINKER__protos_Debug lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/protos/CMakeFiles/protos.dir/protos.pdb
   TARGET_FILE = lib/protos/libprotos.a
-  TARGET_PDB = protos.a.dbg
+  TARGET_PDB = lib/protos/libprotos.pdb
 
 
 #############################################
 # Utility command for package
 
 build lib/protos/CMakeFiles/package.util: CUSTOM_COMMAND lib/protos/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1320,7 +1537,7 @@ build lib/protos/package: phony lib/protos/CMakeFiles/package.util
 # Utility command for package_source
 
 build lib/protos/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1332,8 +1549,9 @@ build lib/protos/package_source: phony lib/protos/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build lib/protos/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build lib/protos/edit_cache: phony lib/protos/CMakeFiles/edit_cache.util
@@ -1343,7 +1561,7 @@ build lib/protos/edit_cache: phony lib/protos/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build lib/protos/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1568,6 +1786,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o: CXX_COMPILER__GrpcS
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/mqttservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o.d
@@ -1575,6 +1795,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o: CXX_COMPILER__Grpc
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/wifiservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o.d
@@ -1582,6 +1804,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o: CXX_COMPILER__Grpc
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/modbusservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o.d
@@ -1589,6 +1813,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o: CXX_COMPILER__Gr
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/s7service.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o.d
@@ -1596,6 +1822,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o: CXX_COMPILER__GrpcSe
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/convertservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o.d
@@ -1603,6 +1831,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o: CXX_COMPILER__G
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/mqttpodservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o.d
@@ -1610,6 +1840,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o: CXX_COMPILER__G
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/nodeservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o.d
@@ -1617,6 +1849,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o: CXX_COMPILER__Grpc
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/serialservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o.d
@@ -1624,6 +1858,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o: CXX_COMPILER__Gr
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/networkservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o.d
@@ -1631,6 +1867,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o: CXX_COMPILER__G
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/startupservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o.d
@@ -1638,6 +1876,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o: CXX_COMPILER__G
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/gpsservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o.d
@@ -1645,6 +1885,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o: CXX_COMPILER__GrpcS
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/locationservice.cpp || cmake_object_order_depends_target_GrpcServer
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o.d
@@ -1652,6 +1894,8 @@ build GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o: CXX_COMPILER__
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 
 # =============================================================================
@@ -1666,15 +1910,16 @@ build GrpcServer/libGrpcServer.a: CXX_STATIC_LIBRARY_LINKER__GrpcServer_Debug Gr
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = GrpcServer/CMakeFiles/GrpcServer.dir/GrpcServer.pdb
   TARGET_FILE = GrpcServer/libGrpcServer.a
-  TARGET_PDB = GrpcServer.a.dbg
+  TARGET_PDB = GrpcServer/libGrpcServer.pdb
 
 
 #############################################
 # Utility command for package
 
 build GrpcServer/CMakeFiles/package.util: CUSTOM_COMMAND GrpcServer/all
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1686,7 +1931,7 @@ build GrpcServer/package: phony GrpcServer/CMakeFiles/package.util
 # Utility command for package_source
 
 build GrpcServer/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1698,8 +1943,9 @@ build GrpcServer/package_source: phony GrpcServer/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build GrpcServer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build GrpcServer/edit_cache: phony GrpcServer/CMakeFiles/edit_cache.util
@@ -1709,7 +1955,7 @@ build GrpcServer/edit_cache: phony GrpcServer/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build GrpcServer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer && /opt/clion-2022.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer && /usr/bin/cmake --regenerate-during-build -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1813,14 +2059,14 @@ build lib/protos/all: phony lib/protos/libprotos.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/user/git/Event_manager11/Event_manager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/ErrorManager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/GrpcServer/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_S7/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_coap/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_mqtt/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/include/config/config.h.in /home/user/git/Event_manager11/Event_manager/lib/mqttclient/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/lib/protos/CMakeLists.txt /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CPack.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CPackComponent.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckIncludeFile.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckIncludeFiles.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckLibraryExists.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/GNU.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindBoost.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindOpenSSL.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindPackageMessage.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindPkgConfig.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindProtobuf.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindThreads.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindZLIB.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Templates/CPackConfig.cmake.in /usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.78.0/BoostConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/FindPahoMqttC.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets-noconfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets.cmake /usr/local/lib/cmake/absl/abslConfig.cmake /usr/local/lib/cmake/absl/abslConfigVersion.cmake /usr/local/lib/cmake/absl/abslTargets-noconfig.cmake /usr/local/lib/cmake/absl/abslTargets.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config.cmake /usr/local/lib/cmake/c-ares/c-ares-config-version.cmake /usr/local/lib/cmake/c-ares/c-ares-config.cmake /usr/local/lib/cmake/c-ares/c-ares-targets-noconfig.cmake /usr/local/lib/cmake/c-ares/c-ares-targets.cmake /usr/local/lib/cmake/grpc/gRPCConfig.cmake /usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake /usr/local/lib/cmake/grpc/gRPCTargets-release.cmake /usr/local/lib/cmake/grpc/gRPCTargets.cmake /usr/local/lib/cmake/grpc/modules/Findc-ares.cmake /usr/local/lib/cmake/grpc/modules/Findre2.cmake /usr/local/lib/cmake/libcoap/libcoapConfig.cmake /usr/local/lib/cmake/libcoap/libcoapConfigVersion.cmake /usr/local/lib/cmake/libcoap/libcoapTargets-debug.cmake /usr/local/lib/cmake/libcoap/libcoapTargets.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake /usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake /usr/local/lib/cmake/pugixml/pugixml-config.cmake /usr/local/lib/cmake/re2/re2Config-noconfig.cmake /usr/local/lib/cmake/re2/re2Config.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/user/git/Event_manager11/Event_manager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/ErrorManager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/GrpcServer/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_S7/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_coap/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_mqtt/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/include/config/config.h.in /home/user/git/Event_manager11/Event_manager/lib/mqttclient/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/lib/protos/CMakeLists.txt /usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.78.0/BoostConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/FindPahoMqttC.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets-noconfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets.cmake /usr/local/lib/cmake/absl/abslConfig.cmake /usr/local/lib/cmake/absl/abslConfigVersion.cmake /usr/local/lib/cmake/absl/abslTargets-noconfig.cmake /usr/local/lib/cmake/absl/abslTargets.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config.cmake /usr/local/lib/cmake/c-ares/c-ares-config-version.cmake /usr/local/lib/cmake/c-ares/c-ares-config.cmake /usr/local/lib/cmake/c-ares/c-ares-targets-noconfig.cmake /usr/local/lib/cmake/c-ares/c-ares-targets.cmake /usr/local/lib/cmake/grpc/gRPCConfig.cmake /usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake /usr/local/lib/cmake/grpc/gRPCTargets-release.cmake /usr/local/lib/cmake/grpc/gRPCTargets.cmake /usr/local/lib/cmake/grpc/modules/Findc-ares.cmake /usr/local/lib/cmake/grpc/modules/Findre2.cmake /usr/local/lib/cmake/libcoap/libcoapConfig.cmake /usr/local/lib/cmake/libcoap/libcoapConfigVersion.cmake /usr/local/lib/cmake/libcoap/libcoapTargets-debug.cmake /usr/local/lib/cmake/libcoap/libcoapTargets.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake /usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake /usr/local/lib/cmake/pugixml/pugixml-config.cmake /usr/local/lib/cmake/re2/re2Config-noconfig.cmake /usr/local/lib/cmake/re2/re2Config.cmake /usr/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.24/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.24/Modules/CMakeCInformation.cmake /usr/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.24/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.24/Modules/CPack.cmake /usr/share/cmake-3.24/Modules/CPackComponent.cmake /usr/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.24/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake-3.24/Modules/CheckIncludeFiles.cmake /usr/share/cmake-3.24/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU.cmake /usr/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/FindBoost.cmake /usr/share/cmake-3.24/Modules/FindOpenSSL.cmake /usr/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.24/Modules/FindPackageMessage.cmake /usr/share/cmake-3.24/Modules/FindPkgConfig.cmake /usr/share/cmake-3.24/Modules/FindProtobuf.cmake /usr/share/cmake-3.24/Modules/FindThreads.cmake /usr/share/cmake-3.24/Modules/FindZLIB.cmake /usr/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.24/Modules/Platform/Linux.cmake /usr/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake-3.24/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.24.1/CMakeCCompiler.cmake CMakeFiles/3.24.1/CMakeCXXCompiler.cmake CMakeFiles/3.24.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/user/git/Event_manager11/Event_manager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/ErrorManager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/GrpcServer/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_S7/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_coap/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_mqtt/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/include/config/config.h.in /home/user/git/Event_manager11/Event_manager/lib/mqttclient/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/lib/protos/CMakeLists.txt /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CPack.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CPackComponent.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckIncludeFile.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckIncludeFiles.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/CheckLibraryExists.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Compiler/GNU.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindBoost.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindOpenSSL.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindPackageMessage.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindPkgConfig.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindProtobuf.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindThreads.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/FindZLIB.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/Linux.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake /opt/clion-2022.3/bin/cmake/linux/share/cmake-3.24/Templates/CPackConfig.cmake.in /usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.78.0/BoostConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/FindPahoMqttC.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets-noconfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets.cmake /usr/local/lib/cmake/absl/abslConfig.cmake /usr/local/lib/cmake/absl/abslConfigVersion.cmake /usr/local/lib/cmake/absl/abslTargets-noconfig.cmake /usr/local/lib/cmake/absl/abslTargets.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config.cmake /usr/local/lib/cmake/c-ares/c-ares-config-version.cmake /usr/local/lib/cmake/c-ares/c-ares-config.cmake /usr/local/lib/cmake/c-ares/c-ares-targets-noconfig.cmake /usr/local/lib/cmake/c-ares/c-ares-targets.cmake /usr/local/lib/cmake/grpc/gRPCConfig.cmake /usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake /usr/local/lib/cmake/grpc/gRPCTargets-release.cmake /usr/local/lib/cmake/grpc/gRPCTargets.cmake /usr/local/lib/cmake/grpc/modules/Findc-ares.cmake /usr/local/lib/cmake/grpc/modules/Findre2.cmake /usr/local/lib/cmake/libcoap/libcoapConfig.cmake /usr/local/lib/cmake/libcoap/libcoapConfigVersion.cmake /usr/local/lib/cmake/libcoap/libcoapTargets-debug.cmake /usr/local/lib/cmake/libcoap/libcoapTargets.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake /usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake /usr/local/lib/cmake/pugixml/pugixml-config.cmake /usr/local/lib/cmake/re2/re2Config-noconfig.cmake /usr/local/lib/cmake/re2/re2Config.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build /home/user/git/Event_manager11/Event_manager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/ErrorManager/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/GrpcServer/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_S7/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_coap/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/W_mqtt/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/include/config/config.h.in /home/user/git/Event_manager11/Event_manager/lib/mqttclient/CMakeLists.txt /home/user/git/Event_manager11/Event_manager/lib/protos/CMakeLists.txt /usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.78.0/BoostConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/FindPahoMqttC.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfigVersion.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets-noconfig.cmake /usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets.cmake /usr/local/lib/cmake/absl/abslConfig.cmake /usr/local/lib/cmake/absl/abslConfigVersion.cmake /usr/local/lib/cmake/absl/abslTargets-noconfig.cmake /usr/local/lib/cmake/absl/abslTargets.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config.cmake /usr/local/lib/cmake/c-ares/c-ares-config-version.cmake /usr/local/lib/cmake/c-ares/c-ares-config.cmake /usr/local/lib/cmake/c-ares/c-ares-targets-noconfig.cmake /usr/local/lib/cmake/c-ares/c-ares-targets.cmake /usr/local/lib/cmake/grpc/gRPCConfig.cmake /usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake /usr/local/lib/cmake/grpc/gRPCTargets-release.cmake /usr/local/lib/cmake/grpc/gRPCTargets.cmake /usr/local/lib/cmake/grpc/modules/Findc-ares.cmake /usr/local/lib/cmake/grpc/modules/Findre2.cmake /usr/local/lib/cmake/libcoap/libcoapConfig.cmake /usr/local/lib/cmake/libcoap/libcoapConfigVersion.cmake /usr/local/lib/cmake/libcoap/libcoapTargets-debug.cmake /usr/local/lib/cmake/libcoap/libcoapTargets.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake /usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake /usr/local/lib/cmake/pugixml/pugixml-config.cmake /usr/local/lib/cmake/re2/re2Config-noconfig.cmake /usr/local/lib/cmake/re2/re2Config.cmake /usr/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.24/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.24/Modules/CMakeCInformation.cmake /usr/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.24/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.24/Modules/CPack.cmake /usr/share/cmake-3.24/Modules/CPackComponent.cmake /usr/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.24/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake-3.24/Modules/CheckIncludeFiles.cmake /usr/share/cmake-3.24/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.24/Modules/Compiler/GNU.cmake /usr/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.24/Modules/FindBoost.cmake /usr/share/cmake-3.24/Modules/FindOpenSSL.cmake /usr/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.24/Modules/FindPackageMessage.cmake /usr/share/cmake-3.24/Modules/FindPkgConfig.cmake /usr/share/cmake-3.24/Modules/FindProtobuf.cmake /usr/share/cmake-3.24/Modules/FindThreads.cmake /usr/share/cmake-3.24/Modules/FindZLIB.cmake /usr/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.24/Modules/Platform/Linux.cmake /usr/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake-3.24/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.24.1/CMakeCCompiler.cmake CMakeFiles/3.24.1/CMakeCXXCompiler.cmake CMakeFiles/3.24.1/CMakeSystem.cmake: phony
 
 
 #############################################

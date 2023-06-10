@@ -36,7 +36,7 @@ void SystemNodeConfigService::ExtractNodeConfig()
    
     OutnodeS.push_back(outnode);
     //outnode->async_run((int)(outnode->Timer.Value));
-    outnode->async_run((int)(5)); //To Check Behrang
+    //outnode->async_run((int)(5)); //To Check Behrang
 }
 
 ::TagListConfig NodeTagGrpc(const ConfigNodeS::NodeData::TagListConfig nodetag) {

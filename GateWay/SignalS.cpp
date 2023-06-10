@@ -15,6 +15,8 @@
 #include "Node/MqttTag.h"
 #include <map>
 
+extern int64_t recent=0;
+extern bool IsinSending = false;
 extern std::queue<Event> EventList;
 extern std::vector<Connection *> ConnectionS;
 

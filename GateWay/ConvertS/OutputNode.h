@@ -64,5 +64,7 @@ public:
         }
         return this->conn->Address.Value == tag->conn->Address.Value;
     }
+
+
 };
 #endif // XML_CONNECTION_H

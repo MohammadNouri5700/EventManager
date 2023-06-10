@@ -25,6 +25,7 @@ ProtocolS::NodeList nodeList;
 ERROR::ErrorManager errorManager;
 GateWay::LISTENer::Listener ll{};
 GateWay::EVENT::MANAGER::EventManager e_manager;
+#include<unistd.h>
 
 std::thread e_m;
 std::thread e_h;
@@ -147,7 +148,7 @@ private:
  * @author MohammadNouri
  */
 void  readGps(){
-    SimpleSerial serial("/dev/ttyUSB0",  9600);
+    SimpleSerial serial("/dev/tty05",  9600);
 
     int i= 0;
  while(true){
@@ -230,9 +231,6 @@ int main()
 //              << std::endl;
 
 
-
-//    readGps();
-//    return 0;
     //  GpsMessagesParser ff =  GpsMessagesParser("/dev/ttyUSB0",9600);
     // ff.fetchNMEA();
     // readGps();
@@ -285,17 +283,19 @@ int main()
     /////////////////////
     mosqpp::lib_init();
     // system("sudo nmcli d wifi connect Inustry4");
-
+//    sleep(5);
     connected = false;
 
     XmlReader xml;
 //    std::string path{"/home/root/config.xml"};
-    std::string path{"../config.xml"};
+    std::string path{"./config.xml"};
     ////////////////////////////////////////////////////////////////////
     if (xml.setFile(path))
     {
         xml.ExtraConnection(ConnectionS);
+//        sleep(5);
         xml.ExtraConvert(ConvertS, ConnectionS);
+//        sleep(5);
     }
 
     for (auto i : ConnectionS)
@@ -311,11 +311,11 @@ int main()
         i.Print();
         std::cout << "\n****************************\n";
     }
-
+//    sleep(5);
     CONNECTION::ConnectionManager ConnMan;
     std::cout << "config connection manager" << std::endl;
     ConnMan.Create();
-
+//    sleep(5);
     xml.ExtraOutputNode(OutnodeS);
     for (OutputNode *i : OutnodeS)
     {
@@ -323,7 +323,7 @@ int main()
         i->print();
         std::cout << "\n****************************\n";
     }
-
+//    sleep(5);
     std::cout << "start grpc" << std::endl;
     GrpcServer grpcserver("0.0.0.0:50051", &ConnMan);
 
@@ -332,7 +332,7 @@ int main()
     // EventManager e_manager{};
     std::cout << "start event handler" << std::endl;
     EventHandler e_handler{};
-
+//    sleep(5);
     std::cout << "bind event manager" << std::endl;
     e_m = std::thread(std::bind(&EventManager::Act, &e_manager));
     std::cout << "bind event handler" << std::endl;
@@ -347,7 +347,7 @@ int main()
     {
         n->async_run((int)(n->Timer.Value));
     }
-
+//    sleep(5);
     std::cout << "after starting, join able: " << e_m.joinable();
     e_m.join();
     e_h.join();

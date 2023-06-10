@@ -6,8 +6,13 @@
 #include <iostream>
 #include "../GateWay/SignalS.h"
 #include <mutex>          // std::mutex
+#include <chrono>
+
+extern bool IsinSending;
+extern int64_t recent;
 
 std::mutex mtx;
+using namespace std::chrono;
 
 MqTT::MqttPublisher::MqttPublisher(std::string adrr, std::string id) : Mqtt{adrr, id}
 {
@@ -32,17 +37,27 @@ void MqTT::MqttPublisher::MqttPublisher::Init()
 
 void MqTT::MqttPublisher::Act()
 {
+    int64_t timestamp = duration_cast<seconds>(system_clock::now().time_since_epoch()).count();
+
+    if (recent==0){
+        recent=timestamp;
+    }else if (recent==timestamp){
+        return;
+    }
+
     mtx.lock();
     mqtt::topic Topic(Client, strTopicName, QoS);
     mqtt::token_ptr tok;
-    std::cout << "starting publisher..." << std::endl;
+    std::cout << "starting publisher..." << timestamp << std::endl;
 
     Topic.set_qos(0);
 
-    Topic.set_retained(true);
-    std::ofstream outFile;
-    outFile.open("log_mqtt.txt", std::ios_base::app);
+    Topic.set_retained(false);
+  //  std::ofstream outFile;
+    //outFile.open("log_mqtt.txt", std::ios_base::app);
     auto now =  std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+
+
     for (auto payload : vstrPayloads)
     {
 
@@ -58,15 +73,16 @@ void MqTT::MqttPublisher::Act()
             std::cout << "Publishing Topic: " << strTopicName << std::endl;
              tok = Topic.publish(payload.c_str());
             //tok = Topic.publish(temp.c_str());
-            Topic.publish(temp.c_str())->try_wait();
+            Topic.publish(temp.c_str())->wait_for(2000);
             std::cout << "Publishing: " << temp.c_str() << std::endl;
             std::cout << "void MqTT::MqttPublisher::Act() "
                       << "publish " << payload << std::endl;
 
-            outFile << payload.c_str() << "Time : " << std::ctime(&now);
+         //   outFile << payload.c_str() << "Time : " << std::ctime(&now);
 
 
-            tok->wait();
+//            tok->wait();
+
         }
         catch (std::exception &e)
         {
@@ -74,8 +90,10 @@ void MqTT::MqttPublisher::Act()
         }
     }
     vstrPayloads.clear();
-    mtx.unlock();
+
     std::cout << "OK" << std::endl;
+    IsinSending=false;
+    mtx.unlock();
 }
 
 void MqTT::MqttPublisher::SetPayload(std::vector<std::string> &p)

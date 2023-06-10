@@ -44,7 +44,7 @@ void MqTT::Mqtt::Connect(bool publisher) {
 
                 Client.connect(ConOpts)->wait();
 
-                std::cout << "  ...OK" << std::endl;
+                std::cout << "  Connection ...OK" << std::endl;
                 connect=1;
             }
             catch (const mqtt::exception &exc) {

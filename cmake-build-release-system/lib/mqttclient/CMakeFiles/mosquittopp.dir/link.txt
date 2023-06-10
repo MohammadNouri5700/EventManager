@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmosquittopp.a  CMakeFiles/mosquittopp.dir/mosquittopp.cpp.o CMakeFiles/mosquittopp.dir/mqttclient.cpp.o
+/usr/bin/ranlib libmosquittopp.a

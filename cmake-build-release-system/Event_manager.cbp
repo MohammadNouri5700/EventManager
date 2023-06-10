@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Event_manager"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ErrorManager\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\pugixml\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.78.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.78.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\modules\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\re2\;CMake Files\include\;CMake Files\include\config\;CMake Files\W_coap\;CMake Files\W_mqtt\;CMake Files\W_S7\;CMake Files\lib\;CMake Files\lib\mqttclient\;CMake Files\lib\protos\;CMake Files\GrpcServer\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Event_manager">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Event_manager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENSSL=1"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_gps"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_coap"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_mqtt"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_S7"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/include"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/atomic_queue/include"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 Event_manager"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Event_manager/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Event_manager" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENSSL=1"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_gps"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_coap"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_mqtt"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_S7"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/include"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/atomic_queue/include"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 Event_manager/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_coap">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 W_coap"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_coap/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 W_coap/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_mqtt">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/libW_mqtt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 W_mqtt"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_mqtt/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/libW_mqtt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 W_mqtt/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_S7">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 W_S7"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_S7/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 W_S7/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ErrorManager">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/libErrorManager.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 ErrorManager"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ErrorManager/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/libErrorManager.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 ErrorManager/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mosquittopp">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/libmosquittopp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 mosquittopp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mosquittopp/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/libmosquittopp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 mosquittopp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/mqttclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="protos">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 protos"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="protos/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 protos/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GrpcServer">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/libGrpcServer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 GrpcServer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GrpcServer/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/libGrpcServer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 GrpcServer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ConnectionManager/ConnectionManager.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ConnectionManager/ConnectionManager.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/EdgeProcess/edgeprocess.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/EdgeProcess/edgeprocess.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/EdgeProcess/edges.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/EdgeProcess/edges.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/GateSetting/setting.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/GateSetting/setting.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/Panel/panel.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/Panel/panel.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/Tag/tags.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/Tag/tags.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/TagValue/getTagValue.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/TagValue/getTagValue.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/TagValue/tagValue.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/TagValue/tagValue.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/command/command.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Entity/command/command.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ErrorManager/Error.cpp">
+			<Option target="Event_manager"/>
+			<Option target="ErrorManager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ErrorManager/Error.h">
+			<Option target="ErrorManager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ErrorManager/ErrorManager.cpp">
+			<Option target="Event_manager"/>
+			<Option target="ErrorManager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ErrorManager/ErrorManager.h">
+			<Option target="ErrorManager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/Connection.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/Connection.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionCan.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionCan.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionCoap.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionCoap.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionEdge.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionEdge.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionGPS.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionGPS.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionModbus.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionModbus.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionMqtt.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionMqtt.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionS7.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionS7.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/XmlReader.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/XmlReader.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/ConvertS/Convert.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/ConvertS/Convert.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/ConvertS/OutputNode.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/ConvertS/OutputNode.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Data.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Data.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Event.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Event.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/EventHandler.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/EventHandler.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/EventManager.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/EventManager.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Listener.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Listener.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/CanTag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/CanTag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/CoapTag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/CoapTag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/EdgeTag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/EdgeTag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/GpsTag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/GpsTag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/ModBusTag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/ModBusTag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/MqttTag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/MqttTag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/NodeList.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/NodeList.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/S7Tag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/S7Tag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/Tag.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Node/Tag.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/SignalS.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/SignalS.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/ThreadPool.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/ThreadPool.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Thread_Call.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Thread_Call.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/convertservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/convertservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/gpsservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/gpsservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/grpcserver.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/grpcserver.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/locationservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/locationservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/modbusservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/modbusservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/mqttpodservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/mqttpodservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/mqttservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/mqttservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/networkservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/networkservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/nodeservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/nodeservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/s7service.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/s7service.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/serialservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/serialservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/startupservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/startupservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/wifiservice.cpp">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/wifiservice.h">
+			<Option target="GrpcServer"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/MouseKey/eventfinder.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/MouseKey/eventfinder.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/MouseKey/key.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/MouseKey/key.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/MouseKey/mouse.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/MouseKey/mouse.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/CanProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/CanProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/CentralProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/CentralProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/CoapProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/CoapProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/GpsProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/GpsProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/KeyProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/KeyProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/MasterProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/MasterProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/MouseProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/MouseProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/Protocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/Protocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/PublisherProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/PublisherProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/S7Protocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/S7Protocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/ServerProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/ServerProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/SubscriberProtocol.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/Protocols/SubscriberProtocol.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_S7/S7Client.cpp">
+			<Option target="W_S7"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_S7/S7Client.h">
+			<Option target="W_S7"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_S7/SNAP7_Client.cpp">
+			<Option target="W_S7"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_S7/SNAP7_Client.h">
+			<Option target="W_S7"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_can/cancontroller.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_can/cancontroller.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Coap.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Coap.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/CoapNode.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/CoapNode.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Context.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Context.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/EndPoint.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/EndPoint.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Pdu.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Pdu.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Resource.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Resource.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Server.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Server.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Sessions.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Sessions.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/client.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/client.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_gps/GpsMessagesParser.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_gps/GpsMessagesParser.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_modbus/Master.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_modbus/Master.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_modbus/ModBus.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_modbus/ModBus.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_modbus/Server.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_modbus/Server.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/Mqtt.cpp">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/Mqtt.h">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/MqttPublisher.cpp">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/MqttPublisher.h">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/MqttSubscriber.cpp">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/MqttSubscriber.h">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/NewPublisher.cpp">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/NewPublisher.h">
+			<Option target="W_mqtt"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqttpod.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqttpod.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqttpod.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqttpod.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/network.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/network.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/network.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/network.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/node.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/node.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/node.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/node.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/s7.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/s7.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/s7.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/s7.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/serialconfig.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/serialconfig.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/serialconfig.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/serialconfig.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/startup.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/startup.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/startup.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/startup.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/wifi.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/wifi.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/wifi.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/wifi.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/mosquittopp.cpp">
+			<Option target="mosquittopp"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/mosquittopp.h">
+			<Option target="mosquittopp"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/mqttclient.cpp">
+			<Option target="mosquittopp"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/mqttclient.h">
+			<Option target="mosquittopp"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/main.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/wireless/wifi.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/wireless/wifi.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ErrorManager/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ErrorManager\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\pugixml\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/pugixml/pugixml-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\pugixml\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/Boost-1.78.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/FindPahoMqttC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/modules/Findc-ares.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\modules\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/modules/Findre2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\modules\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/re2/re2Config-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\re2\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/re2/re2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\re2\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/include/config/config.h.in">
+			<Option virtualFolder="CMake Files\include\config\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\W_coap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\W_mqtt\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_S7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\W_S7\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\mqttclient\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/protos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\protos\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GrpcServer\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

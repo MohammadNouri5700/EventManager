@@ -1,9 +1,11 @@
 //
 // Created by aziz on 18.09.21.
 //
-
+#include <chrono>
 #include "NewPublisher.h"
 #include "../GateWay/SignalS.h"
+
+using namespace std::chrono;
 
 void MqTT::NewPublisher::Run()
 {
@@ -11,6 +13,10 @@ void MqTT::NewPublisher::Run()
         //const std::lock_guard<std::mutex> lock(g_i_mutex);
 
         Act();
+
+
+
+
         //Disconnect();
 
     } catch (const mqtt::exception& exc) {

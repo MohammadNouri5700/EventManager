@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="W_coap"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ErrorManager\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\pugixml\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.78.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.78.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\modules\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\re2\;CMake Files\include\;CMake Files\include\config\;CMake Files\W_coap\;CMake Files\W_mqtt\;CMake Files\W_S7\;CMake Files\lib\;CMake Files\lib\mqttclient\;CMake Files\lib\protos\;CMake Files\GrpcServer\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_coap">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 W_coap"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="W_coap/fast">
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 W_coap/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Coap.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Coap.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/CoapNode.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/CoapNode.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Context.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Context.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/EndPoint.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/EndPoint.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Pdu.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Pdu.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Resource.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Resource.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Server.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Server.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Sessions.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/Sessions.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/client.cpp">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/client.h">
+			<Option target="W_coap"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/ErrorManager/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ErrorManager\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\pugixml\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/pugixml/pugixml-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\pugixml\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/libcoap/libcoapTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\libcoap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/Boost-1.78.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/boost_headers-1.78.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.78.0\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/FindPahoMqttC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/PahoMqttCpp/PahoMqttCppTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\PahoMqttCpp\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/gRPCTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/modules/Findc-ares.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\modules\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/grpc/modules/Findre2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\grpc\modules\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/c-ares/c-ares-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\c-ares\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/absl/abslTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/re2/re2Config-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\re2\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/../../../../../usr/local/lib/cmake/re2/re2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\re2\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/include/config/config.h.in">
+			<Option virtualFolder="CMake Files\include\config\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_coap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\W_coap\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_mqtt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\W_mqtt\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/W_S7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\W_S7\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/mqttclient/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\mqttclient\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/lib/protos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\protos\"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GrpcServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\GrpcServer\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

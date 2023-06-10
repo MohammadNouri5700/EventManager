@@ -1,0 +1,8 @@
+/opt/poky/3.1.16/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" -S /home/user/git/Event_manager11/Event_manager -B /home/user/git/Event_manager11/Event_manager/cmake-build-release-system
+-- Found RE2 via CMake.
+-- Using gRPC 1.45.0
+/usr/local/bin/grpc_cpp_plugin
+-- Found RE2 via CMake.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/git/Event_manager11/Event_manager/cmake-build-release-system

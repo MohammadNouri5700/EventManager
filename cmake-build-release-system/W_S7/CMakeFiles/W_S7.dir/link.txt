@@ -1,0 +1,2 @@
+/usr/bin/ar qc libW_S7.a  CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o CMakeFiles/W_S7.dir/S7Client.cpp.o
+/usr/bin/ranlib libW_S7.a

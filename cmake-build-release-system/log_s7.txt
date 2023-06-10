@@ -1,0 +1,184 @@
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 24 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 28 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 42 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 46 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 50 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 54 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 0 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 4 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 8 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 12 tag->ValueType.Value flat Size : 0Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 16 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 20 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 32 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 36 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:16 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:16 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 24 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 28 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 42 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 46 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 50 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 54 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 0 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 4 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 8 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 12 tag->ValueType.Value flat Size : 0Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 16 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 20 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 32 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 36 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:21 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:21 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 24 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 28 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 42 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 46 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 50 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 54 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 0 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 4 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 8 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 12 tag->ValueType.Value flat Size : 0Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 16 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 20 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 32 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 36 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:26 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:26 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 24 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 28 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 42 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 46 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 50 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 54 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+1
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 0 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 4 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 8 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 12 tag->ValueType.Value flat Size : 0Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 16 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 20 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 32 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 36 tag->ValueType.Value float Size : 4Time : Sun Feb  5 14:19:31 2023
+tag->getDBNumber() 9 tag->getBitNumber() 0 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 1 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 2 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 3 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 4 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 5 tag->getStartingAddress() 40 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 6 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
+tag->getDBNumber() 9 tag->getBitNumber() 7 tag->getStartingAddress() 58 tag->ValueType.Value bool Size : 1Time : Sun Feb  5 14:19:31 2023
+0
