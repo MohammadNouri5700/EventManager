@@ -125,10 +125,13 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
                 if (!strcmp(tag->ValueType.Value.c_str(), "bool"))
                 {
                     EBRead(tag->getDBNumber(), 2, db);
-                    memcpy(&a, db, sizeof(2));
-                    int bits = get_bits(a, tag->getStartingAddress());
-                    printf("%d\n", a);
-                    (*it)->setValue(&bits, 2);
+                    // memcpy(&a, db, sizeof(2));
+                    // int bits = get_bits(a, tag->getStartingAddress());
+                    // printf("%d\n", a);
+                    // (*it)->setValue(&bits, 2);
+                     byte bits = get_bits(a, tag->getStartingAddress());
+                    (*it)->setValue(&bits, 1);
+
                 }else
                 {
                     EBRead(tag->getDBNumber(), size, db);
@@ -140,10 +143,14 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
                 if (!strcmp(tag->ValueType.Value.c_str(), "bool"))
                 {
                     MBRead(tag->getDBNumber(), 2, db);
-                    memcpy(&a, db, sizeof(2));
-                    int bits = get_bits(a, tag->getStartingAddress());
-                    printf("%d\n", a);
-                    (*it)->setValue(&bits, 2);
+                    // memcpy(&a, db, sizeof(2));
+                    // int bits = get_bits(a, tag->getStartingAddress());
+                    printf("HEY THE LOTG IS HEre : %d\n", a);
+
+                    byte bits = get_bits(a, tag->getStartingAddress());
+                    (*it)->setValue(&bits, 1);
+
+                    // (*it)->setValue(&bits, 2);
                 }else{
                     MBRead(tag->getDBNumber(), size, db);
                     ReverseBytes(db, size);
