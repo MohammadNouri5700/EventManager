@@ -288,7 +288,7 @@ int main()
 
     XmlReader xml;
 //    std::string path{"/home/root/config.xml"};
-    std::string path{"./config.xml"};
+    std::string path{"/home/root/config.xml"};
     ////////////////////////////////////////////////////////////////////
     if (xml.setFile(path))
     {

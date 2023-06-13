@@ -12,6 +12,7 @@ bool XmlReader::setFile(std::string Name)
     pugi::xml_parse_result result = xmlDoc.load_file(Name.c_str());
     if (!result) {
         std::cout << "\nErr open xml file.\n";
+        throw std::exception();
         return false;
     }
     return true;
