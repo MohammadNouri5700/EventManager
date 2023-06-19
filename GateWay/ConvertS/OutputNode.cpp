@@ -36,8 +36,9 @@ void OutputNode::run(int interval_sec) {
 }
 
 void OutputNode::async_run(int interval_sec) {
-    sleep(10);
+
     std::cout << "\n\n\n\n\n" << "async_run has been called" << std::endl;
+        sleep(5);
     start = true;
     thread = new std::thread(&OutputNode::run, this, interval_sec);
 }

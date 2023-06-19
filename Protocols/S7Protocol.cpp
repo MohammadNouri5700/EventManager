@@ -60,8 +60,8 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
     Init();
     auto cb = [this]() -> bool
     {
-      //  std::ofstream outFile;
-        //outFile.open("log_s7.txt", std::ios_base::app);
+        std::ofstream outFile;
+        outFile.open("log_s7.txt", std::ios_base::app);
         auto now =  std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
         for (auto it = Observer.begin(); it != Observer.end(); it++)
         {
@@ -77,8 +77,8 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
                 
                 std::cerr << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
                           << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << std::endl;
-         //       outFile << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
-          //                << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << "Time : " << std::ctime(&now);
+                outFile << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
+                          << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << "Time : " << std::ctime(&now);
                 if (!strcmp(tag->ValueType.Value.c_str(), "bool"))
                 {
                     DBRead(tag->getDBNumber(), tag->getStartingAddress(), 1, db);
@@ -86,7 +86,7 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
                     byte bits = get_bits(a, tag->getBitNumber());
                     (*it)->setBitValue(bits);
                      std::cerr << "&&&&&&& "<< (int)bits << std::endl;
-                   //  outFile << (int)bits << std::endl;    
+                     outFile << (int)bits << std::endl;    
                 }
                 else
                 {
@@ -125,14 +125,12 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
                 if (!strcmp(tag->ValueType.Value.c_str(), "bool"))
                 {
                     EBRead(tag->getDBNumber(), 2, db);
-                    // memcpy(&a, db, sizeof(2));
-                    // int bits = get_bits(a, tag->getStartingAddress());
-                    // printf("%d\n", a);
-                    // (*it)->setValue(&bits, 2);
-                     byte bits = get_bits(a, tag->getStartingAddress());
-                    (*it)->setValue(&bits, 1);
-
-                }else
+                    memcpy(&a, db, sizeof(2));
+                    int bits = get_bits(a, tag->getStartingAddress());
+                    printf("%d\n", a);
+                    (*it)->setValue(&bits, 2);
+                }
+                else
                 {
                     EBRead(tag->getDBNumber(), size, db);
                     ReverseBytes(db, size);
@@ -140,22 +138,9 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
                 }
                 break;
             case S7TagType::MEMORYTAG:
-                if (!strcmp(tag->ValueType.Value.c_str(), "bool"))
-                {
-                    MBRead(tag->getDBNumber(), 2, db);
-                    // memcpy(&a, db, sizeof(2));
-                    // int bits = get_bits(a, tag->getStartingAddress());
-                    printf("HEY THE LOTG IS HEre : %d\n", a);
-
-                    byte bits = get_bits(a, tag->getStartingAddress());
-                    (*it)->setValue(&bits, 1);
-
-                    // (*it)->setValue(&bits, 2);
-                }else{
-                    MBRead(tag->getDBNumber(), size, db);
-                    ReverseBytes(db, size);
-                    (*it)->setValue(db, size * sizeof(byte));
-                }
+                MBRead(tag->getDBNumber(), size, db);
+                ReverseBytes(db, size);
+                (*it)->setValue(db, size * sizeof(byte));
                 break;
 
             default:
@@ -167,7 +152,6 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn)
         }
         return true;
     };
-
     SetS7Cb(cb);
 }
 
@@ -238,8 +222,7 @@ void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag)
     ProtocolS::S7Tag *tag_ = (ProtocolS::S7Tag *)tag;
     auto size = Size(tag->ValueType.Value);
     byte db[size];
-//    int16_t temp = atoi(data->GetString().c_str());
-    bool temp = atoi(data->GetString().c_str()) ;
+    int16_t temp = atoi(data->GetString().c_str());
     memcpy(db, &temp, sizeof(temp));
     boost::posix_time::time_duration td;
     std::cout << "++++++ write S7 ++++++" << std::endl;
