@@ -1,4 +1,3 @@
-
 #include "OutputNode.h"
 #include "../Node/NodeList.h"
 #include "../Event.h"
@@ -29,16 +28,15 @@ void OutputNode::run(int interval_sec) {
                 task();
             }
 
-            sleep(1);
+            sleep(10);
 
         }
     }
 }
 
 void OutputNode::async_run(int interval_sec) {
-
+    sleep(10);
     std::cout << "\n\n\n\n\n" << "async_run has been called" << std::endl;
-        sleep(5);
     start = true;
     thread = new std::thread(&OutputNode::run, this, interval_sec);
 }

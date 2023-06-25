@@ -23,6 +23,33 @@
 #include <boost/date_time.hpp>
 #include "../ErrorManager/ErrorManager.h"
 #include <utility>
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <linux/i2c-dev.h>
+#include <linux/i2c.h>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <string>
+
+
+
+
+#include <errno.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <linux/i2c-dev.h>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
 extern ERROR::ErrorManager errorManager;
 
 using json_t = std::string;
@@ -181,6 +208,8 @@ public:
     /// @param c  مسیری که کلاینت به از ان پیام دریافت می‌کند یا ارسال می‌نماید
 
     ///
+
+    void getI2cData();
 
     void fetchNMEA();
 

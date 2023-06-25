@@ -27,6 +27,7 @@ add_subdirectory(W_mqtt)
 add_subdirectory(W_S7)
 add_subdirectory(ErrorManager)
 add_subdirectory(lib/mqttclient)
+include_directories(i2creader)
 add_subdirectory(lib/protos)
 add_subdirectory(GrpcServer)
 

@@ -1,7 +1,3 @@
-//
-// Created by aziz on 22.08.21.
-//
-
 #include "MqttPublisher.h"
 #include <iostream>
 #include "../GateWay/SignalS.h"
@@ -71,9 +67,9 @@ void MqTT::MqttPublisher::Act()
             }
 
             std::cout << "Publishing Topic: " << strTopicName << std::endl;
-             tok = Topic.publish(payload.c_str());
+            //  tok = Topic.publish(payload.c_str());
             //tok = Topic.publish(temp.c_str());
-            Topic.publish(temp.c_str())->wait_for(2000);
+            Topic.publish(payload.c_str())->wait();
             std::cout << "Publishing: " << temp.c_str() << std::endl;
             std::cout << "void MqTT::MqttPublisher::Act() "
                       << "publish " << payload << std::endl;
