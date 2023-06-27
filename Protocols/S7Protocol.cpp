@@ -270,7 +270,7 @@ void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag)
     case S7TagType::MEMORYTAG:
         ReverseBytes(db, size);
         std::cout << temp << "++++++ write S7 MEMORYTAG++++++" << std::endl;
-        MBWrite(tag_->getBitNumber(), size, db);
+        MBWrite(tag_->getDBNumber(), size, db);
         tag_->outputTime = boost::posix_time::microsec_clock::local_time();
         td = tag_->outputTime - tag_->inputTime;
         std::cout << "time : " << td.total_milliseconds() << std::endl

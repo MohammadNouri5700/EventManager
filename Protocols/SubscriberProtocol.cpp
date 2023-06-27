@@ -3,7 +3,7 @@
 //
 
 #include "SubscriberProtocol.h"
-
+#include <algorithm>
 
 ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol():MqttSubscriber(stClient{}) {}
 
@@ -59,28 +59,40 @@ ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol(ConnectionMqtt *Conn) : 
             auto m = reinterpret_cast<MqttTag *>(i);
             bool b = f(m);
             if (b)
-            {
+            { // TODO HERE IS THE BASIC EDGE
+            // WE HAVE TO DO THIS IN CENTERAL
                 std::string s = msg->get_payload_str();
-                if (m->clientAction ==SUB){
-                    int posstart = s.find(m->Name.Value);
-                    std::string sub = s.substr(posstart);
-                    int pos_sec_start = sub.find(":");
-                    sub =  sub.substr(pos_sec_start+1);
-                    int posend = sub.find(",");
-                    sub =  sub.substr(0,posend);
-                    ReplaceAll(sub,"\"\\\\\\\"","");
-                    ReplaceAll(sub,"\\\\\\\"\"","");
-                    ReplaceAll(sub," ","");
-                    std::cout<<sub<<std::endl;
-                    if (sub.find("true") != -1){
-                        sub="true";
-                    }else if(sub.find("false") !=-1 ){
-                        sub="false";
-                    }
+
+            
+            try{
+
+            
+                    json content = json::parse(s).at("content");
+                    std::string contentstr = content.dump();
+                
+                    contentstr.erase(std::remove(contentstr.begin(), contentstr.end(), '\\'), contentstr.end());
+                    contentstr.erase(contentstr.begin(), contentstr.begin()+1);
+                    contentstr.erase(contentstr.end()-1, contentstr.end());
+
+                    content = json::parse(contentstr);
+                    json deviceTwinDocument = content.at("deviceTwinDocument");
+                    json attributes = deviceTwinDocument.at("attributes");
+                    json reported = attributes.at("reported");
+                    reported.erase("$metadata");
+
+                    std::cout << m->Name.Value << "  ==  "  << reported.at(m->Notes.Value) << std::endl;
+
+                    std::string sub = reported.at(m->Notes.Value).dump();
+
                     m->setValue((void *)sub.c_str(), strlen(sub.c_str()));
-                }else{
-                    std::cout<<"we cannot find Value"<<std::endl;
-                }
+
+
+                }catch (const std::bad_function_call& e) {
+                    std::string sub = "Read sub value Error";
+                    m->setValue((void *)sub.c_str(), strlen(sub.c_str()));
+                } 
+
+
 
             }
         }
