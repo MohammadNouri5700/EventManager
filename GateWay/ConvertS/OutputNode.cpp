@@ -21,16 +21,13 @@ void OutputNode::run(int interval_sec) {
 
     start = true;
     while (start) {
-        if (!IsinSending) {
-
+         if (!IsinSending) {
             if (Name.Value.length() > 2) {
                 IsinSending=true;
                 task();
             }
-
             sleep(10);
-
-        }
+         }
     }
 }
 

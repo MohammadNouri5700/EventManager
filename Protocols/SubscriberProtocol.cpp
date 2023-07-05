@@ -5,7 +5,12 @@
 #include "SubscriberProtocol.h"
 #include <algorithm>
 
-ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol():MqttSubscriber(stClient{}) {}
+ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol():MqttSubscriber(stClient{}) {
+
+    // mqtt::topic topic {Client, strTopicName, QoS };
+
+    std::cout << "Sub..123########################" <<std::endl;
+}
 
 ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol(const stClient &s) : MqttSubscriber(s)
 {
@@ -63,7 +68,7 @@ ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol(ConnectionMqtt *Conn) : 
             // WE HAVE TO DO THIS IN CENTERAL
                 std::string s = msg->get_payload_str();
 
-            
+            std::cout << "got message == "<< s <<std::endl;
             try{
 
             
@@ -77,16 +82,21 @@ ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol(ConnectionMqtt *Conn) : 
                     content = json::parse(contentstr);
                     json deviceTwinDocument = content.at("deviceTwinDocument");
                     json attributes = deviceTwinDocument.at("attributes");
-                    json reported = attributes.at("reported");
-                    reported.erase("$metadata");
+                    json desired = attributes.at("desired");
+                    desired.erase("$metadata");
+                    desired.erase("$version");
+                    if (desired.find(m->Notes.Value) != desired.end()) {
 
-                    std::cout << m->Name.Value << "  ==  "  << reported.at(m->Notes.Value) << std::endl;
+                    
+                        std::cout << m->Name.Value << "  ==  "  << desired.at(m->Notes.Value) << std::endl;
 
-                    std::string sub = reported.at(m->Notes.Value).dump();
+                        std::string sub = desired.at(m->Notes.Value).dump();
 
-                    m->setValue((void *)sub.c_str(), strlen(sub.c_str()));
+                        m->setValue((void *)sub.c_str(), strlen(sub.c_str()));
 
 
+
+                    }
                 }catch (const std::bad_function_call& e) {
                     std::string sub = "Read sub value Error";
                     m->setValue((void *)sub.c_str(), strlen(sub.c_str()));
@@ -109,7 +119,8 @@ void ProtocolS::Mqtt::SubscriberProtocol::Create(Connection *Conn)
 
 void ProtocolS::Mqtt::SubscriberProtocol::Open(Connection *Conn)
 {
-    Client.connect();
+    ErrCallBack("Client is trying to create another session");
+    // Client.connect();
 }
 
 void ProtocolS::Mqtt::SubscriberProtocol::Close()
@@ -154,7 +165,7 @@ void ProtocolS::Mqtt::SubscriberProtocol::Write(Data* data,Tag* tag)
 void ProtocolS::Mqtt::SubscriberProtocol::Stop()
 {
     bStopThread = true;
-    MqTT::MqttSubscriber::Stop();
+    // MqTT::MqttSubscriber::Stop();
 }
 
 

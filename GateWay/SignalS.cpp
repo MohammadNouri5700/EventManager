@@ -94,7 +94,7 @@ FunctionTypeNode MqttCB02 = [](Data *data, OutputNode *dest_)
     std::cout << "MqttCB02" << std::endl;
 
     MqTT::NewPublisher *Npub;
-    if (mqttBrokers.find(dest->Conn->Name.Value) != mqttBrokers.end())
+    if (mqttBrokers.find(dest->Conn->Name.Value) != mqttBrokers.end() )
     {
         Npub = mqttBrokers[dest->Conn->Name.Value];
         std::cout << "*************** found mqtt node ******************" << dest->Conn->Name.Value << std::endl;

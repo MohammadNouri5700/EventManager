@@ -65,9 +65,17 @@ lib/protos/convert.grpc.pb.cc: /usr/local/bin/protoc
 lib/protos/convert.grpc.pb.h: lib/protos/convert.grpc.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/protos/convert.grpc.pb.h
 
+lib/protos/gps.grpc.pb.cc: ../lib/protos/gps.proto
+lib/protos/gps.grpc.pb.cc: /usr/local/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/gps.proto"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/gps.proto
+
+lib/protos/gps.grpc.pb.h: lib/protos/gps.grpc.pb.cc
+	@$(CMAKE_COMMAND) -E touch_nocreate lib/protos/gps.grpc.pb.h
+
 lib/protos/modbus.grpc.pb.cc: ../lib/protos/modbus.proto
 lib/protos/modbus.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/modbus.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/modbus.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/modbus.proto
 
 lib/protos/modbus.grpc.pb.h: lib/protos/modbus.grpc.pb.cc
@@ -75,7 +83,7 @@ lib/protos/modbus.grpc.pb.h: lib/protos/modbus.grpc.pb.cc
 
 lib/protos/mqtt.grpc.pb.cc: ../lib/protos/mqtt.proto
 lib/protos/mqtt.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/mqtt.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/mqtt.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/mqtt.proto
 
 lib/protos/mqtt.grpc.pb.h: lib/protos/mqtt.grpc.pb.cc
@@ -83,7 +91,7 @@ lib/protos/mqtt.grpc.pb.h: lib/protos/mqtt.grpc.pb.cc
 
 lib/protos/mqttpod.grpc.pb.cc: ../lib/protos/mqttpod.proto
 lib/protos/mqttpod.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/mqttpod.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/mqttpod.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/mqttpod.proto
 
 lib/protos/mqttpod.grpc.pb.h: lib/protos/mqttpod.grpc.pb.cc
@@ -91,7 +99,7 @@ lib/protos/mqttpod.grpc.pb.h: lib/protos/mqttpod.grpc.pb.cc
 
 lib/protos/network.grpc.pb.cc: ../lib/protos/network.proto
 lib/protos/network.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/network.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/network.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/network.proto
 
 lib/protos/network.grpc.pb.h: lib/protos/network.grpc.pb.cc
@@ -99,7 +107,7 @@ lib/protos/network.grpc.pb.h: lib/protos/network.grpc.pb.cc
 
 lib/protos/node.grpc.pb.cc: ../lib/protos/node.proto
 lib/protos/node.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/node.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/node.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/node.proto
 
 lib/protos/node.grpc.pb.h: lib/protos/node.grpc.pb.cc
@@ -107,7 +115,7 @@ lib/protos/node.grpc.pb.h: lib/protos/node.grpc.pb.cc
 
 lib/protos/s7.grpc.pb.cc: ../lib/protos/s7.proto
 lib/protos/s7.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/s7.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/s7.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/s7.proto
 
 lib/protos/s7.grpc.pb.h: lib/protos/s7.grpc.pb.cc
@@ -115,7 +123,7 @@ lib/protos/s7.grpc.pb.h: lib/protos/s7.grpc.pb.cc
 
 lib/protos/serialconfig.grpc.pb.cc: ../lib/protos/serialconfig.proto
 lib/protos/serialconfig.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/serialconfig.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/serialconfig.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/serialconfig.proto
 
 lib/protos/serialconfig.grpc.pb.h: lib/protos/serialconfig.grpc.pb.cc
@@ -123,7 +131,7 @@ lib/protos/serialconfig.grpc.pb.h: lib/protos/serialconfig.grpc.pb.cc
 
 lib/protos/startup.grpc.pb.cc: ../lib/protos/startup.proto
 lib/protos/startup.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/startup.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/startup.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/startup.proto
 
 lib/protos/startup.grpc.pb.h: lib/protos/startup.grpc.pb.cc
@@ -131,7 +139,7 @@ lib/protos/startup.grpc.pb.h: lib/protos/startup.grpc.pb.cc
 
 lib/protos/wifi.grpc.pb.cc: ../lib/protos/wifi.proto
 lib/protos/wifi.grpc.pb.cc: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/wifi.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running gRPC C++ protocol buffer compiler on /home/user/git/Event_manager11/Event_manager/lib/protos/wifi.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --grpc_out=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/wifi.proto
 
 lib/protos/wifi.grpc.pb.h: lib/protos/wifi.grpc.pb.cc
@@ -139,15 +147,23 @@ lib/protos/wifi.grpc.pb.h: lib/protos/wifi.grpc.pb.cc
 
 lib/protos/convert.pb.h: ../lib/protos/convert.proto
 lib/protos/convert.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running cpp protocol buffer compiler on convert.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running cpp protocol buffer compiler on convert.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/convert.proto
 
 lib/protos/convert.pb.cc: lib/protos/convert.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/protos/convert.pb.cc
 
+lib/protos/gps.pb.h: ../lib/protos/gps.proto
+lib/protos/gps.pb.h: /usr/local/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running cpp protocol buffer compiler on gps.proto"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/gps.proto
+
+lib/protos/gps.pb.cc: lib/protos/gps.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate lib/protos/gps.pb.cc
+
 lib/protos/modbus.pb.h: ../lib/protos/modbus.proto
 lib/protos/modbus.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running cpp protocol buffer compiler on modbus.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running cpp protocol buffer compiler on modbus.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/modbus.proto
 
 lib/protos/modbus.pb.cc: lib/protos/modbus.pb.h
@@ -155,7 +171,7 @@ lib/protos/modbus.pb.cc: lib/protos/modbus.pb.h
 
 lib/protos/mqtt.pb.h: ../lib/protos/mqtt.proto
 lib/protos/mqtt.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running cpp protocol buffer compiler on mqtt.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Running cpp protocol buffer compiler on mqtt.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/mqtt.proto
 
 lib/protos/mqtt.pb.cc: lib/protos/mqtt.pb.h
@@ -163,7 +179,7 @@ lib/protos/mqtt.pb.cc: lib/protos/mqtt.pb.h
 
 lib/protos/mqttpod.pb.h: ../lib/protos/mqttpod.proto
 lib/protos/mqttpod.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running cpp protocol buffer compiler on mqttpod.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Running cpp protocol buffer compiler on mqttpod.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/mqttpod.proto
 
 lib/protos/mqttpod.pb.cc: lib/protos/mqttpod.pb.h
@@ -171,7 +187,7 @@ lib/protos/mqttpod.pb.cc: lib/protos/mqttpod.pb.h
 
 lib/protos/network.pb.h: ../lib/protos/network.proto
 lib/protos/network.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Running cpp protocol buffer compiler on network.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Running cpp protocol buffer compiler on network.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/network.proto
 
 lib/protos/network.pb.cc: lib/protos/network.pb.h
@@ -179,7 +195,7 @@ lib/protos/network.pb.cc: lib/protos/network.pb.h
 
 lib/protos/node.pb.h: ../lib/protos/node.proto
 lib/protos/node.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Running cpp protocol buffer compiler on node.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Running cpp protocol buffer compiler on node.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/node.proto
 
 lib/protos/node.pb.cc: lib/protos/node.pb.h
@@ -187,7 +203,7 @@ lib/protos/node.pb.cc: lib/protos/node.pb.h
 
 lib/protos/s7.pb.h: ../lib/protos/s7.proto
 lib/protos/s7.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Running cpp protocol buffer compiler on s7.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Running cpp protocol buffer compiler on s7.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/s7.proto
 
 lib/protos/s7.pb.cc: lib/protos/s7.pb.h
@@ -195,7 +211,7 @@ lib/protos/s7.pb.cc: lib/protos/s7.pb.h
 
 lib/protos/serialconfig.pb.h: ../lib/protos/serialconfig.proto
 lib/protos/serialconfig.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Running cpp protocol buffer compiler on serialconfig.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Running cpp protocol buffer compiler on serialconfig.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/serialconfig.proto
 
 lib/protos/serialconfig.pb.cc: lib/protos/serialconfig.pb.h
@@ -203,7 +219,7 @@ lib/protos/serialconfig.pb.cc: lib/protos/serialconfig.pb.h
 
 lib/protos/startup.pb.h: ../lib/protos/startup.proto
 lib/protos/startup.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Running cpp protocol buffer compiler on startup.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Running cpp protocol buffer compiler on startup.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/startup.proto
 
 lib/protos/startup.pb.cc: lib/protos/startup.pb.h
@@ -211,7 +227,7 @@ lib/protos/startup.pb.cc: lib/protos/startup.pb.h
 
 lib/protos/wifi.pb.h: ../lib/protos/wifi.proto
 lib/protos/wifi.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Running cpp protocol buffer compiler on wifi.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Running cpp protocol buffer compiler on wifi.proto"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/local/bin/protoc --cpp_out /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos -I /home/user/git/Event_manager11/Event_manager/lib/protos /home/user/git/Event_manager11/Event_manager/lib/protos/wifi.proto
 
 lib/protos/wifi.pb.cc: lib/protos/wifi.pb.h
@@ -219,7 +235,7 @@ lib/protos/wifi.pb.cc: lib/protos/wifi.pb.h
 
 lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o: lib/protos/convert.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/convert.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.i: cmake_force
@@ -230,9 +246,22 @@ lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protos.dir/convert.grpc.pb.cc.s"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.cc -o CMakeFiles/protos.dir/convert.grpc.pb.cc.s
 
+lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
+lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o: lib/protos/gps.grpc.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/gps.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc
+
+lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protos.dir/gps.grpc.pb.cc.i"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc > CMakeFiles/protos.dir/gps.grpc.pb.cc.i
+
+lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protos.dir/gps.grpc.pb.cc.s"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc -o CMakeFiles/protos.dir/gps.grpc.pb.cc.s
+
 lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o: lib/protos/modbus.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/modbus.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.i: cmake_force
@@ -245,7 +274,7 @@ lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o: lib/protos/mqtt.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.i: cmake_force
@@ -258,7 +287,7 @@ lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o: lib/protos/mqttpod.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqttpod.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.i: cmake_force
@@ -271,7 +300,7 @@ lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o: lib/protos/network.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/network.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/network.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.i: cmake_force
@@ -284,7 +313,7 @@ lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o: lib/protos/node.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/node.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/node.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.i: cmake_force
@@ -297,7 +326,7 @@ lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o: lib/protos/s7.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/s7.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/s7.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.i: cmake_force
@@ -310,7 +339,7 @@ lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o: lib/protos/serialconfig.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/serialconfig.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.i: cmake_force
@@ -323,7 +352,7 @@ lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o: lib/protos/startup.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/startup.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/startup.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.i: cmake_force
@@ -336,7 +365,7 @@ lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o: lib/protos/wifi.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/wifi.grpc.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/wifi.grpc.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.i: cmake_force
@@ -349,7 +378,7 @@ lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o: lib/protos/convert.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/convert.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/convert.pb.cc.i: cmake_force
@@ -360,9 +389,22 @@ lib/protos/CMakeFiles/protos.dir/convert.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protos.dir/convert.pb.cc.s"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.cc -o CMakeFiles/protos.dir/convert.pb.cc.s
 
+lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
+lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o: lib/protos/gps.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/gps.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.cc
+
+lib/protos/CMakeFiles/protos.dir/gps.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protos.dir/gps.pb.cc.i"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.cc > CMakeFiles/protos.dir/gps.pb.cc.i
+
+lib/protos/CMakeFiles/protos.dir/gps.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protos.dir/gps.pb.cc.s"
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.cc -o CMakeFiles/protos.dir/gps.pb.cc.s
+
 lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o: lib/protos/modbus.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/modbus.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.i: cmake_force
@@ -375,7 +417,7 @@ lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o: lib/protos/mqtt.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/mqtt.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.i: cmake_force
@@ -388,7 +430,7 @@ lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o: lib/protos/mqttpod.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/mqttpod.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqttpod.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.i: cmake_force
@@ -401,7 +443,7 @@ lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/network.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/network.pb.cc.o: lib/protos/network.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object lib/protos/CMakeFiles/protos.dir/network.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object lib/protos/CMakeFiles/protos.dir/network.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/network.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/network.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/network.pb.cc.i: cmake_force
@@ -414,7 +456,7 @@ lib/protos/CMakeFiles/protos.dir/network.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/node.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/node.pb.cc.o: lib/protos/node.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object lib/protos/CMakeFiles/protos.dir/node.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object lib/protos/CMakeFiles/protos.dir/node.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/node.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/node.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/node.pb.cc.i: cmake_force
@@ -427,7 +469,7 @@ lib/protos/CMakeFiles/protos.dir/node.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o: lib/protos/s7.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/s7.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/s7.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/s7.pb.cc.i: cmake_force
@@ -440,7 +482,7 @@ lib/protos/CMakeFiles/protos.dir/s7.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o: lib/protos/serialconfig.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/serialconfig.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/serialconfig.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.i: cmake_force
@@ -453,7 +495,7 @@ lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o: lib/protos/startup.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/startup.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/startup.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/startup.pb.cc.i: cmake_force
@@ -466,7 +508,7 @@ lib/protos/CMakeFiles/protos.dir/startup.pb.cc.s: cmake_force
 
 lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o: lib/protos/CMakeFiles/protos.dir/flags.make
 lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o: lib/protos/wifi.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protos.dir/wifi.pb.cc.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/wifi.pb.cc
 
 lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.i: cmake_force
@@ -480,6 +522,7 @@ lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.s: cmake_force
 # Object files for target protos
 protos_OBJECTS = \
 "CMakeFiles/protos.dir/convert.grpc.pb.cc.o" \
+"CMakeFiles/protos.dir/gps.grpc.pb.cc.o" \
 "CMakeFiles/protos.dir/modbus.grpc.pb.cc.o" \
 "CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o" \
 "CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o" \
@@ -490,6 +533,7 @@ protos_OBJECTS = \
 "CMakeFiles/protos.dir/startup.grpc.pb.cc.o" \
 "CMakeFiles/protos.dir/wifi.grpc.pb.cc.o" \
 "CMakeFiles/protos.dir/convert.pb.cc.o" \
+"CMakeFiles/protos.dir/gps.pb.cc.o" \
 "CMakeFiles/protos.dir/modbus.pb.cc.o" \
 "CMakeFiles/protos.dir/mqtt.pb.cc.o" \
 "CMakeFiles/protos.dir/mqttpod.pb.cc.o" \
@@ -504,6 +548,7 @@ protos_OBJECTS = \
 protos_EXTERNAL_OBJECTS =
 
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o
+lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o
@@ -514,6 +559,7 @@ lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o
+lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o
@@ -525,7 +571,7 @@ lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/build.make
 lib/protos/libprotos.a: lib/protos/CMakeFiles/protos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX static library libprotos.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX static library libprotos.a"
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && $(CMAKE_COMMAND) -P CMakeFiles/protos.dir/cmake_clean_target.cmake
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/protos.dir/link.txt --verbose=$(VERBOSE)
 
@@ -540,6 +586,8 @@ lib/protos/CMakeFiles/protos.dir/clean:
 
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/convert.grpc.pb.cc
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/convert.grpc.pb.h
+lib/protos/CMakeFiles/protos.dir/depend: lib/protos/gps.grpc.pb.cc
+lib/protos/CMakeFiles/protos.dir/depend: lib/protos/gps.grpc.pb.h
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/modbus.grpc.pb.cc
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/modbus.grpc.pb.h
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/mqtt.grpc.pb.cc
@@ -560,6 +608,8 @@ lib/protos/CMakeFiles/protos.dir/depend: lib/protos/wifi.grpc.pb.cc
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/wifi.grpc.pb.h
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/convert.pb.h
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/convert.pb.cc
+lib/protos/CMakeFiles/protos.dir/depend: lib/protos/gps.pb.h
+lib/protos/CMakeFiles/protos.dir/depend: lib/protos/gps.pb.cc
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/modbus.pb.h
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/modbus.pb.cc
 lib/protos/CMakeFiles/protos.dir/depend: lib/protos/mqtt.pb.h

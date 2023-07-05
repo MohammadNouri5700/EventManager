@@ -12,7 +12,7 @@ GateWay::LISTENer::Listener::~Listener()
 
 void GateWay::LISTENer::Listener::SetNodes(ProtocolS::Protocol *pNode)
 {
-    std::thread t{std::bind(&ProtocolS::Protocol::Listen, pNode)};
+    std::thread t{[pNode] { pNode->Listen(); }};
     aNodes.push_back(std::move(t));
 }
 

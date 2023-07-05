@@ -26,6 +26,7 @@
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
@@ -54,6 +55,7 @@
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>

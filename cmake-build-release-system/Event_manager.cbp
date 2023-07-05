@@ -47,6 +47,7 @@
 					<Add option="-DOPENSSL=1"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_gps"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_coap"/>
@@ -83,6 +84,7 @@
 					<Add option="-DOPENSSL=1"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_gps"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_coap"/>
@@ -380,6 +382,7 @@
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
@@ -405,6 +408,7 @@
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
@@ -430,6 +434,7 @@
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
@@ -458,6 +463,7 @@
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/wireless"/>
+					<Add directory="/home/user/git/Event_manager11/Event_manager/i2creader"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/."/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager"/>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
@@ -1012,6 +1018,18 @@
 			<Option target="protos"/>
 		</Unit>
 		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.h.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc.rule">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.cc">
+			<Option target="protos"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.h.rule">
 			<Option target="protos"/>
 		</Unit>
 		<Unit filename="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.cc">

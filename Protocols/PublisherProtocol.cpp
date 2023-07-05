@@ -61,7 +61,8 @@ void ProtocolS::Mqtt::PublisherProtocol::Create(Connection *Conn)
 
 void ProtocolS::Mqtt::PublisherProtocol::Open(Connection *Conn)
 {
-    Client.connect();
+   ErrCallBack("Client is trying to create another session");
+    // Client.connect();
 }
 
 void ProtocolS::Mqtt::PublisherProtocol::Close()

@@ -66,8 +66,7 @@ void ProtocolS::MqttTag::setSubject(ProtocolS::Protocol *subject)
     Tag::setSubject(subject);
     std::cout << "clientAction is = "<< clientAction << std::endl;
     if (clientAction == ClientActions::SUB){
-        reinterpret_cast<subMqtt *>(subject)->SetTopic(Topic.Value, 0);
-
+        reinterpret_cast<subMqtt *>(subject)->SetTopic(Topic.Value, 1);
     }
 }
 

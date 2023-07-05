@@ -201,6 +201,60 @@ convert.pb.cc.s:
 	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/convert.pb.cc.s
 .PHONY : convert.pb.cc.s
 
+gps.grpc.pb.o: gps.grpc.pb.cc.o
+
+.PHONY : gps.grpc.pb.o
+
+# target to build an object file
+gps.grpc.pb.cc.o:
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o
+.PHONY : gps.grpc.pb.cc.o
+
+gps.grpc.pb.i: gps.grpc.pb.cc.i
+
+.PHONY : gps.grpc.pb.i
+
+# target to preprocess a source file
+gps.grpc.pb.cc.i:
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.i
+.PHONY : gps.grpc.pb.cc.i
+
+gps.grpc.pb.s: gps.grpc.pb.cc.s
+
+.PHONY : gps.grpc.pb.s
+
+# target to generate assembly for a file
+gps.grpc.pb.cc.s:
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.s
+.PHONY : gps.grpc.pb.cc.s
+
+gps.pb.o: gps.pb.cc.o
+
+.PHONY : gps.pb.o
+
+# target to build an object file
+gps.pb.cc.o:
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o
+.PHONY : gps.pb.cc.o
+
+gps.pb.i: gps.pb.cc.i
+
+.PHONY : gps.pb.i
+
+# target to preprocess a source file
+gps.pb.cc.i:
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/gps.pb.cc.i
+.PHONY : gps.pb.cc.i
+
+gps.pb.s: gps.pb.cc.s
+
+.PHONY : gps.pb.s
+
+# target to generate assembly for a file
+gps.pb.cc.s:
+	cd /home/user/git/Event_manager11/Event_manager/cmake-build-release-system && $(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/gps.pb.cc.s
+.PHONY : gps.pb.cc.s
+
 modbus.grpc.pb.o: modbus.grpc.pb.cc.o
 
 .PHONY : modbus.grpc.pb.o
@@ -704,6 +758,12 @@ help:
 	@echo "... convert.pb.o"
 	@echo "... convert.pb.i"
 	@echo "... convert.pb.s"
+	@echo "... gps.grpc.pb.o"
+	@echo "... gps.grpc.pb.i"
+	@echo "... gps.grpc.pb.s"
+	@echo "... gps.pb.o"
+	@echo "... gps.pb.i"
+	@echo "... gps.pb.s"
 	@echo "... modbus.grpc.pb.o"
 	@echo "... modbus.grpc.pb.i"
 	@echo "... modbus.grpc.pb.s"

@@ -4,8 +4,13 @@
 
 #ifndef XML_CONNECTIONMQTT_H
 #define XML_CONNECTIONMQTT_H
+
+#include <mqtt/async_client.h>
 #include "Connection.h"
 #include "../../GrpcServer/mqttservice.h"
+
+
+using ClientType = mqtt::async_client;
 enum class MqttProtocol {ERR, WS, WSS, MQTT_TCP, MQTT_TLS};
 
 using proTag = XmlTag<MqttProtocol>;
@@ -25,7 +30,7 @@ struct xmlMqtt : public  xmlNode {
 
 struct ConnectionMqtt : public Connection {
 
-    
+
     strTag ID{};
     proTag Protocol{};
     strTag Username{};

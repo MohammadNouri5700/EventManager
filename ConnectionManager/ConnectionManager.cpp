@@ -202,7 +202,7 @@ void CONNECTION::ConnectionManager::Create()
             std::cout << "config MQTT" << std::endl;
             auto m = reinterpret_cast<ConnectionMqtt*>(p);
             mqtt_sub *node{new mqtt_sub{m}};
-            node->setErrCallBack(errHandMqtt);
+//            node->setErrCallBack(errHandMqtt);
 
             // node->SetHandler(cb_lose,false);
 

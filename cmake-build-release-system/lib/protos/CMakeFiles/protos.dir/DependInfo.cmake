@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o"
+  "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o"
+  "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.grpc.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o"
@@ -31,6 +33,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../W_modbus/modbuspp"
   "../wireless"
+  "../i2creader"
   "lib/protos"
   )
 
@@ -38,6 +41,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.h" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.grpc.pb.cc"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/convert.pb.h"
+  "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.h" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.grpc.pb.cc"
+  "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/gps.pb.h"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.h" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.grpc.pb.cc"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.pb.cc" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/modbus.pb.h"
   "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.grpc.pb.h" "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/mqtt.grpc.pb.cc"

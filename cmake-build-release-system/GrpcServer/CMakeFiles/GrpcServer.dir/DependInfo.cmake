@@ -24,6 +24,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../W_modbus/modbuspp"
   "../wireless"
+  "../i2creader"
   "../GrpcServer/."
   "../GrpcServer/../ConnectionManager"
   "lib/protos"

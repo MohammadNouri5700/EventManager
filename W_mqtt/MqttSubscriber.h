@@ -15,6 +15,7 @@ protected:
     void Act();
     int QoS{1};
     std::atomic_bool bStopThread{false};
+    std::atomic_bool isCunsume{false};
 public:
     MqttSubscriber():MqttSubscriber(stClient{}) {};
     MqttSubscriber(stClient);

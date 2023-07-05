@@ -206,7 +206,7 @@ int start_sub(){
     std::string id = "NG340F190E3YA3C02ESCIEI";
 
     // Construct a client using the Ip and Id, specifying usage of MQTT V5.
-    mqtt::client client(ip, id, mqtt::create_options(MQTTVERSION_5));
+    mqtt::client client(ip, id, mqtt::create_options(MQTTVERSION_3_1));
     // Use the connect method of the client to establish a connection to the broker.
     client.connect();
     // In order to receive messages from the broker, specify a topic to subscribe to.

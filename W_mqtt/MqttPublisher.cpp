@@ -7,8 +7,9 @@
 extern bool IsinSending;
 extern int64_t recent;
 
-std::mutex mtx;
+
 using namespace std::chrono;
+extern std::shared_mutex mutex_;
 
 MqTT::MqttPublisher::MqttPublisher(std::string adrr, std::string id) : Mqtt{adrr, id}
 {
@@ -33,15 +34,16 @@ void MqTT::MqttPublisher::MqttPublisher::Init()
 
 void MqTT::MqttPublisher::Act()
 {
+
     int64_t timestamp = duration_cast<seconds>(system_clock::now().time_since_epoch()).count();
 
-    if (recent==0){
-        recent=timestamp;
-    }else if (recent==timestamp){
-        return;
-    }
+    // if (recent==0){
+    //     recent=timestamp;
+    // }else if (recent==timestamp){
+    //     return;
+    // }
 
-    mtx.lock();
+
     mqtt::topic Topic(Client, strTopicName, QoS);
     mqtt::token_ptr tok;
     std::cout << "starting publisher..." << timestamp << std::endl;
@@ -62,8 +64,7 @@ void MqTT::MqttPublisher::Act()
             std::string temp;
             if (!Client.is_connected())
             {
-                std::cout << "Client Is not Connected ,Try to connect... " << std::endl;
-                Client.connect()->wait();
+                 Client.connect()->wait();
             }
 
             std::cout << "Publishing Topic: " << strTopicName << std::endl;
@@ -88,8 +89,11 @@ void MqTT::MqttPublisher::Act()
     vstrPayloads.clear();
 
     std::cout << "OK" << std::endl;
+    Client.disconnect();
     IsinSending=false;
-    mtx.unlock();
+
+
+
 }
 
 void MqTT::MqttPublisher::SetPayload(std::vector<std::string> &p)

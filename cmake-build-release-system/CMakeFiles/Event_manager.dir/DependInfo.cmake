@@ -77,6 +77,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../W_modbus/modbuspp"
   "../wireless"
+  "../i2creader"
   "."
   "../W_gps"
   "../W_coap"
