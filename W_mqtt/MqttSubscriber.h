@@ -12,7 +12,7 @@ class MqttSubscriber:public Mqtt
 {
 protected:
     void Init();
-    void Act();
+
     int QoS{1};
     std::atomic_bool bStopThread{false};
     std::atomic_bool isCunsume{false};
@@ -24,6 +24,8 @@ public:
     void SetTopic(std::string t, int qos);
 
     void Stop();
+
+    void Act();
 };
 }
 

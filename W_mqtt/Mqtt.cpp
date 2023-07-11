@@ -41,7 +41,7 @@ MqTT::Mqtt::~Mqtt() {
 }
 
 void MqTT::Mqtt::Run() {
-    Init();
+//    Init();
     try {
         std::cout << "--Start running mqtt" << std::endl;
 //        if (TopicS.size()) {
@@ -52,7 +52,7 @@ void MqTT::Mqtt::Run() {
     }
     catch (const mqtt::exception &exc) {
         std::cerr << "\n!@!" << exc << std::endl;
-        ErrCallBack("mqtt Run");
+//        ErrCallBack("mqtt Run");
     }
 }
 
@@ -70,10 +70,10 @@ void MqTT::Mqtt::Connect(bool publisher) {
                       << std::endl;
             ConOpts.set_clean_session(false);
             ConOpts.set_mqtt_version(MQTTVERSION_3_1);
-            ConOpts.set_connect_timeout(30000);
+            ConOpts.set_connect_timeout(1000);
 //            ConOpts.set_automatic_reconnect(true);
-            ConOpts.set_keep_alive_interval(10);
-            ConOpts.set_automatic_reconnect(true);
+//            ConOpts.set_keep_alive_interval(10);
+//            ConOpts.set_automatic_reconnect(true);
 
             Client.connect(ConOpts)->wait();
 

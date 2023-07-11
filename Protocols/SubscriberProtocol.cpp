@@ -100,7 +100,7 @@ ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol(ConnectionMqtt *Conn) : 
                 }catch (const std::bad_function_call& e) {
                     std::string sub = "Read sub value Error";
                     m->setValue((void *)sub.c_str(), strlen(sub.c_str()));
-                } 
+                }
 
 
 

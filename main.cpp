@@ -414,7 +414,7 @@ int main()
 
 
 //    start_sub();
-
+//return 0;
 
 //    tag_->outputTime = boost::posix_time::microsec_clock::local_time();
 //    td = tag_->outputTime - tag_->inputTime;
@@ -478,7 +478,7 @@ int main()
     connected = false;
 
     XmlReader xml;
-    // std::string path{"/home/root/config.xml"};
+//     std::string path{"/home/user/git/Event_manager11/Event_manager/build/config.xml"};
     std::string path{"./config.xml"};
     ////////////////////////////////////////////////////////////////////
     if (xml.setFile(path))

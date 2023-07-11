@@ -3,12 +3,16 @@
 //
 #include <nlohmann/json.hpp>
 #include "MqttSubscriber.h"
+#include "../GateWay/ConvertS/OutputNode.h"
 #include <memory>
 #include <shared_mutex>
 #include<unistd.h>
 
+
+std::mutex mtx;
 extern bool IsinSending;
-extern std::shared_mutex mutex_;
+extern bool waitPub;
+extern std::vector<OutputNode *> OutnodeS;
 
 MqTT::MqttSubscriber::MqttSubscriber(stClient c) : Mqtt{c.strAddress, c.strId} {
 
@@ -22,92 +26,103 @@ MqTT::MqttSubscriber::~MqttSubscriber() {
 
 void MqTT::MqttSubscriber::Act() {
 
+    mqtt::const_message_ptr messagePointer;
+    sleep(10);
+    mqtt::topic Topic(Client, strTopicName, QoS);
 
-    sleep(3);
-    while (IsinSending) {}
-    for (auto topics: TopicS) {
 
-        while (true) {
-            if (!IsinSending) {//Preventing of concurrently in publish and sub
-                if (Client.is_connected()) {
-                    mqtt::const_message_ptr messagePointer;
-                    Client.try_consume_message(&messagePointer);
-                } else {
-                    Client.connect()->wait();
-                    Client.subscribe(topics.get_name(), 0);
-                    Client.start_consuming();
+//    while (IsinSending) {}
+
+    while (true) {
+        std::atomic_bool res = false;
+        for (auto n: OutnodeS) {
+            if (strcmp(TopicS.begin()->get_client().get_client_id().c_str(), n->OutputNodeID.Value.c_str()) == 0) {
+                if (n->isbusy) {
+                    res = true;
+                    break;
                 }
-            } else {
-//                std::cout << "MqttSubscriber stopeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed " << std::endl;
             }
-            std::this_thread::sleep_for(std::chrono::milliseconds(250));
-//            sleep(1);
         }
-        break;
-    }
 
 
+        if (!res){
+            if (Client.is_connected()) {
+                Client.try_consume_message(&messagePointer);
+            } else {
+                Client.connect()->wait();
+                std::cout << "try_consume_message == " << TopicS.begin()->get_client().get_client_id();
+                Client.subscribe(TopicS.begin()->get_name(), 0);
+                Client.start_consuming();
+            }
+        }
 
-    // while (!bStopThread && Client.is_connected()) {
-    //     mqtt::const_message_ptr messagePointer;
-    //     Client.try_consume_message(&messagePointer);
-    // }
-    // std::cout << "Client Is not Connected ,Try to connect... " << std::endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(50));
+}
+
+
+std::cout<< "finish =============================================================";
+//    std::exit(1);
+// while (!bStopThread && Client.is_connected()) {
+//     mqtt::const_message_ptr messagePointer;
+//     Client.try_consume_message(&messagePointer);
+// }
+// std::cout << "Client Is not Connected ,Try to connect... " << std::endl;
 
 // //    0LF5KW2MRLS457OYH2JKCNS
-    // std::cout << "\nOk.\nstarting subscriber"<<  std::flush;
+// std::cout << "\nOk.\nstarting subscriber"<<  std::flush;
 
-    // while(!Client.is_connected()){
+// while(!Client.is_connected()){
 
-    // }
-    // for (auto topic: TopicS) {
-    //     try {
-    //         if(!isCunsume){
+// }
+// for (auto topic: TopicS) {
+//     try {
+//         if(!isCunsume){
 
-    //         if (!Client.is_connected())
-    //         {
-    //             throw std::invalid_argument( "received negative value" );   
-    //             // std::cout << "Client Is not Connected ,Try to connect... " << std::endl;
-    //             // Client.connect()->wait();
-    //         }
+//         if (!Client.is_connected())
+//         {
+//             throw std::invalid_argument( "received negative value" );
+//             // std::cout << "Client Is not Connected ,Try to connect... " << std::endl;
+//             // Client.connect()->wait();
+//         }
 
-    //             isCunsume = true;
-    //             std::cout << "\nOk.\nsubscribe    "<< topic.get_name()<< std::flush;
-    // //            topic.subscribe()->wait();
-    //             Client.subscribe(topic.get_name(),0);//Almost Once
-    //             Client.start_consuming();
-    //             std::cout << "\nOk.. "<<std::endl;
-    //          }
-    //     } catch (const mqtt::exception& exc) {
-    //         std::cerr << "\nERROR: Unable to Connect. "<< exc.get_message()<<exc.get_reason_code()
-    //                   << exc.what() << "---"<<std::endl;
-    //         ErrCallBack(exc.to_string()+ "----");
-    //     }
-    // }
-    // while (!bStopThread) {
-    //    // Construct a message pointer to hold an incoming message.
-    //     mqtt::const_message_ptr messagePointer;
+//             isCunsume = true;
+//             std::cout << "\nOk.\nsubscribe    "<< topic.get_name()<< std::flush;
+// //            topic.subscribe()->wait();
+//             Client.subscribe(topic.get_name(),0);//Almost Once
+//             Client.start_consuming();
+//             std::cout << "\nOk.. "<<std::endl;
+//          }
+//     } catch (const mqtt::exception& exc) {
+//         std::cerr << "\nERROR: Unable to Connect. "<< exc.get_message()<<exc.get_reason_code()
+//                   << exc.what() << "---"<<std::endl;
+//         ErrCallBack(exc.to_string()+ "----");
+//     }
+// }
+// while (!bStopThread) {
+//    // Construct a message pointer to hold an incoming message.
+//     mqtt::const_message_ptr messagePointer;
 
-    //     // Try to consume a message, passing messagePointer by reference.
-    //     // If a message is consumed, the function will return `true`,
-    //     // allowing control to enter the if-statement body.
-    //     if (Client.try_consume_message(&messagePointer))
-    //     {
-    //         // Construct a string from the message payload.
-    //         // std::string messageString = messagePointer -> get_payload_str();
-    //         // Print payload string to console (debugging).
-    //         // std::cout << messageString << std::endl;
+//     // Try to consume a message, passing messagePointer by reference.
+//     // If a message is consumed, the function will return `true`,
+//     // allowing control to enter the if-statement body.
+//     if (Client.try_consume_message(&messagePointer))
+//     {
+//         // Construct a string from the message payload.
+//         // std::string messageString = messagePointer -> get_payload_str();
+//         // Print payload string to console (debugging).
+//         // std::cout << messageString << std::endl;
 
-    //         // Perform processing on the string.
-    //         // This is where message processing can be passed onto different
-    //         // functions for parsing.
-    //         // Here, we break the loop and exit the program if a `quit` is received.
-    //     }
+//         // Perform processing on the string.
+//         // This is where message processing can be passed onto different
+//         // functions for parsing.
+//         // Here, we break the loop and exit the program if a `quit` is received.
+//     }
 
-    // }
+// }
 }
 
 void MqTT::MqttSubscriber::Init() {
+
 }
 
 void MqTT::MqttSubscriber::SetTopic(std::string t, int qos = 1) {

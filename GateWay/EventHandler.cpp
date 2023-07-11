@@ -27,14 +27,14 @@ std::mutex EventMutex;
 
 void GateWay::EVENT::HANDLER::EventHandler::Act()
 {
-    std::cout << "void GateWay::EVENT::HANDLER::EventHandler::Act()" << std::endl;
+//    std::cout << "void GateWay::EVENT::HANDLER::EventHandler::Act()" << std::endl;
     auto free_b = [this]() {
         EventMutex.lock();
         std::vector<Event> merged_events;
         /* Merge events to reduce transations */
         while (!EventList.was_empty()) {
-            std::cout << "free_b========----------------------------"
-                      << "\n";
+//            std::cout << "free_b========----------------------------"
+//                      << "\n";
             auto it = EventList.pop();
             auto n = merged_events.size();
             if (n == 0 || it.Destination == NULL) {
@@ -59,10 +59,10 @@ void GateWay::EVENT::HANDLER::EventHandler::Act()
         }
         for (auto &e : merged_events) {
             TYPE t = e.type;
-            std::cout << "main switch" << (int)t << "***" << merged_events.size()<< "\n";
+//            std::cout << "main switch" << (int)t << "***" << merged_events.size()<< "\n";
             switch (t) {
             case TYPE::MQTT:
-                std::cout << "free_b TYPE::MQTT" << std::endl;
+//                std::cout << "free_b TYPE::MQTT" << std::endl;
                 e.SetSignal(MqttCB01);
                 break;
             case TYPE::MODBUS:
@@ -72,7 +72,7 @@ void GateWay::EVENT::HANDLER::EventHandler::Act()
                 e.SetSignal(S7CB01);
                 break;
             case TYPE::PRINT:
-                // e.SetSignal(PrintCB01);
+                 e.SetSignal(PrintCB01);
                 break;
             case TYPE::CAN:
                 e.SetSignal(CANCB01);

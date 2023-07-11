@@ -23,7 +23,7 @@ void ProtocolS::S7Tag::SendEvent()
 {
     std::string v;
     Event b;
-    std::cout << "void ProtocolS::S7Tag::SendEvent() type == " << ValueType.Value.c_str() << std::endl;
+//    std::cout << "void ProtocolS::S7Tag::SendEvent() type == " << ValueType.Value.c_str() << std::endl;
 
     if (strcmp(ValueType.Value.c_str(), "float")==0) {
         float  Res; memcpy (&Res, Value, 4);
@@ -61,12 +61,12 @@ void ProtocolS::S7Tag::SendEvent()
                 t->setValue((void *)v.c_str(), strlen(v.c_str()));
                 if (!t->OnlyNode)
                 {
-                    std::cout << "public Tag" << t->Name.Value << std::endl;
+//                    std::cout << "public Tag" << t->Name.Value << std::endl;
                     b = Event(new ProtocolData{v, Value,Name.Value}, TYPE::MQTT, t);
                     EventList.push(std::move(b));
                 }
                 else{
-                    std::cout << "private Tag" << t->Name.Value << std::endl;
+//                    std::cout << "private Tag" << t->Name.Value << std::endl;
                 }
             }
             break;

@@ -14,11 +14,15 @@
 #include "Node/Tag.h"
 #include "Node/MqttTag.h"
 #include <map>
+#include <boost/thread.hpp>
 
+boost::mutex mutex;
 extern int64_t recent=0;
 extern bool IsinSending = false;
+extern bool waitPub = false;
 extern std::queue<Event> EventList;
 extern std::vector<Connection *> ConnectionS;
+
 
 FunctionType Updater = [](Data *data, auto)
 {
@@ -89,6 +93,7 @@ FunctionType MqttCB01 = [](Data *data, ProtocolS::Tag *dest)
 
 FunctionTypeNode MqttCB02 = [](Data *data, OutputNode *dest_)
 {
+
      myMutex.lock();
     auto dest = dynamic_cast<OutputNode*>(dest_);
     std::cout << "MqttCB02" << std::endl;

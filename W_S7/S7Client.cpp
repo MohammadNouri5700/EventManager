@@ -6,12 +6,13 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <zconf.h>
 
 void Snap7::S7Client::Run()
 {
     while (iResultCon == 0 && !bStopThread)
     {
-        std::cerr << "void Snap7::S7Client::Run() Run" << std::endl;
+//        std::cerr << "void Snap7::S7Client::Run() Run" << std::endl;
         if (Connected())
         {
             Act();
@@ -26,9 +27,18 @@ void Snap7::S7Client::Run()
             }
         }
     }
-    std::cerr << "void Snap7::S7Client::Run() stopped" << std::endl;
+//    std::cerr << "void Snap7::S7Client::Run() stopped" << std::endl;
     Disconnect();
 }
+bool GetBit(byte byt, int index)
+{
+    if (index < 0 || index > 7)
+        throw std::exception();
+    byte bitMask = (byte)(1 << index);
+    byte masked = (byte)(byt & bitMask);
+    return masked != 0;
+}
+
 
 void Snap7::S7Client::Init()
 {
@@ -45,10 +55,50 @@ void Snap7::S7Client::Init()
         // CpuInfo();
         // CpInfo();
         // UnitStatus();
+
+//        int rec = ReadArea(S7AreaMK, 0, 801, 1,S7WLBit, Buffer);
+//        PS7BlockInfo pUsrData;
+
+//        byte MBRead[1];
+
+
+
+//        byte MB4['\001']; // 16 Merker bytes
+//        uint8_t b0=1;
+//        byte MB3[b0]; // 16 Merker bytes
+
+
+
+
+//        GetAgBlockInfo(Block_FC,801,pUsrData);
+//        WriteArea(S7AreaMK,0,801,1,1,pUsrData);
+//        byte Buffer[pUsrData->MC7Size];
+//        ReadArea(S7AreaPE,0,801,1,S7WLByte,&MB1);
+//        ReadArea(S7AreaPA,0,801,1,S7WLByte,&MB2);
+//        ReadArea(S7AreaMK,0,801,1,S7WLByte,&MB3);
+//        WriteArea(S7AreaMK,0,801,1,S7WLByte,&MB2);
+
+//        ReadArea(S7AreaMK,0,801,1,S7WLByte, &MBRead);
+//        std::string startFD = std::to_string(GetBit(MBRead[0],0));
+//        std::string stopFD = std::to_string(GetBit(MBRead[0],1));
+
+//bool bool_val = true;
+//        WriteArea(S7AreaMK,0,801,1,S7WLBit, &bool_val);
+
+
+//        ReadArea(S7AreaDB,0,801,1,S7WLByte,&MB4);
+//        ReadArea(S7AreaCT,0,801,1,S7WLByte,&MB5);
+//        ReadArea(S7AreaTM,0,801,1,S7WLByte,&MB6);
+
+
+//        int w = 4;
+
+
     }
     else
     {
-        std::cerr << "error Connect s7" << std::endl;
+        std::cerr << ""
+                     "error Connect s7" << std::endl;
         ErrCallBack("error Connect s7");
     }
 }

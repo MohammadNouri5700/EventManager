@@ -16,18 +16,20 @@ OutputNode::OutputNode() : ProtocolS::Tag() {
 OutputNode::~OutputNode() {
     stop();
 }
-
+extern pthread_mutex_t mtxw = PTHREAD_MUTEX_INITIALIZER;
 void OutputNode::run(int interval_sec) {
 
     start = true;
     while (start) {
-         if (!IsinSending) {
+//         if (!IsinSending) {
             if (Name.Value.length() > 2) {
                 IsinSending=true;
+                this->isbusy=true;
                 task();
             }
-            sleep(10);
-         }
+             sleep(10);
+//         }
+
     }
 }
 
