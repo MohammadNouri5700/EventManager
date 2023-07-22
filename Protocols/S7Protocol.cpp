@@ -8,7 +8,10 @@
 #include <algorithm>
 #include <fstream>
 #include <chrono>
+#include <thread>
+#include <mutex>
 
+std::mutex mtxs7;
 extern std::vector<Connection *> ConnectionS;
 
 void ProtocolS::S7::S7Protocol::ReverseBytes(void *start, int size) {
@@ -45,6 +48,7 @@ byte get_bits(byte n, int bitswanted) {
     return n & mask ? 1 : 0;
 }
 
+
 void ProtocolS::S7::S7Protocol::Create(Connection *Conn) {
     auto cS7 = reinterpret_cast<ConnectionS7 *>(Conn);
     SetAddress(cS7->Address.Value);
@@ -52,6 +56,17 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn) {
     SetSlot();
     Init();
     auto cb = [this]() -> bool {
+        mtxs7.lock();
+        int plcStatusCode = PlcStatus();
+        if (plcStatusCode != 8) {
+            std::cerr << "\n\n\n\n PLC has error try to establish \n\n\n\n\n" << std::endl;
+            SetRack();
+            SetSlot();
+            Init();
+        }
+
+
+
         // std::ofstream outFile;
         // outFile.open("log_s7.txt", std::ios_base::app);
         auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
@@ -59,80 +74,121 @@ void ProtocolS::S7::S7Protocol::Create(Connection *Conn) {
             auto tag = reinterpret_cast<S7Tag *>(*it);
 
             auto size = Size(tag->ValueType.Value);
-            byte db[size + 2];
+            byte db[size];
             byte a = 0;
-            switch (tag->s7tagType) {
-                case S7TagType::DATABLOCKTAG:
 
 
-                    // std::cerr << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
-                    //           << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << std::endl;
-                    // outFile << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
-                    //           << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << "Time : " << std::ctime(&now);
-                    if (!strcmp(tag->ValueType.Value.c_str(), "bool")) {
-                        DBRead(tag->getDBNumber(), tag->getStartingAddress(), 1, db);
-                        a = db[0];
-                        byte bits = get_bits(a, tag->getBitNumber());
-                        (*it)->setBitValue(bits);
+            int ii = -99;
+            float ff = -99.9;
+            bool ss = false;
+
+            if (PlcStatus() != 8) {
+                if (strcmp(tag->ValueType.Value.c_str(), "bool") == 0) {
+                    (*it)->setValue(&ss, size * sizeof(db));
+                } else if (strcmp(tag->ValueType.Value.c_str(), "float") == 0) {
+                    (*it)->setValue(&ff, size * sizeof(db));
+                } else if (strcmp(tag->ValueType.Value.c_str(), "int") == 0) {
+                    (*it)->setValue(&ii, size * sizeof(db));
+                } else if (strcmp(tag->ValueType.Value.c_str(), "int16") == 0) {
+                    (*it)->setValue(&ii, size * sizeof(db));
+                } else {
+                    (*it)->setValue((bool *) false, size * sizeof(db));
+                }
+            } else {
+                switch (tag->s7tagType) {
+                    case S7TagType::DATABLOCKTAG:
+
+
+                        // std::cerr << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
+                        //           << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << std::endl;
+                        // outFile << "tag->getDBNumber() " << tag->getDBNumber() << " tag->getBitNumber() " << tag->getBitNumber() << " tag->getStartingAddress() "
+                        //           << tag->getStartingAddress() << " tag->ValueType.Value " << tag->ValueType.Value << " Size : " << size << "Time : " << std::ctime(&now);
+                        if (!strcmp(tag->ValueType.Value.c_str(), "bool")) {
+                            DBRead(tag->getDBNumber(), tag->getStartingAddress(), 1, db);
+                            a = db[0];
+                            byte bits = get_bits(a, tag->getBitNumber());
+                            (*it)->setBitValue(bits);
 //                     std::cerr << "&&&&&&& "<< (int)bits << std::endl;
-                        //  outFile << (int)bits << std::endl;
-                    } else {
+                            //  outFile << (int)bits << std::endl;
+                        } else {
+                            DBRead(tag->getDBNumber(), tag->getStartingAddress(), size, db);
+                            ReverseBytes(db, size);
+                            (*it)->setValue(db, size * sizeof(byte));
+                            if (!strcmp(tag->ValueType.Value.c_str(), "float")) {
+                                float value = 0;
+                                memcpy(&value, db, 4);
+                                //outFile << value << std::endl;
+                            }
+
+                        }
+
+                        break;
+
+                    case S7TagType::IOTAGOUT:
+                        if (!strcmp(tag->ValueType.Value.c_str(), "bool")) {
+                            ABRead(tag->getDBNumber(), 1, db);
+                            // memcpy(&a, db, sizeof(1));
+                            a = db[0];
+                            byte bits = get_bits(a, tag->getStartingAddress());
+                            (*it)->setValue(&bits, 1);
+                        } else {
+                            ABRead(tag->getDBNumber(), size, db);
+                            ReverseBytes(db, size);
+                            (*it)->setValue(db, size * sizeof(byte));
+                        }
+                        break;
+                    case S7TagType::IOTAGIN:
+                        std::cout << "<<<<<<<<<<<<<<<<<<<<<<<<<IOTAGIN>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
+                        if (!strcmp(tag->ValueType.Value.c_str(), "bool")) {
+                            EBRead(tag->getDBNumber(), 2, db);
+                            memcpy(&a, db, sizeof(2));
+                            int bits = get_bits(a, tag->getStartingAddress());
+                            printf("%d\n", a);
+                            (*it)->setValue(&bits, 2);
+                        } else {
+                            EBRead(tag->getDBNumber(), size, db);
+                            ReverseBytes(db, size);
+                            (*it)->setValue(db, size * sizeof(byte));
+                        }
+                        break;
+                    case S7TagType::MEMORYTAG: {
+
+                        if (strcmp(tag->ValueType.Value.c_str(), "bool")==0) {
+                            MBRead(tag->getDBNumber(), size, db);
+                            memcpy(&a, db, size);
+                            int bits = get_bits(a, tag->getStartingAddress());
+                            ReverseBytes(db, size);
+                            (*it)->setValue(&bits, 2);
+                        } else {
+                            MBRead(tag->getDBNumber(), size, db);
+                            ReverseBytes(db, size);
+                            (*it)->setValue(db, size * sizeof(byte));
+                        }
+
+
+//                        MBRead(tag->getDBNumber(), size, dbs);
+
+                        break;
+                    }
+
+
+                    default:
                         DBRead(tag->getDBNumber(), tag->getStartingAddress(), size, db);
                         ReverseBytes(db, size);
                         (*it)->setValue(db, size * sizeof(byte));
-                        if (!strcmp(tag->ValueType.Value.c_str(), "float")) {
-                            float value = 0;
-                            memcpy(&value, db, 4);
-                            //outFile << value << std::endl;
-                        }
-
-                    }
-
-                    break;
-
-                case S7TagType::IOTAGOUT:
-                    if (!strcmp(tag->ValueType.Value.c_str(), "bool")) {
-                        ABRead(tag->getDBNumber(), 1, db);
-                        // memcpy(&a, db, sizeof(1));
-                        a = db[0];
-                        byte bits = get_bits(a, tag->getStartingAddress());
-                        (*it)->setValue(&bits, 1);
-                    } else {
-                        ABRead(tag->getDBNumber(), size, db);
-                        ReverseBytes(db, size);
-                        (*it)->setValue(db, size * sizeof(byte));
-                    }
-                    break;
-                case S7TagType::IOTAGIN:
-                    std::cout << "<<<<<<<<<<<<<<<<<<<<<<<<<IOTAGIN>>>>>>>>>>>>>>>>>>>>>>>>>>" << std::endl;
-                    if (!strcmp(tag->ValueType.Value.c_str(), "bool")) {
-                        EBRead(tag->getDBNumber(), 2, db);
-                        memcpy(&a, db, sizeof(2));
-                        int bits = get_bits(a, tag->getStartingAddress());
-                        printf("%d\n", a);
-                        (*it)->setValue(&bits, 2);
-                    } else {
-                        EBRead(tag->getDBNumber(), size, db);
-                        ReverseBytes(db, size);
-                        (*it)->setValue(db, size * sizeof(byte));
-                    }
-                    break;
-                case S7TagType::MEMORYTAG:
-                    MBRead(tag->getDBNumber(), size, db);
-                    ReverseBytes(db, size);
-                    (*it)->setValue(db, size * sizeof(byte));
-                    break;
-
-                default:
-                    DBRead(tag->getDBNumber(), tag->getStartingAddress(), size, db);
-                    ReverseBytes(db, size);
-                    (*it)->setValue(db, size * sizeof(byte));
-                    break;
+                        break;
+                }
             }
+
+
         }
+        if (plcStatusCode == 8)
+            std::cerr << "PLC TAGS updated successfully" << std::endl;
+        mtxs7.unlock();
         return true;
     };
     SetS7Cb(cb);
+
 }
 
 // void ProtocolS::S7::S7Protocol::CreateAndWrite(Connection *Conn, Data* data)
@@ -165,7 +221,7 @@ void ProtocolS::S7::S7Protocol::Open(Connection *Conn) {
 }
 
 void ProtocolS::S7::S7Protocol::Close() {
-    Disconnect();
+//    Disconnect();
 }
 
 void ProtocolS::S7::S7Protocol::KeepAlive() {
@@ -187,6 +243,7 @@ void ProtocolS::S7::S7Protocol::DataReceived() {
 void ProtocolS::S7::S7Protocol::UpdateTag(ProtocolS::Tag *tag) {
     Protocol::UpdateTag(tag);
 }
+
 
 void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag) {
     Protocol::Write(data, tag);
@@ -232,10 +289,29 @@ void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag) {
             break;
 
         case S7TagType::MEMORYTAG: {
-            ReverseBytes(db, size);
-            std::cout << temp << "++++++ write S7 MEMORYTAG++++++" << std::endl;
-            int res = MBWrite(tag_->getDBNumber(), size, db);
-            std::cout<<"RESUUUULTTTTTTTTTTTTTTT = "<<std::to_string (res)<<std::endl;
+            if (!strcmp(tag_->ValueType.Value.c_str(), "bool")) {
+                size = Size(std::string("bool"));
+                byte db_helper[size];
+                if (strcmp(data->GetString().c_str(), std::string("true").c_str()) == 0) {
+                    SetBitAt(db_helper, 0, tag_->getStartingAddress(), true);
+                    ReverseBytes(db_helper, size);
+                    MBWrite(tag_->getDBNumber(), size, &db_helper);
+                } else {
+                    byte db_helper2['\000'];
+                    ReverseBytes(db_helper2, size);
+                    SetBitAt(db_helper2, tag_->getStartingAddress(), tag_->getStartingAddress(), false);
+                    MBWrite(tag_->getDBNumber(), size, &db_helper2);
+                }
+
+
+            } else {
+                ReverseBytes(db, size);
+                std::cout << temp << "++++++ write S7 MEMORYTAG++++++" << std::endl;
+                int res = MBWrite(tag_->getDBNumber(), size, db);
+                std::cout << "RESUUUULTTTTTTTTTTTTTTT = " << std::to_string(res) << std::endl;
+            }
+
+
             break;
         }
 
@@ -249,4 +325,16 @@ void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag) {
 
 void ProtocolS::S7::S7Protocol::Stop() {
     Snap7::S7Client::Stop();
+}
+
+void ProtocolS::S7::S7Protocol::SetBitAt(byte *buffer, int Pos, int Bit, bool Value) {
+    byte Mask[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
+    if (Bit < 0) Bit = 0;
+    if (Bit > 7) Bit = 7;
+
+    if (Value) {
+        buffer[Pos] = (byte) (buffer[Pos] | Mask[Bit]);
+    } else {
+        buffer[Pos] = (byte) (buffer[Pos] & ~Mask[Bit]);
+    }
 }

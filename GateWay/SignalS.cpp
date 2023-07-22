@@ -50,7 +50,7 @@ std::mutex myMutex;
 
 FunctionType MqttCB01 = [](Data *data, ProtocolS::Tag *dest)
 {
-    
+
     myMutex.lock();
     std::cout << "MqttCB01" << std::endl;
 
@@ -86,7 +86,7 @@ FunctionType MqttCB01 = [](Data *data, ProtocolS::Tag *dest)
     p.push_back(temp);
     Npub->SetPayload(p);
     std::cout << "*************** run mqtt  ******************" << data->GetString() << std::endl;
-    //dest->Value = new std::string(data->GetString());    
+    //dest->Value = new std::string(data->GetString());
     Npub->Run();
     myMutex.unlock();
 };

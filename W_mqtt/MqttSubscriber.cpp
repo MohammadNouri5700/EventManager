@@ -26,41 +26,53 @@ MqTT::MqttSubscriber::~MqttSubscriber() {
 
 void MqTT::MqttSubscriber::Act() {
 
+
+
     mqtt::const_message_ptr messagePointer;
-    sleep(10);
-    mqtt::topic Topic(Client, strTopicName, QoS);
+
+//    sleep(5);
+//    mqtt::topic Topic(Client, strTopicName, QoS);
 
 
 //    while (IsinSending) {}
 
-    while (true) {
-        std::atomic_bool res = false;
-        for (auto n: OutnodeS) {
-            if (strcmp(TopicS.begin()->get_client().get_client_id().c_str(), n->OutputNodeID.Value.c_str()) == 0) {
-                if (n->isbusy) {
-                    res = true;
-                    break;
+    LOOP:
+    do {
+        try {
+            mtx.lock();
+//            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+            std::atomic_bool res = false;
+            for (auto n: OutnodeS) {
+                if (strcmp(TopicS.begin()->get_client().get_client_id().c_str(), n->OutputNodeID.Value.c_str()) == 0) {
+                    if (n->isbusy) {
+                        res = true;
+                        break;
+                    }
                 }
             }
-        }
 
 
-        if (!res){
-            if (Client.is_connected()) {
-                Client.try_consume_message(&messagePointer);
-            } else {
-                Client.connect()->wait();
-                std::cout << "try_consume_message == " << TopicS.begin()->get_client().get_client_id();
-                Client.subscribe(TopicS.begin()->get_name(), 0);
-                Client.start_consuming();
+            if (!res) {
+                if (Client.is_connected()) {
+                    Client.try_consume_message(&messagePointer);
+                } else {
+                    Client.connect()->wait();
+                    std::cout << "try_consume_message == " << TopicS.begin()->get_client().get_client_id();
+                    Client.subscribe(TopicS.begin()->get_name(), 0);
+                    Client.start_consuming();
+                }
             }
+            mtx.unlock();
+        } catch (const mqtt::exception &exc) {
+            std::cout << "\n!@! MQTT EXCEPTION  in sub   " << exc.get_error_str() << std::endl;
+            std::cout << "\n!@! MQTT EXCEPTION  in sub   " << TopicS.begin()->get_name() << std::endl;
+            mtx.unlock();
+//            goto LOOP;
         }
-
-    std::this_thread::sleep_for(std::chrono::milliseconds(50));
-}
+    } while (true);
 
 
-std::cout<< "finish =============================================================";
+    std::cout << "finish =============================================================";
 //    std::exit(1);
 // while (!bStopThread && Client.is_connected()) {
 //     mqtt::const_message_ptr messagePointer;

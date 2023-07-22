@@ -44,5 +44,5 @@ void MqTT::NewPublisher::Run()
 MqTT::NewPublisher::NewPublisher(const std::string &addr, const std::string &id) : MqttPublisher(addr, id)
 {
     std::cout << "**Publisher ID :" << id << std::endl;
-    Connect(true);
+//    Connect(true);
 }

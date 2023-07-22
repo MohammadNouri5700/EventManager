@@ -478,8 +478,14 @@ int main()
     connected = false;
 
     XmlReader xml;
-//     std::string path{"/home/user/git/Event_manager11/Event_manager/build/config.xml"};
-    std::string path{"./config.xml"};
+    std::string path="";
+    try{
+         path = {"/home/user/git/Event_manager11/Event_manager/build/config.xml"};
+//        path = {"./config.xml"};
+    } catch (std::exception &e) {
+    }
+
+
     ////////////////////////////////////////////////////////////////////
     if (xml.setFile(path))
     {

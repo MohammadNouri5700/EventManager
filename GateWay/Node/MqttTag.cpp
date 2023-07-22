@@ -68,9 +68,7 @@ void ProtocolS::MqttTag::setSubject(ProtocolS::Protocol *subject) {
     }
 }
 
-ProtocolS::MqttTag::MqttTag(xmlMqtt *mqtt) : Tag(mqtt),
-                                             Topic(mqtt->Topic), Prefix(mqtt->Prefix),
-                                             clientAction(mqtt->clientAction) {}
+ProtocolS::MqttTag::MqttTag(xmlMqtt *mqtt) : Tag(mqtt),Topic(mqtt->Topic), Prefix(mqtt->Prefix),clientAction(mqtt->clientAction) {}
 
 void ProtocolS::MqttTag::UpdateValue() {
     Tag::UpdateValue();

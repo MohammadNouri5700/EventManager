@@ -77,26 +77,26 @@ void MqTT::MqttPublisher::Act()
     int64_t timestamp = duration_cast<seconds>(system_clock::now().time_since_epoch()).count();
 
 
-     std::ofstream outFile;
-     outFile.open("log_143.txt", std::ios_base::app);
-
-    struct sysinfo memInfo;
-
-    sysinfo (&memInfo);
-    long long totalVirtualMem = memInfo.totalram;
-//Add other values in next statement to avoid int overflow on right hand side...
-    totalVirtualMem += memInfo.totalswap;
-    totalVirtualMem *= memInfo.mem_unit;
-
-    long long virtualMemUsed = memInfo.totalram - memInfo.freeram;
-//Add other values in next statement to avoid int overflow on right hand side...
-    virtualMemUsed += memInfo.totalswap - memInfo.freeswap;
-    virtualMemUsed *= memInfo.mem_unit;
-
-
-    std::string temp =  std::to_string(getValue()) +"," + std::to_string(timestamp) + "\n";
-    std::cout<<temp;
-    outFile<<temp;
+//     std::ofstream outFile;
+//     outFile.open("log_143.txt", std::ios_base::app);
+//
+//    struct sysinfo memInfo;
+//
+//    sysinfo (&memInfo);
+//    long long totalVirtualMem = memInfo.totalram;
+////Add other values in next statement to avoid int overflow on right hand side...
+//    totalVirtualMem += memInfo.totalswap;
+//    totalVirtualMem *= memInfo.mem_unit;
+//
+//    long long virtualMemUsed = memInfo.totalram - memInfo.freeram;
+////Add other values in next statement to avoid int overflow on right hand side...
+//    virtualMemUsed += memInfo.totalswap - memInfo.freeswap;
+//    virtualMemUsed *= memInfo.mem_unit;
+//
+//
+//    std::string temp =  std::to_string(getValue()) +"," + std::to_string(timestamp) + "\n";
+//    std::cout<<temp;
+//    outFile<<temp;
 
 
 
@@ -141,7 +141,8 @@ void MqTT::MqttPublisher::Act()
             std::cout << "Publishing Topic: " << strTopicName << std::endl;
             //  tok = Topic.publish(payload.c_str());
             //tok = Topic.publish(temp.c_str());
-            Topic.publish(payload.c_str())->wait();
+            Topic.publish(payload.c_str())->try_wait();
+//            Client.disconnect();
             waitPub= false;
 //            mqtt::iasync_client dubclient("iot-mqtt.pod.ir:1883", "U9MFKW3X53T0VSV4APIH9P3");
 //            mqtt::topic test(static_cast<iasync_client &>(dubclient), "strTopicName", 1);

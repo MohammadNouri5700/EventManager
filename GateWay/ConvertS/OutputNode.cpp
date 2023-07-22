@@ -16,19 +16,19 @@ OutputNode::OutputNode() : ProtocolS::Tag() {
 OutputNode::~OutputNode() {
     stop();
 }
-extern pthread_mutex_t mtxw = PTHREAD_MUTEX_INITIALIZER;
+
 void OutputNode::run(int interval_sec) {
 
     start = true;
     while (start) {
-//         if (!IsinSending) {
+         if (!IsinSending) {
             if (Name.Value.length() > 2) {
                 IsinSending=true;
                 this->isbusy=true;
                 task();
             }
              sleep(10);
-//         }
+         }
 
     }
 }
@@ -185,6 +185,20 @@ std::string OutputNode::CreateMQTTPayload() {
             vTemp = *str;
         } else {
             continue;
+//            if (strcmp(t.tag->ValueType.Value.c_str(),"bool")==0) {
+//                vTemp = '0';
+//            }else if (strcmp(t.tag->ValueType.Value.c_str(),"float")==0){
+//                vTemp =  '-999';
+//            }else if(strcmp(t.tag->ValueType.Value.c_str(),"int")==0){
+//                vTemp =  '-999';
+//            }else if(strcmp(t.tag->ValueType.Value.c_str(),"int16")==0){
+//                vTemp =  '-999';
+//            }else if(strcmp(t.tag->ValueType.Value.c_str(),"Json")==0){
+//                vTemp =  '-999';
+//            }else{
+//                vTemp =  '-999';
+//            }
+
         }
 
 

@@ -72,7 +72,7 @@ void GateWay::EVENT::HANDLER::EventHandler::Act()
                 e.SetSignal(S7CB01);
                 break;
             case TYPE::PRINT:
-                 e.SetSignal(PrintCB01);
+//                 e.SetSignal(PrintCB01);
                 break;
             case TYPE::CAN:
                 e.SetSignal(CANCB01);

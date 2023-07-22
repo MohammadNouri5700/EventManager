@@ -31,7 +31,7 @@ using ErrHandler = std::function<void(std::string err)>;
 class Mqtt
 {
 protected:
-    std::mutex  mutex_;
+
     virtual void Connect(bool publisher =false);
     virtual void Disconnect();
     virtual void Init()=0;

@@ -41,7 +41,7 @@ MqTT::Mqtt::~Mqtt() {
 }
 
 void MqTT::Mqtt::Run() {
-//    Init();
+    Init();
     try {
         std::cout << "--Start running mqtt" << std::endl;
 //        if (TopicS.size()) {
@@ -51,7 +51,8 @@ void MqTT::Mqtt::Run() {
 //        }
     }
     catch (const mqtt::exception &exc) {
-        std::cerr << "\n!@!" << exc << std::endl;
+        std::cout << "\n!@! MQTT EXCEPTION     " << exc << std::endl;
+//        Run();
 //        ErrCallBack("mqtt Run");
     }
 }

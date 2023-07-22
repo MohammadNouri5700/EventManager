@@ -31,6 +31,7 @@ namespace ProtocolS::S7
         void UpdateTag(Tag *tag) override;
         void Write(Data *data, Tag *tag) override;
         void Stop();
+        void SetBitAt(byte buffer[], int Pos, int Bit, bool Value);
 
     private:
         int Size(std::string str);

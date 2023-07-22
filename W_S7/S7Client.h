@@ -7,7 +7,7 @@
 #include "SNAP7_Client.h"
 #include <functional>
 #include <atomic>
-#define SLEEP_S7 5000
+#define SLEEP_S7 1000
 
 namespace Snap7
 {
