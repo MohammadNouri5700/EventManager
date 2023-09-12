@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionModbus.cpp.o"
   "CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionMqtt.cpp.o"
   "CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionS7.cpp.o"
+  "CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o"
   "CMakeFiles/Event_manager.dir/GateWay/Connection/XmlReader.cpp.o"
   "CMakeFiles/Event_manager.dir/GateWay/ConvertS/Convert.cpp.o"
   "CMakeFiles/Event_manager.dir/GateWay/ConvertS/OutputNode.cpp.o"

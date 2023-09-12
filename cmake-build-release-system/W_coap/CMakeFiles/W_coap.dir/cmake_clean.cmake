@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/W_coap.dir/Server.cpp.o"
   "CMakeFiles/W_coap.dir/Sessions.cpp.o"
   "CMakeFiles/W_coap.dir/client.cpp.o"
-  "libW_coap.a"
   "libW_coap.pdb"
+  "libW_coap.so"
 )
 
 # Per-language clean rules from dependency scanning.

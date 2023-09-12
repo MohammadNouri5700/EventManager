@@ -132,10 +132,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_coap">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -156,10 +156,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_coap/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap/libW_coap.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_coap"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -180,10 +180,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_mqtt">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/libW_mqtt.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/libW_mqtt.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -204,10 +204,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_mqtt/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/libW_mqtt.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt/libW_mqtt.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_mqtt"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -228,10 +228,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_S7">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -252,10 +252,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_S7/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -276,10 +276,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ErrorManager">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/libErrorManager.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/libErrorManager.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -300,10 +300,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ErrorManager/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/libErrorManager.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager/libErrorManager.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/ErrorManager"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -374,10 +374,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="protos">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -400,10 +400,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="protos/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -426,10 +426,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GrpcServer">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/libGrpcServer.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/libGrpcServer.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -455,10 +455,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GrpcServer/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/libGrpcServer.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer/libGrpcServer.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/GrpcServer"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -598,6 +598,12 @@
 			<Option target="Event_manager"/>
 		</Unit>
 		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionS7.h">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionTcp.cpp">
+			<Option target="Event_manager"/>
+		</Unit>
+		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionTcp.h">
 			<Option target="Event_manager"/>
 		</Unit>
 		<Unit filename="/home/user/git/Event_manager11/Event_manager/GateWay/Connection/XmlReader.cpp">

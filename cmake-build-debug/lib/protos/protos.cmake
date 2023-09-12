@@ -47,7 +47,7 @@ unset(_cmake_expected_targets)
 
 
 # Create imported target protos
-add_library(protos STATIC IMPORTED)
+add_library(protos SHARED IMPORTED)
 
 set_target_properties(protos PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos"
@@ -57,8 +57,8 @@ set_target_properties(protos PROPERTIES
 # Import target "protos" for configuration "Debug"
 set_property(TARGET protos APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(protos PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/libprotos.a"
+  IMPORTED_LOCATION_DEBUG "/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/libprotos.so"
+  IMPORTED_SONAME_DEBUG "libprotos.so"
   )
 
 # This file does not depend on other imported targets which have

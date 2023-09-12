@@ -119,7 +119,7 @@ void GateWay::EVENT::HANDLER::EventHandler::Act()
     };
 
     PoolQueue.Post(free_b);
-    Caller.push_task("re", std::chrono::microseconds(500), free_b);
+    Caller.push_task("re", std::chrono::microseconds(10000), free_b);
 
     Caller.run();
     PoolEvent.Wait();

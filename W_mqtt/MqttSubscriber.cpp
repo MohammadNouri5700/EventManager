@@ -27,7 +27,6 @@ MqTT::MqttSubscriber::~MqttSubscriber() {
 void MqTT::MqttSubscriber::Act() {
 
 
-
     mqtt::const_message_ptr messagePointer;
 
 //    sleep(5);
@@ -40,7 +39,7 @@ void MqTT::MqttSubscriber::Act() {
     do {
         try {
             mtx.lock();
-//            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+            std::this_thread::sleep_for(std::chrono::milliseconds(10));
             std::atomic_bool res = false;
             for (auto n: OutnodeS) {
                 if (strcmp(TopicS.begin()->get_client().get_client_id().c_str(), n->OutputNodeID.Value.c_str()) == 0) {
@@ -64,13 +63,12 @@ void MqTT::MqttSubscriber::Act() {
             }
             mtx.unlock();
         } catch (const mqtt::exception &exc) {
-            std::cout << "\n!@! MQTT EXCEPTION  in sub   " << exc.get_error_str() << std::endl;
             std::cout << "\n!@! MQTT EXCEPTION  in sub   " << TopicS.begin()->get_name() << std::endl;
             mtx.unlock();
-//            goto LOOP;
         }
     } while (true);
-
+    std::cout << "try_consume_message == ERROR ";
+    goto LOOP;
 
     std::cout << "finish =============================================================";
 //    std::exit(1);

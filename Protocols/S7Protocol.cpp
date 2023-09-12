@@ -290,25 +290,30 @@ void ProtocolS::S7::S7Protocol::Write(Data *data, Tag *tag) {
 
         case S7TagType::MEMORYTAG: {
             if (!strcmp(tag_->ValueType.Value.c_str(), "bool")) {
-                size = Size(std::string("bool"));
-                byte db_helper[size];
+                byte db_helper[1];
                 if (strcmp(data->GetString().c_str(), std::string("true").c_str()) == 0) {
                     SetBitAt(db_helper, 0, tag_->getStartingAddress(), true);
-                    ReverseBytes(db_helper, size);
                     MBWrite(tag_->getDBNumber(), size, &db_helper);
                 } else {
-                    byte db_helper2['\000'];
-                    ReverseBytes(db_helper2, size);
-                    SetBitAt(db_helper2, tag_->getStartingAddress(), tag_->getStartingAddress(), false);
-                    MBWrite(tag_->getDBNumber(), size, &db_helper2);
+                    SetBitAt(db_helper, 0, tag_->getStartingAddress(), false);
+                    MBWrite(tag_->getDBNumber(), size, &db_helper);
                 }
 
 
             } else {
-                ReverseBytes(db, size);
-                std::cout << temp << "++++++ write S7 MEMORYTAG++++++" << std::endl;
-                int res = MBWrite(tag_->getDBNumber(), size, db);
-                std::cout << "RESUUUULTTTTTTTTTTTTTTT = " << std::to_string(res) << std::endl;
+
+                if (size==4){
+                    byte Ndb[size];
+                    float tempn = std::stof(data->GetString());
+                    memcpy(Ndb, &tempn, sizeof(tempn));
+                    ReverseBytes(Ndb, 4);
+                    MBWrite(tag_->getDBNumber(), 4, Ndb);
+                }else{
+                    ReverseBytes(db, size);
+                    std::cout << temp << "++++++ write S7 MEMORYTAG++++++" << std::endl;
+                    MBWrite(tag_->getDBNumber(), size, db);
+                }
+
             }
 
 

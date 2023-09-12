@@ -16,7 +16,7 @@
 #include "../GateWay/EventManager.h"
 #include "../GateWay/Connection/ConnectionEdge.h"
 #include "../GateWay/ConvertS/Convert.h"
-
+#include "../GateWay/Connection/ConnectionTcp.h"
 #include "../GateWay/Node/GpsTag.h"
 #include "../GateWay/Node/MqttTag.h"
 #include "../GateWay/Node/S7Tag.h"
@@ -110,6 +110,11 @@ void CONNECTION::ConnectionManager::AddConvert(Convert Conn) {
 
 
 void CONNECTION::ConnectionManager::Create() {
+
+
+
+
+
     for (auto p: ConnectionS) {
 
         switch (p->IProtocol) {

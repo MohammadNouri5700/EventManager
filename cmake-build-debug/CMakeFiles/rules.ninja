@@ -49,11 +49,11 @@ rule CXX_COMPILER__W_coap_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__W_coap_Debug
-  command = $PRE_LINK && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__W_coap_Debug
+  command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -68,11 +68,11 @@ rule CXX_COMPILER__W_mqtt_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__W_mqtt_Debug
-  command = $PRE_LINK && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__W_mqtt_Debug
+  command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -87,11 +87,11 @@ rule CXX_COMPILER__W_S7_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__W_S7_Debug
-  command = $PRE_LINK && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__W_S7_Debug
+  command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -106,11 +106,11 @@ rule CXX_COMPILER__ErrorManager_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__ErrorManager_Debug
-  command = $PRE_LINK && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__ErrorManager_Debug
+  command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -144,11 +144,11 @@ rule CXX_COMPILER__protos_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__protos_Debug
-  command = $PRE_LINK && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__protos_Debug
+  command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 
@@ -163,11 +163,11 @@ rule CXX_COMPILER__GrpcServer_Debug
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX shared library.
 
-rule CXX_STATIC_LIBRARY_LINKER__GrpcServer_Debug
-  command = $PRE_LINK && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_SHARED_LIBRARY_LINKER__GrpcServer_Debug
+  command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
 

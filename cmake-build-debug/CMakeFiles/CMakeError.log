@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_a8a08 && [1/2] Building C object CMakeFiles/cmTC_a8a08.dir/src.c.o
-[2/2] Linking C executable cmTC_a8a08
-FAILED: cmTC_a8a08 
-: && /usr/bin/cc   CMakeFiles/cmTC_a8a08.dir/src.c.o -o cmTC_a8a08   && :
-CMakeFiles/cmTC_a8a08.dir/src.c.o: In function `main':
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_7f12a && [1/2] Building C object CMakeFiles/cmTC_7f12a.dir/src.c.o
+[2/2] Linking C executable cmTC_7f12a
+FAILED: cmTC_7f12a 
+: && /usr/bin/cc   CMakeFiles/cmTC_7f12a.dir/src.c.o -o cmTC_7f12a   && :
+CMakeFiles/cmTC_7f12a.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x56): undefined reference to `pthread_cancel'
@@ -39,13 +39,1197 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_ca60c && [1/2] Building C object CMakeFiles/cmTC_ca60c.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_ca60c
-FAILED: cmTC_ca60c 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_ca60c.dir/CheckFunctionExists.c.o -o cmTC_ca60c  -lpthreads && :
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_2210f && [1/2] Building C object CMakeFiles/cmTC_2210f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2210f
+FAILED: cmTC_2210f 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_2210f.dir/CheckFunctionExists.c.o -o cmTC_2210f  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
 
+
+
+Performing C SOURCE FILE Test OPT_Wenum_conversion failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_ce418 && [1/2] Building C object CMakeFiles/cmTC_ce418.dir/src.c.o
+FAILED: CMakeFiles/cmTC_ce418.dir/src.c.o 
+/usr/bin/cc -DOPT_Wenum_conversion  -fdiagnostics-color=always   -Wenum-conversion -o CMakeFiles/cmTC_ce418.dir/src.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the function connect exists in the socket;-lpthread failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b5722 && [1/2] Building C object CMakeFiles/cmTC_b5722.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b5722
+FAILED: cmTC_b5722 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DCHECK_FUNCTION_EXISTS=connect  CMakeFiles/cmTC_b5722.dir/CheckFunctionExists.c.o -o cmTC_b5722  -lsocket  -lpthread && :
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the RAND_egd exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b4eb3 && [1/2] Building C object CMakeFiles/cmTC_b4eb3.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_b4eb3.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_b4eb3.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: error: ‘RAND_egd’ undeclared (first use in this function)
+    7 |   return ((int*)(&RAND_egd))[argc];
+      |                   ^~~~~~~~
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    3 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef RAND_egd
+  return ((int*)(&RAND_egd))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the OPENSSL_IS_BORINGSSL exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b0fac && [1/2] Building C object CMakeFiles/cmTC_b0fac.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_b0fac.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_b0fac.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: openssl/base.h: No such file or directory
+    2 | #include <openssl/base.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/base.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OPENSSL_IS_BORINGSSL
+  return ((int*)(&OPENSSL_IS_BORINGSSL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the OPENSSL_IS_AWSLC exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_aa7de && [1/2] Building C object CMakeFiles/cmTC_aa7de.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_aa7de.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_aa7de.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: openssl/base.h: No such file or directory
+    2 | #include <openssl/base.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/base.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OPENSSL_IS_AWSLC
+  return ((int*)(&OPENSSL_IS_AWSLC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function ldap_init exists in the ldap;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_e14fe && [1/2] Building C object CMakeFiles/cmTC_e14fe.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e14fe
+FAILED: cmTC_e14fe 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DCHECK_FUNCTION_EXISTS=ldap_init  CMakeFiles/cmTC_e14fe.dir/CheckFunctionExists.c.o -o cmTC_e14fe  -lldap  -lpthread  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so && :
+/usr/bin/ld: cannot find -lldap
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function ber_init exists in the lber;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_1702d && [1/2] Building C object CMakeFiles/cmTC_1702d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1702d
+FAILED: cmTC_1702d 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DCHECK_FUNCTION_EXISTS=ber_init  CMakeFiles/cmTC_1702d.dir/CheckFunctionExists.c.o -o cmTC_1702d  -llber  -lpthread  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so && :
+/usr/bin/ld: cannot find -llber
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if files ;ldap.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_2d214 && [1/2] Building C object CMakeFiles/cmTC_2d214.dir/HAVE_LDAP_H.c.o
+FAILED: CMakeFiles/cmTC_2d214.dir/HAVE_LDAP_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_2d214.dir/HAVE_LDAP_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_LDAP_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_LDAP_H.c:2:10: fatal error: ldap.h: No such file or directory
+    2 | #include <ldap.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <ldap.h>
+
+
+int main(void){return 0;}
+
+Determining if files ;lber.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_24260 && [1/2] Building C object CMakeFiles/cmTC_24260.dir/HAVE_LBER_H.c.o
+FAILED: CMakeFiles/cmTC_24260.dir/HAVE_LBER_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_24260.dir/HAVE_LBER_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_LBER_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_LBER_H.c:2:10: fatal error: lber.h: No such file or directory
+    2 | #include <lber.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <lber.h>
+
+
+int main(void){return 0;}
+
+Determining if the function idn2_lookup_ul exists in the idn2;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_e73dd && [1/2] Building C object CMakeFiles/cmTC_e73dd.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e73dd
+FAILED: cmTC_e73dd 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DCHECK_FUNCTION_EXISTS=idn2_lookup_ul  CMakeFiles/cmTC_e73dd.dir/CheckFunctionExists.c.o -o cmTC_e73dd  -lidn2  -lpthread  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so && :
+/usr/bin/ld: cannot find -lidn2
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if files inttypes.h;sys/filio.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_d6228 && [1/2] Building C object CMakeFiles/cmTC_d6228.dir/HAVE_SYS_FILIO_H.c.o
+FAILED: CMakeFiles/cmTC_d6228.dir/HAVE_SYS_FILIO_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_d6228.dir/HAVE_SYS_FILIO_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c:3:10: fatal error: sys/filio.h: No such file or directory
+    3 | #include <sys/filio.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <inttypes.h>
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_aab0f && [1/2] Building C object CMakeFiles/cmTC_aab0f.dir/HAVE_SYS_SOCKIO_H.c.o
+FAILED: CMakeFiles/cmTC_aab0f.dir/HAVE_SYS_SOCKIO_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_aab0f.dir/HAVE_SYS_SOCKIO_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c:9:10: fatal error: sys/sockio.h: No such file or directory
+    9 | #include <sys/sockio.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if files inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/utime.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_6276b && [1/2] Building C object CMakeFiles/cmTC_6276b.dir/HAVE_SYS_UTIME_H.c.o
+FAILED: CMakeFiles/cmTC_6276b.dir/HAVE_SYS_UTIME_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_6276b.dir/HAVE_SYS_UTIME_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c:13:10: fatal error: sys/utime.h: No such file or directory
+   13 | #include <sys/utime.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;idn2.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b0bcb && [1/2] Building C object CMakeFiles/cmTC_b0bcb.dir/HAVE_IDN2_H.c.o
+FAILED: CMakeFiles/cmTC_b0bcb.dir/HAVE_IDN2_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_b0bcb.dir/HAVE_IDN2_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:17:10: fatal error: idn2.h: No such file or directory
+   17 | #include <idn2.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <idn2.h>
+
+
+int main(void){return 0;}
+
+Determining if files inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;io.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_a2ad6 && [1/2] Building C object CMakeFiles/cmTC_a2ad6.dir/HAVE_IO_H.c.o
+FAILED: CMakeFiles/cmTC_a2ad6.dir/HAVE_IO_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_a2ad6.dir/HAVE_IO_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c:18:10: fatal error: io.h: No such file or directory
+   18 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_f667f && [1/2] Building C object CMakeFiles/cmTC_f667f.dir/HAVE_SSL_H.c.o
+FAILED: CMakeFiles/cmTC_f667f.dir/HAVE_SSL_H.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_f667f.dir/HAVE_SSL_H.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:28:10: fatal error: ssl.h: No such file or directory
+   28 | #include <ssl.h>
+      |          ^~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_7cd6c && [1/2] Building C object CMakeFiles/cmTC_7cd6c.dir/SIZEOF___INT64.c.o
+FAILED: CMakeFiles/cmTC_7cd6c.dir/SIZEOF___INT64.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_7cd6c.dir/SIZEOF___INT64.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+   27 | #define SIZE (sizeof(__int64))
+      |                      ^~~~~~~
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+ninja: build stopped: subcommand failed.
+
+
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_2bc55 && [1/2] Building C object CMakeFiles/cmTC_2bc55.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_2bc55.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_2bc55.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: error: ‘stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   47 |   return ((int*)(&stricmp))[argc];
+      |                   ^~~~~~~
+      |                   strncmp
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:43:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   43 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdatomic.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_6741d && [1/2] Building C object CMakeFiles/cmTC_6741d.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_6741d.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_6741d.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: error: ‘strcmpi’ undeclared (first use in this function); did you mean ‘strcmp’?
+   47 |   return ((int*)(&strcmpi))[argc];
+      |                   ^~~~~~~
+      |                   strcmp
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:43:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   43 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdatomic.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the closesocket exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b0b4c && [1/2] Building C object CMakeFiles/cmTC_b0b4c.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_b0b4c.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_b0b4c.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: error: ‘closesocket’ undeclared (first use in this function)
+   47 |   return ((int*)(&closesocket))[argc];
+      |                   ^~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:43:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   43 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdatomic.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpass_r exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_0a6df && [1/2] Building C object CMakeFiles/cmTC_0a6df.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_0a6df.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_0a6df.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: error: ‘getpass_r’ undeclared (first use in this function); did you mean ‘getpass’?
+   47 |   return ((int*)(&getpass_r))[argc];
+      |                   ^~~~~~~~~
+      |                   getpass
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:43:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   43 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdatomic.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpass_r
+  return ((int*)(&getpass_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setmode exist failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_ee572 && [1/2] Building C object CMakeFiles/cmTC_ee572.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_ee572.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_ee572.dir/CheckSymbolExists.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: error: ‘setmode’ undeclared (first use in this function)
+   47 |   return ((int*)(&setmode))[argc];
+      |                   ^~~~~~~
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:47:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:43:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   43 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdatomic.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setmode
+  return ((int*)(&setmode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_cdfa0 && [1/2] Building C object CMakeFiles/cmTC_cdfa0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_cdfa0
+FAILED: cmTC_cdfa0 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DCHECK_FUNCTION_EXISTS=mach_absolute_time  CMakeFiles/cmTC_cdfa0.dir/CheckFunctionExists.c.o -o cmTC_cdfa0  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so && :
+CMakeFiles/cmTC_cdfa0.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `mach_absolute_time'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing Curl Test HAVE_FSETXATTR_6 failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_fc180 && [1/2] Building C object CMakeFiles/cmTC_fc180.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_fc180.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_FSETXATTR_6  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_fc180.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:422:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  422 | main() {
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:423:3: error: too many arguments to function ‘fsetxattr’
+  423 |   fsetxattr(0, 0, 0, 0, 0, 0);
+      |   ^~~~~~~~~
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:420:
+/usr/include/x86_64-linux-gnu/sys/xattr.h:54:12: note: declared here
+   54 | extern int fsetxattr (int __fd, const char *__name, const void *__value,
+      |            ^~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Determining size of ADDRESS_FAMILY failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b01a0 && [1/2] Building C object CMakeFiles/cmTC_b01a0.dir/SIZEOF_ADDRESS_FAMILY.c.o
+FAILED: CMakeFiles/cmTC_b01a0.dir/SIZEOF_ADDRESS_FAMILY.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable  -fdiagnostics-color=always -o CMakeFiles/cmTC_b01a0.dir/SIZEOF_ADDRESS_FAMILY.c.o -c /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:4:10: fatal error: ws2def.h: No such file or directory
+    4 | #include "ws2def.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "ws2def.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(ADDRESS_FAMILY))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_c5df3 && [1/2] Building C object CMakeFiles/cmTC_c5df3.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_c5df3.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_IOCTLSOCKET  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_c5df3.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:216:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  216 | main ()
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:221:24: warning: implicit declaration of function ‘ioctlsocket’ [-Wimplicit-function-declaration]
+  221 |  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+      |                        ^~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:221:24: warning: nested extern declaration of ‘ioctlsocket’ [-Wnested-externs]
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:221:44: error: ‘FIONBIO’ undeclared (first use in this function)
+  221 |  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+      |                                            ^~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:221:44: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_fe81c && [1/2] Building C object CMakeFiles/cmTC_fe81c.dir/CurlTests.c.o
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:241:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  241 | main ()
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:245:13: warning: implicit declaration of function ‘IoctlSocket’ [-Wimplicit-function-declaration]
+  245 |     if(0 != IoctlSocket(0, 0, 0))
+      |             ^~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:245:13: warning: nested extern declaration of ‘IoctlSocket’ [-Wnested-externs]
+[2/2] Linking C executable cmTC_fe81c
+FAILED: cmTC_fe81c 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H  CMakeFiles/cmTC_fe81c.dir/CurlTests.c.o -o cmTC_fe81c  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so && :
+CMakeFiles/cmTC_fe81c.dir/CurlTests.c.o: In function `main':
+CurlTests.c:(.text+0x19): undefined reference to `IoctlSocket'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_30754 && [1/2] Building C object CMakeFiles/cmTC_30754.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_30754.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_30754.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:264:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  264 | main ()
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:269:17: warning: implicit declaration of function ‘IoctlSocket’ [-Wimplicit-function-declaration]
+  269 |         if(0 != IoctlSocket(0, FIONBIO, &flags))
+      |                 ^~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:269:17: warning: nested extern declaration of ‘IoctlSocket’ [-Wnested-externs]
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:269:32: error: ‘FIONBIO’ undeclared (first use in this function)
+  269 |         if(0 != IoctlSocket(0, FIONBIO, &flags))
+      |                                ^~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:269:32: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_27a1e && [1/2] Building C object CMakeFiles/cmTC_27a1e.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_27a1e.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_27a1e.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:288:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  288 | main ()
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:292:17: warning: implicit declaration of function ‘ioctlsocket’ [-Wimplicit-function-declaration]
+  292 |         if(0 != ioctlsocket(0, FIONBIO, &flags))
+      |                 ^~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:292:17: warning: nested extern declaration of ‘ioctlsocket’ [-Wnested-externs]
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:292:32: error: ‘FIONBIO’ undeclared (first use in this function)
+  292 |         if(0 != ioctlsocket(0, FIONBIO, &flags))
+      |                                ^~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:292:32: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_43ecf && [1/2] Building C object CMakeFiles/cmTC_43ecf.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_43ecf.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_43ecf.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:382:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  382 | main ()
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:384:43: error: ‘SO_NONBLOCK’ undeclared (first use in this function); did you mean ‘SOCK_NONBLOCK’?
+  384 |         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+      |                                           ^~~~~~~~~~~
+      |                                           SOCK_NONBLOCK
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:384:43: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_adfba && [1/2] Building C object CMakeFiles/cmTC_adfba.dir/CurlTests.c.o
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:532: warning: ISO C forbids an empty translation unit [-Wpedantic]
+  532 | #endif
+      | 
+[2/2] Linking C executable cmTC_adfba
+FAILED: cmTC_adfba 
+: && /usr/bin/cc -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_O_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H  CMakeFiles/cmTC_adfba.dir/CurlTests.c.o -o cmTC_adfba  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so && :
+/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_7cbc2 && [1/2] Building C object CMakeFiles/cmTC_7cbc2.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_7cbc2.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_7cbc2.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:92:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   92 |   char *address = "example.com";
+      |                   ^~~~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:99:23: error: storage size of ‘hdata’ isn’t known
+   99 |   struct hostent_data hdata;
+      |                       ^~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:111:8: error: too few arguments to function ‘gethostbyname_r’
+  111 |   rc = gethostbyname_r(address, &h, &hdata);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:99:23: warning: unused variable ‘hdata’ [-Wunused-variable]
+   99 |   struct hostent_data hdata;
+      |                       ^~~~~
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_303b1 && [1/2] Building C object CMakeFiles/cmTC_303b1.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_303b1.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_303b1.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:92:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   92 |   char *address = "example.com";
+      |                   ^~~~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:114:51: warning: passing argument 5 of ‘gethostbyname_r’ from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+      |                                                   ^~~~~~~~~
+      |                                                   |
+      |                                                   int *
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:180:36: note: expected ‘struct hostent ** restrict’ but argument is of type ‘int *’
+  180 |        struct hostent **__restrict __result,
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:114:8: error: too few arguments to function ‘gethostbyname_r’
+  114 |   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_c21fe && [1/2] Building C object CMakeFiles/cmTC_c21fe.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_c21fe.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_c21fe.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:92:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   92 |   char *address = "example.com";
+      |                   ^~~~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:99:23: error: storage size of ‘hdata’ isn’t known
+   99 |   struct hostent_data hdata;
+      |                       ^~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:111:8: error: too few arguments to function ‘gethostbyname_r’
+  111 |   rc = gethostbyname_r(address, &h, &hdata);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:99:23: warning: unused variable ‘hdata’ [-Wunused-variable]
+   99 |   struct hostent_data hdata;
+      |                       ^~~~~
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_9e5ed && [1/2] Building C object CMakeFiles/cmTC_9e5ed.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_9e5ed.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_9e5ed.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:92:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   92 |   char *address = "example.com";
+      |                   ^~~~~~~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:114:51: warning: passing argument 5 of ‘gethostbyname_r’ from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+      |                                                   ^~~~~~~~~
+      |                                                   |
+      |                                                   int *
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:180:36: note: expected ‘struct hostent ** restrict’ but argument is of type ‘int *’
+  180 |        struct hostent **__restrict __result,
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:114:8: error: too few arguments to function ‘gethostbyname_r’
+  114 |   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_96893 && [1/2] Building C object CMakeFiles/cmTC_96893.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_96893.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_GLIBC_STRERROR_R  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_96893.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:394:6: warning: no previous prototype for ‘check’ [-Wmissing-prototypes]
+  394 | void check(char c) {}
+      |      ^~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘check’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:394:17: warning: unused parameter ‘c’ [-Wunused-parameter]
+  394 | void check(char c) {}
+      |            ~~~~~^
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: At top level:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:397:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  397 | main () {
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:400:51: error: subscripted value is neither array nor pointer nor vector
+  400 |   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+      |                                                   ^
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3/bin/ninja/linux/ninja cmTC_b6153 && [1/2] Building C object CMakeFiles/cmTC_b6153.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_b6153.dir/CurlTests.c.o 
+/usr/bin/cc   -W -Wall -pedantic -Wbad-function-cast -Wconversion -Winline -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Wcast-align -Wdeclaration-after-statement -Wempty-body -Wendif-labels -Wfloat-equal -Wignored-qualifiers -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wstrict-prototypes -Wtype-limits -Wvla -Wmissing-parameter-type -Wold-style-declaration -Wstrict-aliasing=3 -Wformat=2 -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Walloc-zero -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=1 -Wrestrict -Wdouble-promotion -Wunused-const-variable -DHAVE_BUILTIN_AVAILABLE  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDATOMIC_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -fdiagnostics-color=always -o CMakeFiles/cmTC_b6153.dir/CurlTests.c.o -c /home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:446:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+  446 | main() {
+      | ^~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c: In function ‘main’:
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:447:6: warning: implicit declaration of function ‘__builtin_available’; did you mean ‘__builtin_scalbl’? [-Wimplicit-function-declaration]
+  447 |   if(__builtin_available(macOS 10.12, *)) {}
+      |      ^~~~~~~~~~~~~~~~~~~
+      |      __builtin_scalbl
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:447:6: warning: nested extern declaration of ‘__builtin_available’ [-Wnested-externs]
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:447:26: error: ‘macOS’ undeclared (first use in this function)
+  447 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                          ^~~~~
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:447:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/user/git/Event_manager11/Event_manager/lib/curl/CMake/CurlTests.c:447:31: error: expected ‘)’ before numeric constant
+  447 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                               ^~~~~~
+      |                               )
+ninja: build stopped: subcommand failed.
 
 

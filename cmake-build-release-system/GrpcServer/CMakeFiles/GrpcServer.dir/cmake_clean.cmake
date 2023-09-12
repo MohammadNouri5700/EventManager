@@ -12,8 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GrpcServer.dir/serialservice.cpp.o"
   "CMakeFiles/GrpcServer.dir/startupservice.cpp.o"
   "CMakeFiles/GrpcServer.dir/wifiservice.cpp.o"
-  "libGrpcServer.a"
   "libGrpcServer.pdb"
+  "libGrpcServer.so"
 )
 
 # Per-language clean rules from dependency scanning.

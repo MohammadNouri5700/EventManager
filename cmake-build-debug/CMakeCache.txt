@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Set to ON to build curl executable.
+BUILD_CURL_EXE:BOOL=ON
+
+//Build shared libraries
+BUILD_SHARED_LIBS:BOOL=ON
+
+//Build tests
+BUILD_TESTING:BOOL=ON
+
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=/usr/local/lib/cmake/Boost-1.78.0
 
@@ -34,7 +43,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -60,7 +69,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -109,8 +118,65 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/user/git/Event_manager11/Event_manager/cmake-build-debug/CMakeFiles/pkgRedirects
 
+//User executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//Read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//Read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//Info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//Object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//Program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//Locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//Modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//Man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
+
+//Run-time variable data (LOCALSTATEDIR/run)
+CMAKE_INSTALL_RUNSTATEDIR:PATH=
+
+//System admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//Modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//Read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
+
+//Name or full path to lber library
+CMAKE_LBER_LIB:STRING=lber
+
+//Path to LDAP include directory
+CMAKE_LDAP_INCLUDE_DIR:STRING=
+
+//Name or full path to ldap library
+CMAKE_LDAP_LIB:STRING=ldap
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
@@ -267,6 +333,208 @@ CPACK_SOURCE_TZ:BOOL=ON
 CPACK_SOURCE_ZIP:BOOL=OFF
 
 //Value Computed by CMake
+CURL_BINARY_DIR:STATIC=/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/curl
+
+//Set to ON to enable building curl with brotli support.
+CURL_BROTLI:BOOL=OFF
+
+//Path to the CA bundle. Set 'none' to disable or 'auto' for auto-detection.
+// Defaults to 'auto'.
+CURL_CA_BUNDLE:STRING=/etc/ssl/certs/ca-certificates.crt
+
+//Path to the CA bundle has been set
+CURL_CA_BUNDLE_SET:BOOL=TRUE
+
+//Set ON to use built-in CA store of TLS backend. Defaults to OFF
+CURL_CA_FALLBACK:BOOL=OFF
+
+//Location of default CA path. Set 'none' to disable or 'auto'
+// for auto-detection. Defaults to 'auto'.
+CURL_CA_PATH:STRING=/etc/ssl/certs
+
+//Path to the CA bundle has been set
+CURL_CA_PATH_SET:BOOL=TRUE
+
+//disables alt-svc support
+CURL_DISABLE_ALTSVC:BOOL=OFF
+
+//disables cookies support
+CURL_DISABLE_COOKIES:BOOL=OFF
+
+//disables cryptographic authentication
+CURL_DISABLE_CRYPTO_AUTH:BOOL=OFF
+
+//disables DICT
+CURL_DISABLE_DICT:BOOL=OFF
+
+//disables DNS-over-HTTPS
+CURL_DISABLE_DOH:BOOL=OFF
+
+//disables FILE
+CURL_DISABLE_FILE:BOOL=OFF
+
+//disables FTP
+CURL_DISABLE_FTP:BOOL=OFF
+
+//disables curl_easy_options API for existing options to curl_easy_setopt
+CURL_DISABLE_GETOPTIONS:BOOL=OFF
+
+//disables Gopher
+CURL_DISABLE_GOPHER:BOOL=OFF
+
+//disables HSTS support
+CURL_DISABLE_HSTS:BOOL=OFF
+
+//disables HTTP
+CURL_DISABLE_HTTP:BOOL=OFF
+
+//disables all HTTP authentication methods
+CURL_DISABLE_HTTP_AUTH:BOOL=OFF
+
+//disables IMAP
+CURL_DISABLE_IMAP:BOOL=OFF
+
+//disables LDAP
+CURL_DISABLE_LDAP:BOOL=ON
+
+//disables LDAPS
+CURL_DISABLE_LDAPS:BOOL=ON
+
+//disables --libcurl option from the curl tool
+CURL_DISABLE_LIBCURL_OPTION:BOOL=OFF
+
+//disables MIME support
+CURL_DISABLE_MIME:BOOL=OFF
+
+//disables MQTT
+CURL_DISABLE_MQTT:BOOL=OFF
+
+//disables netrc parser
+CURL_DISABLE_NETRC:BOOL=OFF
+
+//disables NTLM support
+CURL_DISABLE_NTLM:BOOL=OFF
+
+//Disable automatic loading of OpenSSL configuration
+CURL_DISABLE_OPENSSL_AUTO_LOAD_CONFIG:BOOL=OFF
+
+//disables date parsing
+CURL_DISABLE_PARSEDATE:BOOL=OFF
+
+//disables POP3
+CURL_DISABLE_POP3:BOOL=OFF
+
+//disables built-in progress meter
+CURL_DISABLE_PROGRESS_METER:BOOL=OFF
+
+//disables proxy support
+CURL_DISABLE_PROXY:BOOL=OFF
+
+//disables RTSP
+CURL_DISABLE_RTSP:BOOL=OFF
+
+//disables shuffle DNS feature
+CURL_DISABLE_SHUFFLE_DNS:BOOL=OFF
+
+//disables SMB
+CURL_DISABLE_SMB:BOOL=OFF
+
+//disables SMTP
+CURL_DISABLE_SMTP:BOOL=OFF
+
+//disables use of socketpair for curl_multi_poll
+CURL_DISABLE_SOCKETPAIR:BOOL=OFF
+
+//disables Telnet
+CURL_DISABLE_TELNET:BOOL=OFF
+
+//disables TFTP
+CURL_DISABLE_TFTP:BOOL=OFF
+
+//disables verbose strings
+CURL_DISABLE_VERBOSE_STRINGS:BOOL=OFF
+
+//to enable cmake export target
+CURL_ENABLE_EXPORT_TARGET:BOOL=ON
+
+//Enable SSL support
+CURL_ENABLE_SSL:BOOL=ON
+
+//Set to ON to hide libcurl internal symbols (=hide all symbols
+// that aren't officially external).
+CURL_HIDDEN_SYMBOLS:BOOL=ON
+
+//Value Computed by CMake
+CURL_IS_TOP_LEVEL:STATIC=OFF
+
+//Turn on compiler Link Time Optimizations
+CURL_LTO:BOOL=OFF
+
+//Value Computed by CMake
+CURL_SOURCE_DIR:STATIC=/home/user/git/Event_manager11/Event_manager/lib/curl
+
+//Enable BearSSL for SSL/TLS
+CURL_USE_BEARSSL:BOOL=OFF
+
+//Use GSSAPI implementation (right now only Heimdal is supported
+// with CMake build)
+CURL_USE_GSSAPI:BOOL=OFF
+
+//Use libPSL
+CURL_USE_LIBPSL:BOOL=ON
+
+//Use libSSH
+CURL_USE_LIBSSH:BOOL=OFF
+
+//Use libSSH2
+CURL_USE_LIBSSH2:BOOL=ON
+
+//Enable mbedTLS for SSL/TLS
+CURL_USE_MBEDTLS:BOOL=OFF
+
+//Enable NSS for SSL/TLS
+CURL_USE_NSS:BOOL=OFF
+
+//Use OpenLDAP code.
+CURL_USE_OPENLDAP:BOOL=OFF
+
+//Use OpenSSL code. Experimental
+CURL_USE_OPENSSL:BOOL=ON
+
+//enable wolfSSL for SSL/TLS
+CURL_USE_WOLFSSL:BOOL=OFF
+
+//Turn compiler warnings into errors
+CURL_WERROR:BOOL=OFF
+
+//Build curl with ZLIB support (AUTO, ON or OFF)
+CURL_ZLIB:STRING=AUTO
+
+//Set to ON to enable building curl with zstd support.
+CURL_ZSTD:BOOL=OFF
+
+//Set to ON to enable c-ares support
+ENABLE_ARES:BOOL=OFF
+
+//Set to ON to build with TrackMemory feature enabled
+ENABLE_CURLDEBUG:BOOL=OFF
+
+//Set to ON to enable curl debug features
+ENABLE_DEBUG:BOOL=OFF
+
+//Define if you want to enable IPv6 support
+ENABLE_IPV6:BOOL=ON
+
+//Set to ON to enable threaded DNS lookup
+ENABLE_THREADED_RESOLVER:BOOL=ON
+
+//Define if you want Unix domain sockets support
+ENABLE_UNIX_SOCKETS:BOOL=ON
+
+//Set to ON to enable EXPERIMENTAL websockets
+ENABLE_WEBSOCKETS:BOOL=OFF
+
+//Value Computed by CMake
 ErrorManager_BINARY_DIR:STATIC=/home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager
 
 //Value Computed by CMake
@@ -299,6 +567,31 @@ GrpcServer_LIB_DEPENDS:STATIC=general;protos;general;mosquittopp;
 //Value Computed by CMake
 GrpcServer_SOURCE_DIR:STATIC=/home/user/git/Event_manager11/Event_manager/GrpcServer
 
+//disables all protocols except HTTP (This overrides all CURL_DISABLE_*
+// options)
+HTTP_ONLY:BOOL=OFF
+
+//Basename of the curl library
+LIBCURL_OUTPUT_NAME:STRING=libcurl
+
+//Path to a file.
+LIBPSL_INCLUDE_DIR:PATH=LIBPSL_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+LIBPSL_LIBRARY:FILEPATH=LIBPSL_LIBRARY-NOTFOUND
+
+//Path to a file.
+LIBSSH2_INCLUDE_DIR:PATH=LIBSSH2_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+LIBSSH2_LIBRARY:FILEPATH=LIBSSH2_LIBRARY-NOTFOUND
+
+//The directory containing a CMake configuration file for LibPSL.
+LibPSL_DIR:PATH=LibPSL_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for LibSSH2.
+LibSSH2_DIR:PATH=LibSSH2_DIR-NOTFOUND
+
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
@@ -313,6 +606,12 @@ PAHO_MQTT_C_INCLUDE_DIRS:PATH=/usr/local/include
 
 //Path to a library.
 PAHO_MQTT_C_LIBRARIES:FILEPATH=/usr/local/lib/libpaho-mqtt3as.so
+
+//Path to a program.
+PERL_EXECUTABLE:FILEPATH=/usr/bin/perl
+
+//Enable picky compiler options
+PICKY_COMPILER:BOOL=ON
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -346,6 +645,24 @@ Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libprotoc.so
 
 //Path to a library.
 Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libprotoc.so
+
+//Path to a file.
+RANDOM_FILE:FILEPATH=/dev/urandom
+
+//Use libidn2 for IDN support
+USE_LIBIDN2:BOOL=ON
+
+//Use msquic library for HTTP/3 support
+USE_MSH3:BOOL=OFF
+
+//Use Nghttp2 library
+USE_NGHTTP2:BOOL=OFF
+
+//Use ngtcp2 and nghttp3 libraries for HTTP/3 support
+USE_NGTCP2:BOOL=OFF
+
+//Use quiche library for HTTP/3 support
+USE_QUICHE:BOOL=OFF
 
 //Value Computed by CMake
 W_coap_BINARY_DIR:STATIC=/home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap
@@ -496,8 +813,6 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
-//Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/ccmake
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -531,8 +846,40 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/user/git/Event_manager11/Event_manager
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
+CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -623,12 +970,96 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_ALTSVC
+CURL_DISABLE_ALTSVC-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_COOKIES
+CURL_DISABLE_COOKIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_CRYPTO_AUTH
+CURL_DISABLE_CRYPTO_AUTH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_DICT
+CURL_DISABLE_DICT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_DOH
+CURL_DISABLE_DOH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_FILE
+CURL_DISABLE_FILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_FTP
+CURL_DISABLE_FTP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_GETOPTIONS
+CURL_DISABLE_GETOPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_GOPHER
+CURL_DISABLE_GOPHER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_HSTS
+CURL_DISABLE_HSTS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_HTTP
+CURL_DISABLE_HTTP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_HTTP_AUTH
+CURL_DISABLE_HTTP_AUTH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_IMAP
+CURL_DISABLE_IMAP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_LDAP
+CURL_DISABLE_LDAP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_LDAPS
+CURL_DISABLE_LDAPS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_LIBCURL_OPTION
+CURL_DISABLE_LIBCURL_OPTION-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_MIME
+CURL_DISABLE_MIME-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_MQTT
+CURL_DISABLE_MQTT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_NETRC
+CURL_DISABLE_NETRC-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_NTLM
+CURL_DISABLE_NTLM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_PARSEDATE
+CURL_DISABLE_PARSEDATE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_POP3
+CURL_DISABLE_POP3-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_PROGRESS_METER
+CURL_DISABLE_PROGRESS_METER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_PROXY
+CURL_DISABLE_PROXY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_RTSP
+CURL_DISABLE_RTSP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_SHUFFLE_DNS
+CURL_DISABLE_SHUFFLE_DNS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_SMB
+CURL_DISABLE_SMB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_SMTP
+CURL_DISABLE_SMTP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_SOCKETPAIR
+CURL_DISABLE_SOCKETPAIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_TELNET
+CURL_DISABLE_TELNET-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_TFTP
+CURL_DISABLE_TFTP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_DISABLE_VERBOSE_STRINGS
+CURL_DISABLE_VERBOSE_STRINGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_ENABLE_EXPORT_TARGET
+CURL_ENABLE_EXPORT_TARGET-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_HIDDEN_SYMBOLS
+CURL_HIDDEN_SYMBOLS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_USE_GSSAPI
+CURL_USE_GSSAPI-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_USE_LIBPSL
+CURL_USE_LIBPSL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_USE_LIBSSH
+CURL_USE_LIBSSH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_USE_LIBSSH2
+CURL_USE_LIBSSH2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CURL_USE_OPENLDAP
+CURL_USE_OPENLDAP-ADVANCED:INTERNAL=1
+//STRINGS property for variable: CURL_ZLIB
+CURL_ZLIB-STRINGS:INTERNAL=AUTO;ON;OFF
+//ADVANCED property for variable: ENABLE_IPV6
+ENABLE_IPV6-ADVANCED:INTERNAL=1
 //Details about finding Boost
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake][c ][v1.78.0()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][c ][v1.1.1()]
 //Details about finding PahoMqttC
 FIND_PACKAGE_MESSAGE_DETAILS_PahoMqttC:INTERNAL=[/usr/local/lib/libpaho-mqtt3as.so][/usr/local/include][v()]
+//Details about finding Perl
+FIND_PACKAGE_MESSAGE_DETAILS_Perl:INTERNAL=[/usr/bin/perl][v5.26.1()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding Protobuf
@@ -641,12 +1072,338 @@ FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/lib/x86_64-linux-gnu/libz.so][/
 FIND_PACKAGE_MESSAGE_DETAILS_c-ares:INTERNAL=[/usr/local/lib/cmake/c-ares/c-ares-config.cmake][v1.17.2()]
 //Details about finding nlohmann_json
 FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.10.5()]
+//Have symbol alarm
+HAVE_ALARM:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h
+HAVE_ARPA_INET_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h
+HAVE_ARPA_TFTP_H:INTERNAL=1
+//Curl test 
+HAVE_ATOMIC:INTERNAL=1
+//Have symbol OPENSSL_IS_AWSLC
+HAVE_AWSLC:INTERNAL=
+//Have symbol basename
+HAVE_BASENAME:INTERNAL=1
+//Curl test 
+HAVE_BOOL_T:INTERNAL=1
+//Have symbol OPENSSL_IS_BORINGSSL
+HAVE_BORINGSSL:INTERNAL=
+//Curl test 
+HAVE_BUILTIN_AVAILABLE:INTERNAL=
+//Curl test 
+HAVE_CLOCK_GETTIME_MONOTONIC:INTERNAL=1
+//Have symbol closesocket
+HAVE_CLOSESOCKET:INTERNAL=
+//Have symbol fchmod
+HAVE_FCHMOD:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h
+HAVE_FCNTL_H:INTERNAL=1
+//Curl test 
+HAVE_FCNTL_O_NONBLOCK:INTERNAL=1
+//Curl test 
+HAVE_FILE_OFFSET_BITS:INTERNAL=1
+//Have symbol freeaddrinfo
+HAVE_FREEADDRINFO:INTERNAL=1
+//Have symbol fsetxattr
+HAVE_FSETXATTR:INTERNAL=1
+//Curl test 
+HAVE_FSETXATTR_5:INTERNAL=1
+//Curl test 
+HAVE_FSETXATTR_6:INTERNAL=
+//Have symbol ftruncate
+HAVE_FTRUNCATE:INTERNAL=1
+//Have symbol getaddrinfo
+HAVE_GETADDRINFO:INTERNAL=1
+//Have symbol geteuid
+HAVE_GETEUID:INTERNAL=1
+//Have symbol gethostbyname_r
+HAVE_GETHOSTBYNAME_R:INTERNAL=1
+//Curl test 
+HAVE_GETHOSTBYNAME_R_3:INTERNAL=
+//Curl test 
+HAVE_GETHOSTBYNAME_R_3_REENTRANT:INTERNAL=
+//Curl test 
+HAVE_GETHOSTBYNAME_R_5:INTERNAL=
+//Curl test 
+HAVE_GETHOSTBYNAME_R_5_REENTRANT:INTERNAL=
+//Curl test 
+HAVE_GETHOSTBYNAME_R_6:INTERNAL=1
+//Curl test 
+HAVE_GETHOSTBYNAME_R_6_REENTRANT:INTERNAL=1
+//Have function gethostname
+HAVE_GETHOSTNAME:INTERNAL=1
+//Have symbol getpass_r
+HAVE_GETPASS_R:INTERNAL=
+//Have symbol getpeername
+HAVE_GETPEERNAME:INTERNAL=1
+//Have symbol getppid
+HAVE_GETPPID:INTERNAL=1
+//Have symbol getpwuid
+HAVE_GETPWUID:INTERNAL=1
+//Have symbol getpwuid_r
+HAVE_GETPWUID_R:INTERNAL=1
+//Have symbol getrlimit
+HAVE_GETRLIMIT:INTERNAL=1
+//Have symbol getsockname
+HAVE_GETSOCKNAME:INTERNAL=1
+//Have symbol gettimeofday
+HAVE_GETTIMEOFDAY:INTERNAL=1
+//Curl test 
+HAVE_GLIBC_STRERROR_R:INTERNAL=
+//Have symbol gmtime_r
+HAVE_GMTIME_R:INTERNAL=1
+//Have includes inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;idn2.h
+HAVE_IDN2_H:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h
+HAVE_IFADDRS_H:INTERNAL=1
+//Have symbol if_nametoindex
+HAVE_IF_NAMETOINDEX:INTERNAL=1
+//Have symbol inet_ntop
+HAVE_INET_NTOP:INTERNAL=1
+//Have symbol inet_pton
+HAVE_INET_PTON:INTERNAL=1
+//Have include ;inttypes.h
+HAVE_INTTYPES_H:INTERNAL=1
+//Curl test 
+HAVE_IN_ADDR_T:INTERNAL=1
+//Curl test 
+HAVE_IOCTLSOCKET:INTERNAL=
+//Curl test 
+HAVE_IOCTLSOCKET_CAMEL:INTERNAL=
+//Curl test 
+HAVE_IOCTLSOCKET_CAMEL_FIONBIO:INTERNAL=
+//Curl test 
+HAVE_IOCTLSOCKET_FIONBIO:INTERNAL=
+//Curl test 
+HAVE_IOCTL_FIONBIO:INTERNAL=1
+//Curl test 
+HAVE_IOCTL_SIOCGIFADDR:INTERNAL=1
+//Have includes inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;io.h
+HAVE_IO_H:INTERNAL=
+//Have includes ;lber.h
+HAVE_LBER_H:INTERNAL=
+//Have includes ;ldap.h
+HAVE_LDAP_H:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h
+HAVE_LIBGEN_H:INTERNAL=1
+//Have library idn2;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB
+HAVE_LIBIDN2:INTERNAL=
+//Have library lber;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB
+HAVE_LIBLBER:INTERNAL=
+//Have library ldap;-lpthread;OpenSSL::SSL;OpenSSL::Crypto;ZLIB::ZLIB
+HAVE_LIBLDAP:INTERNAL=
+//Have library socket;-lpthread
+HAVE_LIBSOCKET:INTERNAL=
+//Have include linux/tcp.h
+HAVE_LINUX_TCP_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h
+HAVE_LOCALE_H:INTERNAL=1
+//Have function mach_absolute_time
+HAVE_MACH_ABSOLUTE_TIME:INTERNAL=
+//Test HAVE_MSG_NOSIGNAL
+HAVE_MSG_NOSIGNAL:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h
+HAVE_NETDB_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h
+HAVE_NETINET_IN_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h
+HAVE_NETINET_TCP_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h
+HAVE_NET_IF_H:INTERNAL=1
+//Curl test 
+HAVE_O_NONBLOCK:INTERNAL=
+//Have symbol pipe
+HAVE_PIPE:INTERNAL=1
+//Test HAVE_POLL_FINE
+HAVE_POLL_FINE:INTERNAL=1
+//Result of TRY_COMPILE
+HAVE_POLL_FINE_COMPILED:INTERNAL=TRUE
+//Result of try_run()
+HAVE_POLL_FINE_EXITCODE:INTERNAL=0
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h
+HAVE_POLL_H:INTERNAL=1
+//Curl test 
+HAVE_POSIX_STRERROR_R:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h
+HAVE_PWD_H:INTERNAL=1
+//Have symbol RAND_egd
+HAVE_RAND_EGD:INTERNAL=
+//Have symbol recv
+HAVE_RECV:INTERNAL=1
+//Have symbol select
+HAVE_SELECT:INTERNAL=1
+//Have symbol send
+HAVE_SEND:INTERNAL=1
+//Have symbol sendmsg
+HAVE_SENDMSG:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h
+HAVE_SETJMP_H:INTERNAL=1
+//Have symbol setlocale
+HAVE_SETLOCALE:INTERNAL=1
+//Have symbol setmode
+HAVE_SETMODE:INTERNAL=
+//Have symbol setrlimit
+HAVE_SETRLIMIT:INTERNAL=1
+//Curl test 
+HAVE_SETSOCKOPT_SO_NONBLOCK:INTERNAL=
+//Have symbol sigaction
+HAVE_SIGACTION:INTERNAL=1
+//Have symbol siginterrupt
+HAVE_SIGINTERRUPT:INTERNAL=1
+//Have symbol signal
+HAVE_SIGNAL:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h
+HAVE_SIGNAL_H:INTERNAL=1
+//Have symbol sigsetjmp
+HAVE_SIGSETJMP:INTERNAL=1
+//Result of TRY_COMPILE
+HAVE_SIZEOF_ADDRESS_FAMILY:INTERNAL=FALSE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_CURL_OFF_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_CURL_SOCKET_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_INT:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_LONG:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_LONG_LONG:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_OFF_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_SA_FAMILY_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_SIZE_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_SSIZE_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_STRUCT_SOCKADDR_STORAGE:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF_TIME_T:INTERNAL=TRUE
+//Result of TRY_COMPILE
+HAVE_SIZEOF___INT64:INTERNAL=FALSE
+//Have symbol snprintf
+HAVE_SNPRINTF:INTERNAL=1
+//Test HAVE_SOCKADDR_IN6_SIN6_ADDR
+HAVE_SOCKADDR_IN6_SIN6_ADDR:INTERNAL=1
+//Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID
+HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID:INTERNAL=1
+//Have symbol socket
+HAVE_SOCKET:INTERNAL=1
+//Have symbol socketpair
+HAVE_SOCKETPAIR:INTERNAL=1
+//Have includes inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;ssl.h
+HAVE_SSL_H:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h
+HAVE_STDATOMIC_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h
+HAVE_STDBOOL_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h;utime.h;stddef.h
+HAVE_STDDEF_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h
+HAVE_STDINT_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h
+HAVE_STDLIB_H:INTERNAL=1
+//Have symbol strcasecmp
+HAVE_STRCASECMP:INTERNAL=1
+//Have symbol strcmpi
+HAVE_STRCMPI:INTERNAL=
+//Have symbol strdup
+HAVE_STRDUP:INTERNAL=1
+//Have symbol strerror_r
+HAVE_STRERROR_R:INTERNAL=1
+//Have symbol stricmp
+HAVE_STRICMP:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h
+HAVE_STRINGS_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h
+HAVE_STRING_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h
+HAVE_STROPTS_H:INTERNAL=1
+//Have symbol strtok_r
+HAVE_STRTOK_R:INTERNAL=1
+//Have symbol strtoll
+HAVE_STRTOLL:INTERNAL=1
+//Test HAVE_STRUCT_TIMEVAL
+HAVE_STRUCT_TIMEVAL:INTERNAL=1
+//Have includes inttypes.h;sys/filio.h
+HAVE_SYS_FILIO_H:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h
+HAVE_SYS_IOCTL_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h
+HAVE_SYS_PARAM_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h
+HAVE_SYS_POLL_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h
+HAVE_SYS_RESOURCE_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h
+HAVE_SYS_SELECT_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h
+HAVE_SYS_SOCKET_H:INTERNAL=1
+//Have includes inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h
+HAVE_SYS_SOCKIO_H:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h
+HAVE_SYS_STAT_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h
+HAVE_SYS_TIME_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h
+HAVE_SYS_TYPES_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h
+HAVE_SYS_UN_H:INTERNAL=1
+//Have includes inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/utime.h
+HAVE_SYS_UTIME_H:INTERNAL=
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h;utime.h;stddef.h;sys/utsname.h
+HAVE_SYS_UTSNAME_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h
+HAVE_SYS_XATTR_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h
+HAVE_TERMIOS_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h
+HAVE_TERMIO_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h
+HAVE_TIME_H:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h
+HAVE_UNISTD_H:INTERNAL=1
+//Have symbol utime
+HAVE_UTIME:INTERNAL=1
+//Have symbol utimes
+HAVE_UTIMES:INTERNAL=1
+//Have include inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/un.h;sys/xattr.h;arpa/inet.h;arpa/tftp.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdatomic.h;stdbool.h;stdint.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h;utime.h
+HAVE_UTIME_H:INTERNAL=1
+//Curl test 
+HAVE_VARIADIC_MACROS_C99:INTERNAL=1
+//Curl test 
+HAVE_VARIADIC_MACROS_GCC:INTERNAL=1
+//Test HAVE_WRITABLE_ARGV
+HAVE_WRITABLE_ARGV:INTERNAL=1
+//Result of TRY_COMPILE
+HAVE_WRITABLE_ARGV_COMPILED:INTERNAL=TRUE
+//Result of try_run()
+HAVE_WRITABLE_ARGV_EXITCODE:INTERNAL=0
+//ADVANCED property for variable: HTTP_ONLY
+HTTP_ONLY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBPSL_INCLUDE_DIR
+LIBPSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBPSL_LIBRARY
+LIBPSL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBSSH2_INCLUDE_DIR
+LIBSSH2_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBSSH2_LIBRARY
+LIBSSH2_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
 OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_SSL_LIBRARY
 OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
+//Test OPT_Wdouble_promotion
+OPT_Wdouble_promotion:INTERNAL=1
+//Test OPT_Wenum_conversion
+OPT_Wenum_conversion:INTERNAL=
+//Test OPT_Wunused_const_variable
+OPT_Wunused_const_variable:INTERNAL=1
+//ADVANCED property for variable: PERL_EXECUTABLE
+PERL_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
@@ -667,6 +1424,40 @@ Protobuf_PROTOC_EXECUTABLE-ADVANCED:INTERNAL=1
 Protobuf_PROTOC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Protobuf_PROTOC_LIBRARY_RELEASE
 Protobuf_PROTOC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: RANDOM_FILE
+RANDOM_FILE-ADVANCED:INTERNAL=1
+//CHECK_TYPE_SIZE: ADDRESS_FAMILY unknown
+SIZEOF_ADDRESS_FAMILY:INTERNAL=
+//CHECK_TYPE_SIZE: sizeof(curl_off_t)
+SIZEOF_CURL_OFF_T:INTERNAL=8
+//CHECK_TYPE_SIZE: sizeof(curl_socket_t)
+SIZEOF_CURL_SOCKET_T:INTERNAL=4
+//CHECK_TYPE_SIZE: sizeof(int)
+SIZEOF_INT:INTERNAL=4
+//CHECK_TYPE_SIZE: sizeof(long)
+SIZEOF_LONG:INTERNAL=8
+//CHECK_TYPE_SIZE: sizeof(long long)
+SIZEOF_LONG_LONG:INTERNAL=8
+//CHECK_TYPE_SIZE: sizeof(off_t)
+SIZEOF_OFF_T:INTERNAL=8
+//CHECK_TYPE_SIZE: sizeof(sa_family_t)
+SIZEOF_SA_FAMILY_T:INTERNAL=2
+//CHECK_TYPE_SIZE: sizeof(size_t)
+SIZEOF_SIZE_T:INTERNAL=8
+//CHECK_TYPE_SIZE: sizeof(ssize_t)
+SIZEOF_SSIZE_T:INTERNAL=8
+//CHECK_TYPE_SIZE: sizeof(struct sockaddr_storage)
+SIZEOF_STRUCT_SOCKADDR_STORAGE:INTERNAL=128
+//CHECK_TYPE_SIZE: sizeof(time_t)
+SIZEOF_TIME_T:INTERNAL=8
+//CHECK_TYPE_SIZE: __int64 unknown
+SIZEOF___INT64:INTERNAL=
+//Curl test 
+STDC_HEADERS:INTERNAL=1
+//Curl test 
+TIME_WITH_SYS_TIME:INTERNAL=1
+//Test USE_UNIX_SOCKETS
+USE_UNIX_SOCKETS:INTERNAL=1
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
 ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
@@ -675,6 +1466,8 @@ ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=

@@ -18,10 +18,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="protos">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -44,10 +44,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="protos/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>

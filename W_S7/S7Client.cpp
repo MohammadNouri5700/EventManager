@@ -81,6 +81,11 @@ void Snap7::S7Client::Init() {
         std::cerr << "\n\n\n\n PLC is CONNECT \n\n\n\n\n" <<  std::endl;
     }
 
+//    byte db_helper[1];
+//    SetBitAt(db_helper, 0, 6, true);
+//    MBWrite(11, 1, &db_helper);
+//
+//    std::cerr << "\n\n\n\n PLC is CONNECT \n\n\n\n\n" <<  std::endl;
 
 
 //    if (Connected())
@@ -117,6 +122,8 @@ void Snap7::S7Client::Init() {
 //        byte MB4['\001']; // 16 Merker bytes
 //        uint8_t b0=1;
 //        byte MB3[b0]; // 16 Merker bytes
+
+//    DBWrite(25, 0, 4, db);
 
 
 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/W_S7.dir/S7Client.cpp.o"
   "CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o"
-  "libW_S7.a"
   "libW_S7.pdb"
+  "libW_S7.so"
 )
 
 # Per-language clean rules from dependency scanning.

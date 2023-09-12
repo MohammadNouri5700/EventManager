@@ -1,34 +1,5 @@
 #include "Mqtt.h"
 
-//class mqtt_client_callback : public virtual mqtt::callback,
-//                             public virtual mqtt::iaction_listener {
-//
-//
-//    void message_arrived(mqtt::const_message_ptr msg) override {
-//
-//    }
-//
-//
-//    void connected(const std::string &cause) override {
-//
-//    }
-//};
-//
-//class subscription_callback : public virtual mqtt::iaction_listener {
-//
-//
-//    void on_failure(const mqtt::token &tok) override {
-//
-//    }
-//
-//
-//    void on_success(const mqtt::token &tok) override {
-//
-//    }
-//
-//};
-
-
 MqTT::Mqtt::Mqtt(std::string address, std::string id) : Client(address, id, mqtt::create_options(MQTTVERSION_3_1)),
                                                         TopicS{}, ConOpts{}, ErrCallBack{} {
     std::cout << "*init ID :" << id << std::endl;
@@ -44,11 +15,11 @@ void MqTT::Mqtt::Run() {
     Init();
     try {
         std::cout << "--Start running mqtt" << std::endl;
-//        if (TopicS.size()) {
+        if (!TopicS.empty()) {
 //            Connect();
             Act();
 //            Disconnect();
-//        }
+        }
     }
     catch (const mqtt::exception &exc) {
         std::cout << "\n!@! MQTT EXCEPTION     " << exc << std::endl;

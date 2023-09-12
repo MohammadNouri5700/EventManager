@@ -69,6 +69,7 @@ ProtocolS::Mqtt::SubscriberProtocol::SubscriberProtocol(ConnectionMqtt *Conn) : 
                 std::string s = msg->get_payload_str();
 
             std::cout << "got message == "<< s <<std::endl;
+
             try{
 
             

@@ -225,7 +225,7 @@ CMakeFiles/Event_manager.dir/all: lib/protos/CMakeFiles/protos.dir/all
 CMakeFiles/Event_manager.dir/all: GrpcServer/CMakeFiles/GrpcServer.dir/all
 	$(MAKE) -f CMakeFiles/Event_manager.dir/build.make CMakeFiles/Event_manager.dir/depend
 	$(MAKE) -f CMakeFiles/Event_manager.dir/build.make CMakeFiles/Event_manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target Event_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target Event_manager"
 .PHONY : CMakeFiles/Event_manager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -279,12 +279,12 @@ W_coap/CMakeFiles/W_coap.dir/clean:
 W_mqtt/CMakeFiles/W_mqtt.dir/all:
 	$(MAKE) -f W_mqtt/CMakeFiles/W_mqtt.dir/build.make W_mqtt/CMakeFiles/W_mqtt.dir/depend
 	$(MAKE) -f W_mqtt/CMakeFiles/W_mqtt.dir/build.make W_mqtt/CMakeFiles/W_mqtt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=64,65,66 "Built target W_mqtt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=64,65,66,67 "Built target W_mqtt"
 .PHONY : W_mqtt/CMakeFiles/W_mqtt.dir/all
 
 # Build rule for subdir invocation for target.
 W_mqtt/CMakeFiles/W_mqtt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 W_mqtt/CMakeFiles/W_mqtt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 0
 .PHONY : W_mqtt/CMakeFiles/W_mqtt.dir/rule
@@ -360,7 +360,7 @@ ErrorManager/CMakeFiles/ErrorManager.dir/clean:
 lib/mqttclient/CMakeFiles/mosquittopp.dir/all:
 	$(MAKE) -f lib/mqttclient/CMakeFiles/mosquittopp.dir/build.make lib/mqttclient/CMakeFiles/mosquittopp.dir/depend
 	$(MAKE) -f lib/mqttclient/CMakeFiles/mosquittopp.dir/build.make lib/mqttclient/CMakeFiles/mosquittopp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=67,68 "Built target mosquittopp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=68,69 "Built target mosquittopp"
 .PHONY : lib/mqttclient/CMakeFiles/mosquittopp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -387,12 +387,12 @@ lib/mqttclient/CMakeFiles/mosquittopp.dir/clean:
 lib/protos/CMakeFiles/protos.dir/all:
 	$(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/depend
 	$(MAKE) -f lib/protos/CMakeFiles/protos.dir/build.make lib/protos/CMakeFiles/protos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target protos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target protos"
 .PHONY : lib/protos/CMakeFiles/protos.dir/all
 
 # Build rule for subdir invocation for target.
 lib/protos/CMakeFiles/protos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 lib/protos/CMakeFiles/protos.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 0
 .PHONY : lib/protos/CMakeFiles/protos.dir/rule
@@ -415,12 +415,12 @@ GrpcServer/CMakeFiles/GrpcServer.dir/all: lib/mqttclient/CMakeFiles/mosquittopp.
 GrpcServer/CMakeFiles/GrpcServer.dir/all: lib/protos/CMakeFiles/protos.dir/all
 	$(MAKE) -f GrpcServer/CMakeFiles/GrpcServer.dir/build.make GrpcServer/CMakeFiles/GrpcServer.dir/depend
 	$(MAKE) -f GrpcServer/CMakeFiles/GrpcServer.dir/build.make GrpcServer/CMakeFiles/GrpcServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54 "Built target GrpcServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54 "Built target GrpcServer"
 .PHONY : GrpcServer/CMakeFiles/GrpcServer.dir/all
 
 # Build rule for subdir invocation for target.
 GrpcServer/CMakeFiles/GrpcServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 GrpcServer/CMakeFiles/GrpcServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles 0
 .PHONY : GrpcServer/CMakeFiles/GrpcServer.dir/rule

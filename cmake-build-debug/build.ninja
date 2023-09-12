@@ -513,6 +513,14 @@ build CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o: CXX_COMPILER__Eve
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/MouseKey
 
+build CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionTcp.cpp || cmake_object_order_depends_target_Event_manager
+  DEFINES = -DOPENSSL=1
+  DEP_FILE = CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug -I/home/user/git/Event_manager11/Event_manager/W_gps -I/home/user/git/Event_manager11/Event_manager/W_coap -I/home/user/git/Event_manager11/Event_manager/W_mqtt -I/home/user/git/Event_manager11/Event_manager/W_S7 -I/home/user/git/Event_manager11/Event_manager/include -I/home/user/git/Event_manager11/Event_manager/atomic_queue/include -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
+  OBJECT_DIR = CMakeFiles/Event_manager.dir
+  OBJECT_FILE_DIR = CMakeFiles/Event_manager.dir/GateWay/Connection
+
 build CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o: CXX_COMPILER__Event_manager_Debug /home/user/git/Event_manager11/Event_manager/W_modbus/ModBus.cpp || cmake_object_order_depends_target_Event_manager
   DEFINES = -DOPENSSL=1
   DEP_FILE = CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o.d
@@ -545,9 +553,9 @@ build CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o: CXX_COMPILER__Event_ma
 #############################################
 # Link the executable Event_manager
 
-build Event_manager: CXX_EXECUTABLE_LINKER__Event_manager_Debug CMakeFiles/Event_manager.dir/main.cpp.o CMakeFiles/Event_manager.dir/W_can/cancontroller.cpp.o CMakeFiles/Event_manager.dir/MouseKey/key.cpp.o CMakeFiles/Event_manager.dir/MouseKey/mouse.cpp.o CMakeFiles/Event_manager.dir/GateWay/Listener.cpp.o CMakeFiles/Event_manager.dir/GateWay/EventManager.cpp.o CMakeFiles/Event_manager.dir/Protocols/Protocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/SubscriberProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/CanProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/PublisherProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/ServerProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/MasterProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/S7Protocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/SignalS.cpp.o CMakeFiles/Event_manager.dir/GateWay/ThreadPool.cpp.o CMakeFiles/Event_manager.dir/GateWay/Thread_Call.cpp.o CMakeFiles/Event_manager.dir/W_gps/GpsMessagesParser.cpp.o CMakeFiles/Event_manager.dir/Protocols/GpsProtocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/Connection.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionModbus.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionMqtt.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCan.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionS7.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/XmlReader.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionGPS.cpp.o CMakeFiles/Event_manager.dir/ErrorManager/ErrorManager.cpp.o CMakeFiles/Event_manager.dir/ErrorManager/Error.cpp.o CMakeFiles/Event_manager.dir/GateWay/Event.cpp.o CMakeFiles/Event_manager.dir/GateWay/Data.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/Tag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/NodeList.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/MqttTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/CanTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/GpsTag.cpp.o CMakeFiles/Event_manager.dir/ConnectionManager/ConnectionManager.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/S7Tag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/ModBusTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCoap.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/CoapTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/ConvertS/Convert.cpp.o CMakeFiles/Event_manager.dir/Protocols/CoapProtocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/ConvertS/OutputNode.cpp.o CMakeFiles/Event_manager.dir/GateWay/EventHandler.cpp.o CMakeFiles/Event_manager.dir/Protocols/KeyProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/MouseProtocol.cpp.o CMakeFiles/Event_manager.dir/Entity/GateSetting/setting.cpp.o CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edges.cpp.o CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edgeprocess.cpp.o CMakeFiles/Event_manager.dir/Entity/Tag/tags.cpp.o CMakeFiles/Event_manager.dir/Entity/Panel/panel.cpp.o CMakeFiles/Event_manager.dir/Protocols/CentralProtocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/EdgeTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionEdge.cpp.o CMakeFiles/Event_manager.dir/Entity/command/command.cpp.o CMakeFiles/Event_manager.dir/Entity/TagValue/tagValue.cpp.o CMakeFiles/Event_manager.dir/Entity/TagValue/getTagValue.cpp.o CMakeFiles/Event_manager.dir/wireless/wifi.cpp.o CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o | GrpcServer/libGrpcServer.a W_coap/libW_coap.a W_mqtt/libW_mqtt.a W_S7/libW_S7.a /usr/local/lib/libpaho-mqttpp3.so.1.2.0 /usr/local/lib/libpugixml.a /usr/local/lib/libgrpc++.a /usr/local/lib/libprotobuf.so lib/protos/libprotos.a /usr/local/lib/libprotobuf.so lib/mqttclient/libmosquittopp.a /usr/local/lib/libpaho-mqtt3as.so /usr/local/lib/libgrpc.a /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libz.so /usr/local/lib/libcares.so.2.4.3 /usr/local/lib/libaddress_sorting.a /usr/local/lib/libre2.a /usr/local/lib/libabsl_raw_hash_set.a /usr/local/lib/libabsl_hashtablez_sampler.a /usr/local/lib/libabsl_hash.a /usr/local/lib/libabsl_city.a /usr/local/lib/libabsl_low_level_hash.a /usr/local/lib/libabsl_statusor.a /usr/local/lib/libabsl_bad_variant_access.a /usr/local/lib/libgpr.a /usr/local/lib/libupb.a /usr/local/lib/libabsl_status.a /usr/local/lib/libabsl_random_distributions.a /usr/local/lib/libabsl_random_seed_sequences.a /usr/local/lib/libabsl_random_internal_pool_urbg.a /usr/local/lib/libabsl_random_internal_randen.a /usr/local/lib/libabsl_random_internal_randen_hwaes.a /usr/local/lib/libabsl_random_internal_randen_hwaes_impl.a /usr/local/lib/libabsl_random_internal_randen_slow.a /usr/local/lib/libabsl_random_internal_platform.a /usr/local/lib/libabsl_random_internal_seed_material.a /usr/local/lib/libabsl_random_seed_gen_exception.a /usr/local/lib/libabsl_cord.a /usr/local/lib/libabsl_bad_optional_access.a /usr/local/lib/libabsl_cordz_info.a /usr/local/lib/libabsl_cord_internal.a /usr/local/lib/libabsl_cordz_functions.a /usr/local/lib/libabsl_exponential_biased.a /usr/local/lib/libabsl_cordz_handle.a /usr/local/lib/libabsl_str_format_internal.a /usr/local/lib/libabsl_synchronization.a /usr/local/lib/libabsl_stacktrace.a /usr/local/lib/libabsl_symbolize.a /usr/local/lib/libabsl_debugging_internal.a /usr/local/lib/libabsl_demangle_internal.a /usr/local/lib/libabsl_graphcycles_internal.a /usr/local/lib/libabsl_malloc_internal.a /usr/local/lib/libabsl_time.a /usr/local/lib/libabsl_strings.a /usr/local/lib/libabsl_throw_delegate.a /usr/local/lib/libabsl_int128.a /usr/local/lib/libabsl_strings_internal.a /usr/local/lib/libabsl_base.a /usr/local/lib/libabsl_spinlock_wait.a /usr/local/lib/libabsl_raw_logging_internal.a /usr/local/lib/libabsl_log_severity.a /usr/local/lib/libabsl_civil_time.a /usr/local/lib/libabsl_time_zone.a || GrpcServer/libGrpcServer.a W_S7/libW_S7.a W_coap/libW_coap.a W_mqtt/libW_mqtt.a lib/mqttclient/libmosquittopp.a lib/protos/libprotos.a
+build Event_manager: CXX_EXECUTABLE_LINKER__Event_manager_Debug CMakeFiles/Event_manager.dir/main.cpp.o CMakeFiles/Event_manager.dir/W_can/cancontroller.cpp.o CMakeFiles/Event_manager.dir/MouseKey/key.cpp.o CMakeFiles/Event_manager.dir/MouseKey/mouse.cpp.o CMakeFiles/Event_manager.dir/GateWay/Listener.cpp.o CMakeFiles/Event_manager.dir/GateWay/EventManager.cpp.o CMakeFiles/Event_manager.dir/Protocols/Protocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/SubscriberProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/CanProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/PublisherProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/ServerProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/MasterProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/S7Protocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/SignalS.cpp.o CMakeFiles/Event_manager.dir/GateWay/ThreadPool.cpp.o CMakeFiles/Event_manager.dir/GateWay/Thread_Call.cpp.o CMakeFiles/Event_manager.dir/W_gps/GpsMessagesParser.cpp.o CMakeFiles/Event_manager.dir/Protocols/GpsProtocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/Connection.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionModbus.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionMqtt.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCan.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionS7.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/XmlReader.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionGPS.cpp.o CMakeFiles/Event_manager.dir/ErrorManager/ErrorManager.cpp.o CMakeFiles/Event_manager.dir/ErrorManager/Error.cpp.o CMakeFiles/Event_manager.dir/GateWay/Event.cpp.o CMakeFiles/Event_manager.dir/GateWay/Data.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/Tag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/NodeList.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/MqttTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/CanTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/GpsTag.cpp.o CMakeFiles/Event_manager.dir/ConnectionManager/ConnectionManager.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/S7Tag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/ModBusTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionCoap.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/CoapTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/ConvertS/Convert.cpp.o CMakeFiles/Event_manager.dir/Protocols/CoapProtocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/ConvertS/OutputNode.cpp.o CMakeFiles/Event_manager.dir/GateWay/EventHandler.cpp.o CMakeFiles/Event_manager.dir/Protocols/KeyProtocol.cpp.o CMakeFiles/Event_manager.dir/Protocols/MouseProtocol.cpp.o CMakeFiles/Event_manager.dir/Entity/GateSetting/setting.cpp.o CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edges.cpp.o CMakeFiles/Event_manager.dir/Entity/EdgeProcess/edgeprocess.cpp.o CMakeFiles/Event_manager.dir/Entity/Tag/tags.cpp.o CMakeFiles/Event_manager.dir/Entity/Panel/panel.cpp.o CMakeFiles/Event_manager.dir/Protocols/CentralProtocol.cpp.o CMakeFiles/Event_manager.dir/GateWay/Node/EdgeTag.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionEdge.cpp.o CMakeFiles/Event_manager.dir/Entity/command/command.cpp.o CMakeFiles/Event_manager.dir/Entity/TagValue/tagValue.cpp.o CMakeFiles/Event_manager.dir/Entity/TagValue/getTagValue.cpp.o CMakeFiles/Event_manager.dir/wireless/wifi.cpp.o CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o | GrpcServer/libGrpcServer.so W_coap/libW_coap.so W_mqtt/libW_mqtt.so W_S7/libW_S7.so /usr/local/lib/libpaho-mqttpp3.so.1.2.0 /usr/local/lib/libpugixml.a /usr/local/lib/libgrpc++.a /usr/local/lib/libprotobuf.so lib/protos/libprotos.so /usr/local/lib/libprotobuf.so lib/mqttclient/libmosquittopp.a /usr/local/lib/libpaho-mqtt3as.so /usr/local/lib/libgrpc.a /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libz.so /usr/local/lib/libcares.so.2.4.3 /usr/local/lib/libaddress_sorting.a /usr/local/lib/libre2.a /usr/local/lib/libabsl_raw_hash_set.a /usr/local/lib/libabsl_hashtablez_sampler.a /usr/local/lib/libabsl_hash.a /usr/local/lib/libabsl_city.a /usr/local/lib/libabsl_low_level_hash.a /usr/local/lib/libabsl_statusor.a /usr/local/lib/libabsl_bad_variant_access.a /usr/local/lib/libgpr.a /usr/local/lib/libupb.a /usr/local/lib/libabsl_status.a /usr/local/lib/libabsl_random_distributions.a /usr/local/lib/libabsl_random_seed_sequences.a /usr/local/lib/libabsl_random_internal_pool_urbg.a /usr/local/lib/libabsl_random_internal_randen.a /usr/local/lib/libabsl_random_internal_randen_hwaes.a /usr/local/lib/libabsl_random_internal_randen_hwaes_impl.a /usr/local/lib/libabsl_random_internal_randen_slow.a /usr/local/lib/libabsl_random_internal_platform.a /usr/local/lib/libabsl_random_internal_seed_material.a /usr/local/lib/libabsl_random_seed_gen_exception.a /usr/local/lib/libabsl_cord.a /usr/local/lib/libabsl_bad_optional_access.a /usr/local/lib/libabsl_cordz_info.a /usr/local/lib/libabsl_cord_internal.a /usr/local/lib/libabsl_cordz_functions.a /usr/local/lib/libabsl_exponential_biased.a /usr/local/lib/libabsl_cordz_handle.a /usr/local/lib/libabsl_str_format_internal.a /usr/local/lib/libabsl_synchronization.a /usr/local/lib/libabsl_stacktrace.a /usr/local/lib/libabsl_symbolize.a /usr/local/lib/libabsl_debugging_internal.a /usr/local/lib/libabsl_demangle_internal.a /usr/local/lib/libabsl_graphcycles_internal.a /usr/local/lib/libabsl_malloc_internal.a /usr/local/lib/libabsl_time.a /usr/local/lib/libabsl_strings.a /usr/local/lib/libabsl_throw_delegate.a /usr/local/lib/libabsl_int128.a /usr/local/lib/libabsl_strings_internal.a /usr/local/lib/libabsl_base.a /usr/local/lib/libabsl_spinlock_wait.a /usr/local/lib/libabsl_raw_logging_internal.a /usr/local/lib/libabsl_log_severity.a /usr/local/lib/libabsl_civil_time.a /usr/local/lib/libabsl_time_zone.a || GrpcServer/libGrpcServer.so W_S7/libW_S7.so W_coap/libW_coap.so W_mqtt/libW_mqtt.so lib/mqttclient/libmosquittopp.a lib/protos/libprotos.so
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  GrpcServer/libGrpcServer.a  W_coap/libW_coap.a  W_mqtt/libW_mqtt.a  W_S7/libW_S7.a  /usr/local/lib/libpaho-mqttpp3.so.1.2.0  -lmodbuspp  -lmodbus  -lsnap7  -lcoap-3  -lpthread  -lboost_system  -lboost_thread  -lboost_timer  -lboost_chrono  -lboost_regex  -lrt  /usr/local/lib/libpugixml.a  -liw  /usr/local/lib/libgrpc++.a  /usr/local/lib/libprotobuf.so  lib/protos/libprotos.a  /usr/local/lib/libprotobuf.so  -lgrpc++_unsecure  -lgrpc++  lib/mqttclient/libmosquittopp.a  -lmosquitto  /usr/local/lib/libpaho-mqtt3as.so  /usr/local/lib/libgrpc.a  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/local/lib/libcares.so.2.4.3  /usr/local/lib/libaddress_sorting.a  /usr/local/lib/libre2.a  /usr/local/lib/libabsl_raw_hash_set.a  /usr/local/lib/libabsl_hashtablez_sampler.a  /usr/local/lib/libabsl_hash.a  /usr/local/lib/libabsl_city.a  /usr/local/lib/libabsl_low_level_hash.a  /usr/local/lib/libabsl_statusor.a  /usr/local/lib/libabsl_bad_variant_access.a  /usr/local/lib/libgpr.a  /usr/local/lib/libupb.a  -ldl  -lm  -lrt  /usr/local/lib/libabsl_status.a  /usr/local/lib/libabsl_random_distributions.a  /usr/local/lib/libabsl_random_seed_sequences.a  /usr/local/lib/libabsl_random_internal_pool_urbg.a  /usr/local/lib/libabsl_random_internal_randen.a  /usr/local/lib/libabsl_random_internal_randen_hwaes.a  /usr/local/lib/libabsl_random_internal_randen_hwaes_impl.a  /usr/local/lib/libabsl_random_internal_randen_slow.a  /usr/local/lib/libabsl_random_internal_platform.a  /usr/local/lib/libabsl_random_internal_seed_material.a  /usr/local/lib/libabsl_random_seed_gen_exception.a  /usr/local/lib/libabsl_cord.a  /usr/local/lib/libabsl_bad_optional_access.a  /usr/local/lib/libabsl_cordz_info.a  /usr/local/lib/libabsl_cord_internal.a  /usr/local/lib/libabsl_cordz_functions.a  /usr/local/lib/libabsl_exponential_biased.a  /usr/local/lib/libabsl_cordz_handle.a  /usr/local/lib/libabsl_str_format_internal.a  /usr/local/lib/libabsl_synchronization.a  /usr/local/lib/libabsl_stacktrace.a  /usr/local/lib/libabsl_symbolize.a  /usr/local/lib/libabsl_debugging_internal.a  /usr/local/lib/libabsl_demangle_internal.a  /usr/local/lib/libabsl_graphcycles_internal.a  /usr/local/lib/libabsl_malloc_internal.a  /usr/local/lib/libabsl_time.a  /usr/local/lib/libabsl_strings.a  /usr/local/lib/libabsl_throw_delegate.a  /usr/local/lib/libabsl_int128.a  /usr/local/lib/libabsl_strings_internal.a  /usr/local/lib/libabsl_base.a  -lpthread  /usr/local/lib/libabsl_spinlock_wait.a  -lrt  /usr/local/lib/libabsl_raw_logging_internal.a  /usr/local/lib/libabsl_log_severity.a  /usr/local/lib/libabsl_civil_time.a  /usr/local/lib/libabsl_time_zone.a
+  LINK_LIBRARIES = -Wl,-rpath,/home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer:/home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap:/home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt:/home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7:/usr/local/lib:/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos  GrpcServer/libGrpcServer.so  W_coap/libW_coap.so  W_mqtt/libW_mqtt.so  W_S7/libW_S7.so  /usr/local/lib/libpaho-mqttpp3.so.1.2.0  -lmodbuspp  -lmodbus  -lsnap7  -lcoap-3  -lpthread  -lboost_system  -lboost_thread  -lboost_timer  -lboost_chrono  -lboost_regex  -lrt  /usr/local/lib/libpugixml.a  -liw  /usr/local/lib/libgrpc++.a  /usr/local/lib/libprotobuf.so  lib/protos/libprotos.so  /usr/local/lib/libprotobuf.so  -lgrpc++_unsecure  -lgrpc++  lib/mqttclient/libmosquittopp.a  -lmosquitto  /usr/local/lib/libpaho-mqtt3as.so  /usr/local/lib/libgrpc.a  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/local/lib/libcares.so.2.4.3  /usr/local/lib/libaddress_sorting.a  /usr/local/lib/libre2.a  /usr/local/lib/libabsl_raw_hash_set.a  /usr/local/lib/libabsl_hashtablez_sampler.a  /usr/local/lib/libabsl_hash.a  /usr/local/lib/libabsl_city.a  /usr/local/lib/libabsl_low_level_hash.a  /usr/local/lib/libabsl_statusor.a  /usr/local/lib/libabsl_bad_variant_access.a  /usr/local/lib/libgpr.a  /usr/local/lib/libupb.a  -ldl  -lm  -lrt  /usr/local/lib/libabsl_status.a  /usr/local/lib/libabsl_random_distributions.a  /usr/local/lib/libabsl_random_seed_sequences.a  /usr/local/lib/libabsl_random_internal_pool_urbg.a  /usr/local/lib/libabsl_random_internal_randen.a  /usr/local/lib/libabsl_random_internal_randen_hwaes.a  /usr/local/lib/libabsl_random_internal_randen_hwaes_impl.a  /usr/local/lib/libabsl_random_internal_randen_slow.a  /usr/local/lib/libabsl_random_internal_platform.a  /usr/local/lib/libabsl_random_internal_seed_material.a  /usr/local/lib/libabsl_random_seed_gen_exception.a  /usr/local/lib/libabsl_cord.a  /usr/local/lib/libabsl_bad_optional_access.a  /usr/local/lib/libabsl_cordz_info.a  /usr/local/lib/libabsl_cord_internal.a  /usr/local/lib/libabsl_cordz_functions.a  /usr/local/lib/libabsl_exponential_biased.a  /usr/local/lib/libabsl_cordz_handle.a  /usr/local/lib/libabsl_str_format_internal.a  /usr/local/lib/libabsl_synchronization.a  /usr/local/lib/libabsl_stacktrace.a  /usr/local/lib/libabsl_symbolize.a  /usr/local/lib/libabsl_debugging_internal.a  /usr/local/lib/libabsl_demangle_internal.a  /usr/local/lib/libabsl_graphcycles_internal.a  /usr/local/lib/libabsl_malloc_internal.a  /usr/local/lib/libabsl_time.a  /usr/local/lib/libabsl_strings.a  /usr/local/lib/libabsl_throw_delegate.a  /usr/local/lib/libabsl_int128.a  /usr/local/lib/libabsl_strings_internal.a  /usr/local/lib/libabsl_base.a  -lpthread  /usr/local/lib/libabsl_spinlock_wait.a  -lrt  /usr/local/lib/libabsl_raw_logging_internal.a  /usr/local/lib/libabsl_log_severity.a  /usr/local/lib/libabsl_civil_time.a  /usr/local/lib/libabsl_time_zone.a
   OBJECT_DIR = CMakeFiles/Event_manager.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -583,9 +591,8 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -608,7 +615,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target W_coap
+# Object build statements for SHARED_LIBRARY target W_coap
 
 
 #############################################
@@ -617,83 +624,94 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_W_coap: phony || W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/Coap.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Coap.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Coap.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Resource.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/Context.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Context.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Context.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Pdu.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Sessions.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/Server.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/Server.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/Server.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/client.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/client.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/client.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/EndPoint.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 build W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o: CXX_COMPILER__W_coap_Debug /home/user/git/Event_manager11/Event_manager/W_coap/CoapNode.cpp || cmake_object_order_depends_target_W_coap
+  DEFINES = -DW_coap_EXPORTS
   DEP_FILE = W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   OBJECT_FILE_DIR = W_coap/CMakeFiles/W_coap.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target W_coap
+# Link build statements for SHARED_LIBRARY target W_coap
 
 
 #############################################
-# Link the static library W_coap/libW_coap.a
+# Link the shared library W_coap/libW_coap.so
 
-build W_coap/libW_coap.a: CXX_STATIC_LIBRARY_LINKER__W_coap_Debug W_coap/CMakeFiles/W_coap.dir/Coap.cpp.o W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o W_coap/CMakeFiles/W_coap.dir/Context.cpp.o W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o W_coap/CMakeFiles/W_coap.dir/Server.cpp.o W_coap/CMakeFiles/W_coap.dir/client.cpp.o W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o
+build W_coap/libW_coap.so: CXX_SHARED_LIBRARY_LINKER__W_coap_Debug W_coap/CMakeFiles/W_coap.dir/Coap.cpp.o W_coap/CMakeFiles/W_coap.dir/Resource.cpp.o W_coap/CMakeFiles/W_coap.dir/Context.cpp.o W_coap/CMakeFiles/W_coap.dir/Pdu.cpp.o W_coap/CMakeFiles/W_coap.dir/Sessions.cpp.o W_coap/CMakeFiles/W_coap.dir/Server.cpp.o W_coap/CMakeFiles/W_coap.dir/client.cpp.o W_coap/CMakeFiles/W_coap.dir/EndPoint.cpp.o W_coap/CMakeFiles/W_coap.dir/CoapNode.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = W_coap/CMakeFiles/W_coap.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = W_coap/libW_coap.a
-  TARGET_PDB = W_coap.a.dbg
+  SONAME = libW_coap.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = W_coap/libW_coap.so
+  TARGET_PDB = W_coap.so.dbg
 
 
 #############################################
@@ -724,9 +742,8 @@ build W_coap/package_source: phony W_coap/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build W_coap/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build W_coap/edit_cache: phony W_coap/CMakeFiles/edit_cache.util
@@ -749,7 +766,7 @@ build W_coap/rebuild_cache: phony W_coap/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target W_mqtt
+# Object build statements for SHARED_LIBRARY target W_mqtt
 
 
 #############################################
@@ -758,48 +775,54 @@ build W_coap/rebuild_cache: phony W_coap/CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_W_mqtt: phony || W_mqtt/CMakeFiles/W_mqtt.dir
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/Mqtt.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/Mqtt.cpp || cmake_object_order_depends_target_W_mqtt
+  DEFINES = -DW_mqtt_EXPORTS
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/Mqtt.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/MqttSubscriber.cpp || cmake_object_order_depends_target_W_mqtt
+  DEFINES = -DW_mqtt_EXPORTS
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/MqttPublisher.cpp || cmake_object_order_depends_target_W_mqtt
+  DEFINES = -DW_mqtt_EXPORTS
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
 
 build W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o: CXX_COMPILER__W_mqtt_Debug /home/user/git/Event_manager11/Event_manager/W_mqtt/NewPublisher.cpp || cmake_object_order_depends_target_W_mqtt
+  DEFINES = -DW_mqtt_EXPORTS
   DEP_FILE = W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   OBJECT_FILE_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target W_mqtt
+# Link build statements for SHARED_LIBRARY target W_mqtt
 
 
 #############################################
-# Link the static library W_mqtt/libW_mqtt.a
+# Link the shared library W_mqtt/libW_mqtt.so
 
-build W_mqtt/libW_mqtt.a: CXX_STATIC_LIBRARY_LINKER__W_mqtt_Debug W_mqtt/CMakeFiles/W_mqtt.dir/Mqtt.cpp.o W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o
+build W_mqtt/libW_mqtt.so: CXX_SHARED_LIBRARY_LINKER__W_mqtt_Debug W_mqtt/CMakeFiles/W_mqtt.dir/Mqtt.cpp.o W_mqtt/CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o W_mqtt/CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o W_mqtt/CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = W_mqtt/CMakeFiles/W_mqtt.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = W_mqtt/libW_mqtt.a
-  TARGET_PDB = W_mqtt.a.dbg
+  SONAME = libW_mqtt.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = W_mqtt/libW_mqtt.so
+  TARGET_PDB = W_mqtt.so.dbg
 
 
 #############################################
@@ -830,9 +853,8 @@ build W_mqtt/package_source: phony W_mqtt/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build W_mqtt/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build W_mqtt/edit_cache: phony W_mqtt/CMakeFiles/edit_cache.util
@@ -855,7 +877,7 @@ build W_mqtt/rebuild_cache: phony W_mqtt/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target W_S7
+# Object build statements for SHARED_LIBRARY target W_S7
 
 
 #############################################
@@ -864,34 +886,38 @@ build W_mqtt/rebuild_cache: phony W_mqtt/CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_W_S7: phony || W_S7/CMakeFiles/W_S7.dir
 
 build W_S7/CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o: CXX_COMPILER__W_S7_Debug /home/user/git/Event_manager11/Event_manager/W_S7/SNAP7_Client.cpp || cmake_object_order_depends_target_W_S7
+  DEFINES = -DW_S7_EXPORTS
   DEP_FILE = W_S7/CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_S7/CMakeFiles/W_S7.dir
   OBJECT_FILE_DIR = W_S7/CMakeFiles/W_S7.dir
 
 build W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o: CXX_COMPILER__W_S7_Debug /home/user/git/Event_manager11/Event_manager/W_S7/S7Client.cpp || cmake_object_order_depends_target_W_S7
+  DEFINES = -DW_S7_EXPORTS
   DEP_FILE = W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = W_S7/CMakeFiles/W_S7.dir
   OBJECT_FILE_DIR = W_S7/CMakeFiles/W_S7.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target W_S7
+# Link build statements for SHARED_LIBRARY target W_S7
 
 
 #############################################
-# Link the static library W_S7/libW_S7.a
+# Link the shared library W_S7/libW_S7.so
 
-build W_S7/libW_S7.a: CXX_STATIC_LIBRARY_LINKER__W_S7_Debug W_S7/CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o
+build W_S7/libW_S7.so: CXX_SHARED_LIBRARY_LINKER__W_S7_Debug W_S7/CMakeFiles/W_S7.dir/SNAP7_Client.cpp.o W_S7/CMakeFiles/W_S7.dir/S7Client.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = W_S7/CMakeFiles/W_S7.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = W_S7/libW_S7.a
-  TARGET_PDB = W_S7.a.dbg
+  SONAME = libW_S7.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = W_S7/libW_S7.so
+  TARGET_PDB = W_S7.so.dbg
 
 
 #############################################
@@ -922,9 +948,8 @@ build W_S7/package_source: phony W_S7/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build W_S7/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7 && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7 && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build W_S7/edit_cache: phony W_S7/CMakeFiles/edit_cache.util
@@ -947,7 +972,7 @@ build W_S7/rebuild_cache: phony W_S7/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target ErrorManager
+# Object build statements for SHARED_LIBRARY target ErrorManager
 
 
 #############################################
@@ -956,34 +981,38 @@ build W_S7/rebuild_cache: phony W_S7/CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_ErrorManager: phony || ErrorManager/CMakeFiles/ErrorManager.dir
 
 build ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o: CXX_COMPILER__ErrorManager_Debug /home/user/git/Event_manager11/Event_manager/ErrorManager/ErrorManager.cpp || cmake_object_order_depends_target_ErrorManager
+  DEFINES = -DErrorManager_EXPORTS
   DEP_FILE = ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
   OBJECT_FILE_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
 
 build ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o: CXX_COMPILER__ErrorManager_Debug /home/user/git/Event_manager11/Event_manager/ErrorManager/Error.cpp || cmake_object_order_depends_target_ErrorManager
+  DEFINES = -DErrorManager_EXPORTS
   DEP_FILE = ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++2a
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless
   OBJECT_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
   OBJECT_FILE_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target ErrorManager
+# Link build statements for SHARED_LIBRARY target ErrorManager
 
 
 #############################################
-# Link the static library ErrorManager/libErrorManager.a
+# Link the shared library ErrorManager/libErrorManager.so
 
-build ErrorManager/libErrorManager.a: CXX_STATIC_LIBRARY_LINKER__ErrorManager_Debug ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o
+build ErrorManager/libErrorManager.so: CXX_SHARED_LIBRARY_LINKER__ErrorManager_Debug ErrorManager/CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o ErrorManager/CMakeFiles/ErrorManager.dir/Error.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = ErrorManager/CMakeFiles/ErrorManager.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = ErrorManager/libErrorManager.a
-  TARGET_PDB = ErrorManager.a.dbg
+  SONAME = libErrorManager.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = ErrorManager/libErrorManager.so
+  TARGET_PDB = ErrorManager.so.dbg
 
 
 #############################################
@@ -1014,9 +1043,8 @@ build ErrorManager/package_source: phony ErrorManager/CMakeFiles/package_source.
 # Utility command for edit_cache
 
 build ErrorManager/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build ErrorManager/edit_cache: phony ErrorManager/CMakeFiles/edit_cache.util
@@ -1106,9 +1134,8 @@ build lib/mqttclient/package_source: phony lib/mqttclient/CMakeFiles/package_sou
 # Utility command for edit_cache
 
 build lib/mqttclient/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/mqttclient && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/mqttclient && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build lib/mqttclient/edit_cache: phony lib/mqttclient/CMakeFiles/edit_cache.util
@@ -1131,7 +1158,7 @@ build lib/mqttclient/rebuild_cache: phony lib/mqttclient/CMakeFiles/rebuild_cach
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target protos
+# Object build statements for SHARED_LIBRARY target protos
 
 
 #############################################
@@ -1140,174 +1167,199 @@ build lib/mqttclient/rebuild_cache: phony lib/mqttclient/CMakeFiles/rebuild_cach
 build cmake_object_order_depends_target_protos: phony || lib/protos/convert.grpc.pb.cc lib/protos/convert.grpc.pb.h lib/protos/convert.pb.cc lib/protos/convert.pb.h lib/protos/gps.grpc.pb.cc lib/protos/gps.grpc.pb.h lib/protos/gps.pb.cc lib/protos/gps.pb.h lib/protos/modbus.grpc.pb.cc lib/protos/modbus.grpc.pb.h lib/protos/modbus.pb.cc lib/protos/modbus.pb.h lib/protos/mqtt.grpc.pb.cc lib/protos/mqtt.grpc.pb.h lib/protos/mqtt.pb.cc lib/protos/mqtt.pb.h lib/protos/mqttpod.grpc.pb.cc lib/protos/mqttpod.grpc.pb.h lib/protos/mqttpod.pb.cc lib/protos/mqttpod.pb.h lib/protos/network.grpc.pb.cc lib/protos/network.grpc.pb.h lib/protos/network.pb.cc lib/protos/network.pb.h lib/protos/node.grpc.pb.cc lib/protos/node.grpc.pb.h lib/protos/node.pb.cc lib/protos/node.pb.h lib/protos/s7.grpc.pb.cc lib/protos/s7.grpc.pb.h lib/protos/s7.pb.cc lib/protos/s7.pb.h lib/protos/serialconfig.grpc.pb.cc lib/protos/serialconfig.grpc.pb.h lib/protos/serialconfig.pb.cc lib/protos/serialconfig.pb.h lib/protos/startup.grpc.pb.cc lib/protos/startup.grpc.pb.h lib/protos/startup.pb.cc lib/protos/startup.pb.h lib/protos/wifi.grpc.pb.cc lib/protos/wifi.grpc.pb.h lib/protos/wifi.pb.cc lib/protos/wifi.pb.h
 
 build lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/convert.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/gps.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/modbus.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqtt.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqttpod.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/network.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/node.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/s7.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/serialconfig.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/startup.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/wifi.grpc.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/convert.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/gps.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/modbus.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqtt.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/mqttpod.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/network.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/network.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/network.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/node.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/node.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/node.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/s7.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/serialconfig.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/startup.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 build lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o: CXX_COMPILER__protos_Debug /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos/wifi.pb.cc || cmake_object_order_depends_target_protos
+  DEFINES = -Dprotos_EXPORTS
   DEP_FILE = lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   OBJECT_FILE_DIR = lib/protos/CMakeFiles/protos.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target protos
+# Link build statements for SHARED_LIBRARY target protos
 
 
 #############################################
-# Link the static library lib/protos/libprotos.a
+# Link the shared library lib/protos/libprotos.so
 
-build lib/protos/libprotos.a: CXX_STATIC_LIBRARY_LINKER__protos_Debug lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o lib/protos/CMakeFiles/protos.dir/network.pb.cc.o lib/protos/CMakeFiles/protos.dir/node.pb.cc.o lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o
+build lib/protos/libprotos.so: CXX_SHARED_LIBRARY_LINKER__protos_Debug lib/protos/CMakeFiles/protos.dir/convert.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/gps.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/modbus.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqtt.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqttpod.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/network.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/node.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/s7.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/serialconfig.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/startup.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/wifi.grpc.pb.cc.o lib/protos/CMakeFiles/protos.dir/convert.pb.cc.o lib/protos/CMakeFiles/protos.dir/gps.pb.cc.o lib/protos/CMakeFiles/protos.dir/modbus.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqtt.pb.cc.o lib/protos/CMakeFiles/protos.dir/mqttpod.pb.cc.o lib/protos/CMakeFiles/protos.dir/network.pb.cc.o lib/protos/CMakeFiles/protos.dir/node.pb.cc.o lib/protos/CMakeFiles/protos.dir/s7.pb.cc.o lib/protos/CMakeFiles/protos.dir/serialconfig.pb.cc.o lib/protos/CMakeFiles/protos.dir/startup.pb.cc.o lib/protos/CMakeFiles/protos.dir/wifi.pb.cc.o | /usr/local/lib/libprotobuf.so
   LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libprotobuf.so  -lpthread  -lgrpc++_unsecure  -lgrpc++  -lpthread
   OBJECT_DIR = lib/protos/CMakeFiles/protos.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = lib/protos/libprotos.a
-  TARGET_PDB = protos.a.dbg
+  SONAME = libprotos.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = lib/protos/libprotos.so
+  TARGET_PDB = protos.so.dbg
 
 
 #############################################
@@ -1338,9 +1390,8 @@ build lib/protos/package_source: phony lib/protos/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build lib/protos/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build lib/protos/edit_cache: phony lib/protos/CMakeFiles/edit_cache.util
@@ -1561,7 +1612,7 @@ build lib/protos/wifi.pb.h lib/protos/wifi.pb.cc | ${cmake_ninja_workdir}lib/pro
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target GrpcServer
+# Object build statements for SHARED_LIBRARY target GrpcServer
 
 
 #############################################
@@ -1570,111 +1621,127 @@ build lib/protos/wifi.pb.h lib/protos/wifi.pb.cc | ${cmake_ninja_workdir}lib/pro
 build cmake_object_order_depends_target_GrpcServer: phony || cmake_object_order_depends_target_mosquittopp cmake_object_order_depends_target_protos
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/grpcserver.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/mqttservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/wifiservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/modbusservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/s7service.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/convertservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/mqttpodservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/nodeservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/serialservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/networkservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/startupservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/gpsservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 build GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o: CXX_COMPILER__GrpcServer_Debug /home/user/git/Event_manager11/Event_manager/GrpcServer/locationservice.cpp || cmake_object_order_depends_target_GrpcServer
+  DEFINES = -DGrpcServer_EXPORTS
   DEP_FILE = GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -I/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp -I/home/user/git/Event_manager11/Event_manager/wireless -I/home/user/git/Event_manager11/Event_manager/i2creader -I/home/user/git/Event_manager11/Event_manager/GrpcServer/. -I/home/user/git/Event_manager11/Event_manager/GrpcServer/../ConnectionManager -I/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos -I/home/user/git/Event_manager11/Event_manager/lib/mqttclient/.
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   OBJECT_FILE_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target GrpcServer
+# Link build statements for SHARED_LIBRARY target GrpcServer
 
 
 #############################################
-# Link the static library GrpcServer/libGrpcServer.a
+# Link the shared library GrpcServer/libGrpcServer.so
 
-build GrpcServer/libGrpcServer.a: CXX_STATIC_LIBRARY_LINKER__GrpcServer_Debug GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o || lib/mqttclient/libmosquittopp.a lib/protos/libprotos.a
+build GrpcServer/libGrpcServer.so: CXX_SHARED_LIBRARY_LINKER__GrpcServer_Debug GrpcServer/CMakeFiles/GrpcServer.dir/grpcserver.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/wifiservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/modbusservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/s7service.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/convertservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/mqttpodservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/nodeservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/serialservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/networkservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/startupservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/gpsservice.cpp.o GrpcServer/CMakeFiles/GrpcServer.dir/locationservice.cpp.o | lib/protos/libprotos.so lib/mqttclient/libmosquittopp.a /usr/local/lib/libprotobuf.so || lib/mqttclient/libmosquittopp.a lib/protos/libprotos.so
   LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos:/usr/local/lib  lib/protos/libprotos.so  lib/mqttclient/libmosquittopp.a  /usr/local/lib/libprotobuf.so  -lpthread  -lgrpc++_unsecure  -lgrpc++  -lmosquitto
   OBJECT_DIR = GrpcServer/CMakeFiles/GrpcServer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = GrpcServer/libGrpcServer.a
-  TARGET_PDB = GrpcServer.a.dbg
+  SONAME = libGrpcServer.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = GrpcServer/libGrpcServer.so
+  TARGET_PDB = GrpcServer.so.dbg
 
 
 #############################################
@@ -1705,9 +1772,8 @@ build GrpcServer/package_source: phony GrpcServer/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build GrpcServer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer && /usr/bin/ccmake -S/home/user/git/Event_manager11/Event_manager -B/home/user/git/Event_manager11/Event_manager/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer && /opt/clion-2022.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build GrpcServer/edit_cache: phony GrpcServer/CMakeFiles/edit_cache.util
@@ -1727,33 +1793,33 @@ build GrpcServer/rebuild_cache: phony GrpcServer/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build ErrorManager: phony ErrorManager/libErrorManager.a
+build ErrorManager: phony ErrorManager/libErrorManager.so
 
-build GrpcServer: phony GrpcServer/libGrpcServer.a
+build GrpcServer: phony GrpcServer/libGrpcServer.so
 
-build W_S7: phony W_S7/libW_S7.a
+build W_S7: phony W_S7/libW_S7.so
 
-build W_coap: phony W_coap/libW_coap.a
+build W_coap: phony W_coap/libW_coap.so
 
-build W_mqtt: phony W_mqtt/libW_mqtt.a
+build W_mqtt: phony W_mqtt/libW_mqtt.so
 
-build libErrorManager.a: phony ErrorManager/libErrorManager.a
+build libErrorManager.so: phony ErrorManager/libErrorManager.so
 
-build libGrpcServer.a: phony GrpcServer/libGrpcServer.a
+build libGrpcServer.so: phony GrpcServer/libGrpcServer.so
 
-build libW_S7.a: phony W_S7/libW_S7.a
+build libW_S7.so: phony W_S7/libW_S7.so
 
-build libW_coap.a: phony W_coap/libW_coap.a
+build libW_coap.so: phony W_coap/libW_coap.so
 
-build libW_mqtt.a: phony W_mqtt/libW_mqtt.a
+build libW_mqtt.so: phony W_mqtt/libW_mqtt.so
 
 build libmosquittopp.a: phony lib/mqttclient/libmosquittopp.a
 
-build libprotos.a: phony lib/protos/libprotos.a
+build libprotos.so: phony lib/protos/libprotos.so
 
 build mosquittopp: phony lib/mqttclient/libmosquittopp.a
 
-build protos: phony lib/protos/libprotos.a
+build protos: phony lib/protos/libprotos.so
 
 # =============================================================================
 # Folder targets.
@@ -1770,35 +1836,35 @@ build all: phony Event_manager W_coap/all W_mqtt/all W_S7/all ErrorManager/all l
 #############################################
 # Folder: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/ErrorManager
 
-build ErrorManager/all: phony ErrorManager/libErrorManager.a
+build ErrorManager/all: phony ErrorManager/libErrorManager.so
 
 # =============================================================================
 
 #############################################
 # Folder: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/GrpcServer
 
-build GrpcServer/all: phony GrpcServer/libGrpcServer.a
+build GrpcServer/all: phony GrpcServer/libGrpcServer.so
 
 # =============================================================================
 
 #############################################
 # Folder: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_S7
 
-build W_S7/all: phony W_S7/libW_S7.a
+build W_S7/all: phony W_S7/libW_S7.so
 
 # =============================================================================
 
 #############################################
 # Folder: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_coap
 
-build W_coap/all: phony W_coap/libW_coap.a
+build W_coap/all: phony W_coap/libW_coap.so
 
 # =============================================================================
 
 #############################################
 # Folder: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/W_mqtt
 
-build W_mqtt/all: phony W_mqtt/libW_mqtt.a
+build W_mqtt/all: phony W_mqtt/libW_mqtt.so
 
 # =============================================================================
 
@@ -1812,7 +1878,7 @@ build lib/mqttclient/all: phony lib/mqttclient/libmosquittopp.a
 #############################################
 # Folder: /home/user/git/Event_manager11/Event_manager/cmake-build-debug/lib/protos
 
-build lib/protos/all: phony lib/protos/libprotos.a
+build lib/protos/all: phony lib/protos/libprotos.so
 
 # =============================================================================
 # Built-in targets

@@ -32,6 +32,7 @@ class OutputNode : public ProtocolS::Tag
     std::thread* thread;
 public:
     std::atomic_bool isbusy= false;
+    std::atomic_bool isConsume= false;
     strTag Name{};
     strTag OutputNodeID{};
     strTag ConnectionName{};

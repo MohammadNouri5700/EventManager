@@ -12,6 +12,7 @@
 #include "W_modbus/modbuspp/modbuspp.h"
 //#include "W_modbus/modbuspp/master.h"
 #include "W_gps/GpsMessagesParser.h"
+#include "GateWay/Connection/ConnectionTcp.h"
 
 
 #include <stdio.h>
@@ -24,8 +25,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <string>
-
-
+#include <boost/thread.hpp>
 
 
 #include <errno.h>
@@ -40,7 +40,6 @@
 #include <fcntl.h>
 
 
-
 #include <mqtt/client.h>  // Mosquitto client.
 
 std::vector<Connection *> ConnectionS;
@@ -51,6 +50,7 @@ ProtocolS::NodeList nodeList;
 ERROR::ErrorManager errorManager;
 GateWay::LISTENer::Listener ll{};
 GateWay::EVENT::MANAGER::EventManager e_manager;
+
 #include<unistd.h>
 
 std::thread e_m;
@@ -61,8 +61,7 @@ using namespace GateWay::EVENT::MANAGER;
 using namespace GateWay::EVENT::HANDLER;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-void sendRS485()
-{
+void sendRS485() {
     struct termios tty;
     int hSerial = open("/dev/ttyO4", O_RDWR | O_NOCTTY | O_NDELAY);
     if (hSerial == -1)
@@ -98,13 +97,13 @@ void sendRS485()
         std::cout << "Setting the new parameters failed" << std::endl;
     unsigned char C[] = {'H', 'A', 'M', 'I', 'D'};
     // while(1)
-    for (auto c : C)
+    for (auto c: C)
         write(hSerial, &c, 1);
     close(hSerial);
 }
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
-class SimpleSerial
-{
+class SimpleSerial {
 public:
     /**
      * Constructor.
@@ -114,8 +113,7 @@ public:
      * serial device
      */
     SimpleSerial(std::string port, unsigned int baud_rate)
-        : io(), serial(io, port)
-    {
+            : io(), serial(io, port) {
         serial.set_option(boost::asio::serial_port_base::baud_rate(baud_rate));
         serial.set_option(boost::asio::serial_port_base::character_size(8));
         serial.set_option(boost::asio::serial_port_base::parity(boost::asio::serial_port_base::parity::none));
@@ -126,8 +124,7 @@ public:
      * \param s string to write
      * \throws boost::system::system_error on failure
      */
-    void writeString(std::string s)
-    {
+    void writeString(std::string s) {
         boost::asio::write(serial, boost::asio::buffer(s.c_str(), s.size()));
     }
 
@@ -137,23 +134,20 @@ public:
      * \return a string containing the received line
      * \throws boost::system::system_error on failure
      */
-    std::string readLine()
-    {
+    std::string readLine() {
         // Reading data char by char, code is optimized for simplicity, not speed
         using namespace boost;
         char c;
         std::string result;
-        for (;;)
-        {
+        for (;;) {
             asio::read(serial, asio::buffer(&c, 1));
-            switch (c)
-            {
-            case '\r':
-                break;
-            case '\n':
-                return result;
-            default:
-                result += c;
+            switch (c) {
+                case '\r':
+                    break;
+                case '\n':
+                    return result;
+                default:
+                    result += c;
             }
         }
     }
@@ -173,23 +167,21 @@ private:
  * 
  * @author MohammadNouri
  */
-void  readGps(){
-    SimpleSerial serial("/dev/tty05",  9600);
+void readGps() {
+    SimpleSerial serial("/dev/tty05", 9600);
 
-    int i= 0;
- while(true){
-        try
-        {
+    int i = 0;
+    while (true) {
+        try {
             // We consider NEO6 is connected to laptop by USB
             serial.writeString("RXM");
-            std::cout <<  serial.readLine() << std::endl;
+            std::cout << serial.readLine() << std::endl;
 
             // if(rs232Config.enabled == true)
             // serial.writeString("Hello world2\n");
 
         }
-        catch (boost::system::system_error &e)
-        {
+        catch (boost::system::system_error &e) {
             i++;
             std::cout << "Error: " << e.what() << std::endl;
         }
@@ -198,35 +190,33 @@ void  readGps(){
 }
 
 
-int start_sub(){
+int start_sub() {
     // In order to connect the mqtt client to a broker,
     // Define an Ip address pointing to a broker. In this case, the localhost on port 1883.
     std::string ip = "iot-mqtt.pod.ir:1883";
     // Then, define an ID to be used by the client when communicating with the broker.
-    std::string id = "NG340F190E3YA3C02ESCIEI";
+    std::string id = "6N7LKJLBC56W471A1QS69BI";
 
     // Construct a client using the Ip and Id, specifying usage of MQTT V5.
     mqtt::client client(ip, id, mqtt::create_options(MQTTVERSION_3_1));
     // Use the connect method of the client to establish a connection to the broker.
     client.connect();
     // In order to receive messages from the broker, specify a topic to subscribe to.
-    client.subscribe("dvcout/75r8nn7z3rg/NG340F190E3YA3C02ESCIEI/twin/#");
+    client.subscribe("dvcout/fopic3c5702/6N7LKJLBC56W471A1QS69BI/twin/update/desired");
     // Begin the client's message processing loop, filling a queue with messages.
     client.start_consuming();
 
     bool running = true;
-    while (running)
-    {
+    while (running) {
         // Construct a message pointer to hold an incoming message.
         mqtt::const_message_ptr messagePointer;
 
         // Try to consume a message, passing messagePointer by reference.
         // If a message is consumed, the function will return `true`,
         // allowing control to enter the if-statement body.
-        if (client.try_consume_message(&messagePointer))
-        {
+        if (client.try_consume_message(&messagePointer)) {
             // Construct a string from the message payload.
-            std::string messageString = messagePointer -> get_payload_str();
+            std::string messageString = messagePointer->get_payload_str();
             // Print payload string to console (debugging).
             std::cout << messageString << std::endl;
 
@@ -234,8 +224,7 @@ int start_sub(){
             // This is where message processing can be passed onto different
             // functions for parsing.
             // Here, we break the loop and exit the program if a `quit` is received.
-            if (messageString == "quit")
-            {
+            if (messageString == "quit") {
                 running = false;
             }
         }
@@ -364,9 +353,13 @@ int start_sub(){
 // 		failcount=0;
 //   		}
 // 	}
+using namespace boost;
 
-int main()
-{
+void testserver() {
+
+}
+
+int main() {
 
 
     // char *buffer;
@@ -395,9 +388,8 @@ int main()
 
 
 
-
-
-
+    auto tcp = new ConnectionTcp();
+    tcp->async_run(1000);
 
 
 
@@ -429,7 +421,7 @@ int main()
     // Modbus::Master mb (Modbus::Net::Rtu, port , "19200N1"); // new master on RTU
     // if you have to handle the DE signal of the line driver with RTS,
     // you should uncomment the lines below...
-    // mb.rtu().setRts(RtsDown);
+    // mb.rtu().settry_consume_messageRts(RtsDown);
     // mb.rtu().setSerialMode(Rs485);
     // Modbus::Slave & slv = mb.addSlave (2); // SolarPi Pressure meter
     // std::cout << "Reads input registers of slave[" << slv.number() << "] on " <<
@@ -478,32 +470,29 @@ int main()
     connected = false;
 
     XmlReader xml;
-    std::string path="";
-    try{
-         path = {"/home/user/git/Event_manager11/Event_manager/build/config.xml"};
-//        path = {"./config.xml"};
-    } catch (std::exception &e) {
-    }
+    std::string path = "";
+    try {
+//        path = {"/home/user/git/Event_manager11/Event_manager/build/config.xml"};
+        // path = {"/home/user/git/Event_manager11/Event_manager/build/config1.xml"};
+       path = {"/home/root/config.xml"};
+    } catch (std::exception &e) {}
 
 
     ////////////////////////////////////////////////////////////////////
-    if (xml.setFile(path))
-    {
+    if (xml.setFile(path)) {
         xml.ExtraConnection(ConnectionS);
 //        sleep(5);
         xml.ExtraConvert(ConvertS, ConnectionS);
 //        sleep(5);
     }
 
-    for (auto i : ConnectionS)
-    {
+    for (auto i: ConnectionS) {
         std::cout << "\n****************************\n";
         i->print();
         std::cout << "\n****************************\n";
     }
 
-    for (auto i : ConvertS)
-    {
+    for (auto i: ConvertS) {
         std::cout << "\n****************************\n";
         i.Print();
         std::cout << "\n****************************\n";
@@ -514,8 +503,7 @@ int main()
     ConnMan.Create();
 //    sleep(5);
     xml.ExtraOutputNode(OutnodeS);
-    for (OutputNode *i : OutnodeS)
-    {
+    for (OutputNode *i: OutnodeS) {
         std::cout << "\n****************************\n";
         i->print();
         std::cout << "\n****************************\n";
@@ -535,14 +523,12 @@ int main()
     std::cout << "bind event handler" << std::endl;
     e_h = std::thread(std::bind(&EventHandler::Act, &e_handler));
 
-    for (auto l : ListenerS)
-    {
+    for (auto l: ListenerS) {
         ll.SetNodes(l);
     }
     std::cout << "Start out Node thread" << std::endl;
-    for (auto n : OutnodeS)
-    {
-        n->async_run((int)(n->Timer.Value));
+    for (auto n: OutnodeS) {
+        n->async_run((int) (n->Timer.Value));
     }
 //    sleep(5);
     std::cout << "after starting, join able: " << e_m.joinable();
@@ -550,11 +536,10 @@ int main()
     e_h.join();
 
     std::cout << "\nHello, World!" << std::endl;
-    while (true)
-    {
+    while (true) {
         sleep(1);
     }
-    
+
     mosqpp::lib_cleanup();
     return 0;
 }

@@ -811,9 +811,22 @@ CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/git/Event_manager11/Event_manager/MouseKey/eventfinder.cpp -o CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.s
 
+CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o: CMakeFiles/Event_manager.dir/flags.make
+CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o: ../GateWay/Connection/ConnectionTcp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o -c /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionTcp.cpp
+
+CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionTcp.cpp > CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.i
+
+CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/git/Event_manager11/Event_manager/GateWay/Connection/ConnectionTcp.cpp -o CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.s
+
 CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o: CMakeFiles/Event_manager.dir/flags.make
 CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o: ../W_modbus/ModBus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o -c /home/user/git/Event_manager11/Event_manager/W_modbus/ModBus.cpp
 
 CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.i: cmake_force
@@ -826,7 +839,7 @@ CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.s: cmake_force
 
 CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o: CMakeFiles/Event_manager.dir/flags.make
 CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o: ../W_modbus/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o -c /home/user/git/Event_manager11/Event_manager/W_modbus/Server.cpp
 
 CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.i: cmake_force
@@ -839,7 +852,7 @@ CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.s: cmake_force
 
 CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o: CMakeFiles/Event_manager.dir/flags.make
 CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o: ../W_modbus/Master.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o -c /home/user/git/Event_manager11/Event_manager/W_modbus/Master.cpp
 
 CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.i: cmake_force
@@ -910,6 +923,7 @@ Event_manager_OBJECTS = \
 "CMakeFiles/Event_manager.dir/Entity/TagValue/getTagValue.cpp.o" \
 "CMakeFiles/Event_manager.dir/wireless/wifi.cpp.o" \
 "CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o" \
+"CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o" \
 "CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o" \
 "CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o" \
 "CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o"
@@ -975,19 +989,20 @@ Event_manager: CMakeFiles/Event_manager.dir/Entity/TagValue/tagValue.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/Entity/TagValue/getTagValue.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/wireless/wifi.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/MouseKey/eventfinder.cpp.o
+Event_manager: CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/W_modbus/ModBus.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/W_modbus/Server.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/W_modbus/Master.cpp.o
 Event_manager: CMakeFiles/Event_manager.dir/build.make
-Event_manager: GrpcServer/libGrpcServer.a
-Event_manager: W_coap/libW_coap.a
-Event_manager: W_mqtt/libW_mqtt.a
-Event_manager: W_S7/libW_S7.a
+Event_manager: GrpcServer/libGrpcServer.so
+Event_manager: W_coap/libW_coap.so
+Event_manager: W_mqtt/libW_mqtt.so
+Event_manager: W_S7/libW_S7.so
 Event_manager: /usr/local/lib/libpaho-mqttpp3.so.1.2.0
 Event_manager: /usr/local/lib/libpugixml.a
 Event_manager: /usr/local/lib/libgrpc++.a
 Event_manager: /usr/local/lib/libprotobuf.so
-Event_manager: lib/protos/libprotos.a
+Event_manager: lib/protos/libprotos.so
 Event_manager: /usr/local/lib/libprotobuf.so
 Event_manager: lib/mqttclient/libmosquittopp.a
 Event_manager: /usr/local/lib/libpaho-mqtt3as.so
@@ -1045,7 +1060,7 @@ Event_manager: /usr/local/lib/libabsl_log_severity.a
 Event_manager: /usr/local/lib/libabsl_civil_time.a
 Event_manager: /usr/local/lib/libabsl_time_zone.a
 Event_manager: CMakeFiles/Event_manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Linking CXX executable Event_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Linking CXX executable Event_manager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Event_manager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

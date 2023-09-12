@@ -1,2 +1,1 @@
-/usr/bin/ar qc libW_mqtt.a  CMakeFiles/W_mqtt.dir/Mqtt.cpp.o CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o
-/usr/bin/ranlib libW_mqtt.a
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libW_mqtt.so -o libW_mqtt.so CMakeFiles/W_mqtt.dir/Mqtt.cpp.o CMakeFiles/W_mqtt.dir/MqttSubscriber.cpp.o CMakeFiles/W_mqtt.dir/MqttPublisher.cpp.o CMakeFiles/W_mqtt.dir/NewPublisher.cpp.o 

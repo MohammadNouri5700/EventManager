@@ -9,6 +9,7 @@ include(CheckIncludeFile)
 include(CheckIncludeFileCXX)
 include(CheckIncludeFiles)
 
+
 include_directories(W_modbus/modbuspp)
 include_directories(wireless)
 find_package(PkgConfig REQUIRED)
@@ -106,7 +107,7 @@ set( LIB
         Entity/TagValue/getTagValue.cpp
         wireless/wifi.cpp
         MouseKey/eventfinder.cpp
-        )
+        GateWay/Connection/ConnectionTcp.cpp GateWay/Connection/ConnectionTcp.h)
 
 add_executable(Event_manager main.cpp ${LIB} ${MODBUS})
 link_libraries(Event_manager GrpcServer W_coap W_mqtt W_S7 ${PKG} ${MODBUSPP_LIBRARIES}

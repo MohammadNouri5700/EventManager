@@ -72,6 +72,14 @@ void MqTT::MqttPublisher::MqttPublisher::Init()
 mqtt::client cliTest("iot-mqtt.pod.ir:1883", "U9MFKW3X53T0VSV4APIH9P3");
 void MqTT::MqttPublisher::Act()
 {
+
+    for (auto n : OutnodeS)
+    {
+        if (strcmp(Client.get_client_id().c_str(),n->OutputNodeID.Value.c_str())==0) {
+            n->isbusy=true;
+        }
+    }
+
     mu.lock();
 
     int64_t timestamp = duration_cast<seconds>(system_clock::now().time_since_epoch()).count();
@@ -141,7 +149,10 @@ void MqTT::MqttPublisher::Act()
             std::cout << "Publishing Topic: " << strTopicName << std::endl;
             //  tok = Topic.publish(payload.c_str());
             //tok = Topic.publish(temp.c_str());
-            Topic.publish(payload.c_str())->try_wait();
+//            Topic.publish(payload.c_str())->wait();
+
+            Client.publish(strTopicName,payload.c_str(),0,false)->wait_for(20000);
+//            Client.disconnect()->wait();
 //            Client.disconnect();
             waitPub= false;
 //            mqtt::iasync_client dubclient("iot-mqtt.pod.ir:1883", "U9MFKW3X53T0VSV4APIH9P3");
@@ -179,7 +190,7 @@ void MqTT::MqttPublisher::Act()
     vstrPayloads.clear();
 
     std::cout << "OK" << std::endl;
-//    Client.disconnect();
+
     for (auto n : OutnodeS)
     {
         if (strcmp(Client.get_client_id().c_str(),n->OutputNodeID.Value.c_str())==0) {

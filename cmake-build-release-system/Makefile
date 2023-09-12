@@ -749,6 +749,33 @@ GateWay/Connection/ConnectionS7.cpp.s:
 	$(MAKE) -f CMakeFiles/Event_manager.dir/build.make CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionS7.cpp.s
 .PHONY : GateWay/Connection/ConnectionS7.cpp.s
 
+GateWay/Connection/ConnectionTcp.o: GateWay/Connection/ConnectionTcp.cpp.o
+
+.PHONY : GateWay/Connection/ConnectionTcp.o
+
+# target to build an object file
+GateWay/Connection/ConnectionTcp.cpp.o:
+	$(MAKE) -f CMakeFiles/Event_manager.dir/build.make CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.o
+.PHONY : GateWay/Connection/ConnectionTcp.cpp.o
+
+GateWay/Connection/ConnectionTcp.i: GateWay/Connection/ConnectionTcp.cpp.i
+
+.PHONY : GateWay/Connection/ConnectionTcp.i
+
+# target to preprocess a source file
+GateWay/Connection/ConnectionTcp.cpp.i:
+	$(MAKE) -f CMakeFiles/Event_manager.dir/build.make CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.i
+.PHONY : GateWay/Connection/ConnectionTcp.cpp.i
+
+GateWay/Connection/ConnectionTcp.s: GateWay/Connection/ConnectionTcp.cpp.s
+
+.PHONY : GateWay/Connection/ConnectionTcp.s
+
+# target to generate assembly for a file
+GateWay/Connection/ConnectionTcp.cpp.s:
+	$(MAKE) -f CMakeFiles/Event_manager.dir/build.make CMakeFiles/Event_manager.dir/GateWay/Connection/ConnectionTcp.cpp.s
+.PHONY : GateWay/Connection/ConnectionTcp.cpp.s
+
 GateWay/Connection/XmlReader.o: GateWay/Connection/XmlReader.cpp.o
 
 .PHONY : GateWay/Connection/XmlReader.o
@@ -1958,6 +1985,9 @@ help:
 	@echo "... GateWay/Connection/ConnectionS7.o"
 	@echo "... GateWay/Connection/ConnectionS7.i"
 	@echo "... GateWay/Connection/ConnectionS7.s"
+	@echo "... GateWay/Connection/ConnectionTcp.o"
+	@echo "... GateWay/Connection/ConnectionTcp.i"
+	@echo "... GateWay/Connection/ConnectionTcp.s"
 	@echo "... GateWay/Connection/XmlReader.o"
 	@echo "... GateWay/Connection/XmlReader.i"
 	@echo "... GateWay/Connection/XmlReader.s"

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ErrorManager.dir/Error.cpp.o"
   "CMakeFiles/ErrorManager.dir/ErrorManager.cpp.o"
-  "libErrorManager.a"
   "libErrorManager.pdb"
+  "libErrorManager.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -18,10 +18,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_S7">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>
@@ -42,10 +42,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="W_S7/fast">
-				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7/libW_S7.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/W_S7"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/user/git/Event_manager11/Event_manager/W_modbus/modbuspp"/>

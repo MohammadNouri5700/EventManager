@@ -42,7 +42,7 @@ unset(_expectedTargets)
 
 
 # Create imported target protos
-add_library(protos STATIC IMPORTED)
+add_library(protos SHARED IMPORTED)
 
 set_target_properties(protos PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos"
@@ -52,8 +52,8 @@ set_target_properties(protos PROPERTIES
 # Import target "protos" for configuration "Release"
 set_property(TARGET protos APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(protos PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.a"
+  IMPORTED_LOCATION_RELEASE "/home/user/git/Event_manager11/Event_manager/cmake-build-release-system/lib/protos/libprotos.so"
+  IMPORTED_SONAME_RELEASE "libprotos.so"
   )
 
 # This file does not depend on other imported targets which have

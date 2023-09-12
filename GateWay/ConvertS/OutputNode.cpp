@@ -14,6 +14,7 @@ OutputNode::OutputNode() : ProtocolS::Tag() {
 }
 
 OutputNode::~OutputNode() {
+    std::cout<<"OutputNode dead" <<std::endl;
     stop();
 }
 
@@ -22,12 +23,12 @@ void OutputNode::run(int interval_sec) {
     start = true;
     while (start) {
          if (!IsinSending) {
-            if (Name.Value.length() > 2) {
-                IsinSending=true;
-                this->isbusy=true;
-                task();
-            }
-             sleep(10);
+        if (Name.Value.length() > 2) {
+            IsinSending = true;
+            this->isbusy = true;
+            task();
+        }
+        sleep(10);
          }
 
     }
@@ -151,12 +152,15 @@ void OutputNode::SendMQTTEvent() {
     if (v != "") {
         b = Event(new ProtocolData{v, Value, Name.Value}, TYPE::MQTTNODE, this);
         EventList.push(std::move(b));
-    }else{
-        IsinSending=false;
+    } else {
+        IsinSending = false;
     }
 
 
     std::cout << "Event was size = " << EventList.was_size() << std::endl;
+//    if (EventList.was_size()>10){
+//        EventList.pop();
+//    }
 //     }
     EventMutexD.unlock();
 }
